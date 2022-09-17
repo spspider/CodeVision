@@ -1,0 +1,19 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+DataS                                                             0160h      510
+_seed                                                             035Eh        4
+p                                                                 0362h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+adc1                                                              R5           1
+c                                                                 R4           1
+S_1                                                               R2.0      1bit
+Timer_2                                                           R7           1
+Timer_1                                                           R8,R9        2

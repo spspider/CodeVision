@@ -1,0 +1,49 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'Charg.LYT'.
+CADCAM generated at 7:37:43 on 19 апреля 2011 г..
+
+File List
+---------
+Top Copper              : Charg - CADCAM Top Copper.TXT
+Bottom Copper           : Charg - CADCAM Bottom Copper.TXT
+Top Silk Screen         : Charg - CADCAM Top Silk Screen.TXT
+Top Solder Resist       : Charg - CADCAM Top Solder Resist.TXT
+Bottom Solder Resist    : Charg - CADCAM Bottom Solder Resist.TXT
+Top SMT Paste Mask      : Charg - CADCAM Top SMT Paste Mask.TXT
+Drill                   : Charg - CADCAM Drill.TXT
+
+Photoplotter Setup
+------------------
+Format: RS274X, ASCII, 2.4, imperial, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height
+
+D10	CIRCLE	D=12th                                      DRAW
+D11	CIRCLE	D=50th                                      FLASH
+D12	SMT	W=86.6th              H=47.2th              FLASH
+D13	CIRCLE	D=120th                                     FLASH
+D14	CIRCLE	D=100th                                     FLASH
+D15	SQUARE	S=80th                                      FLASH
+D16	CIRCLE	D=8th                                       DRAW
+D17	CIRCLE	D=70th                                      FLASH
+D18	SMT	W=106.6th             H=67.2th              FLASH
+D19	CIRCLE	D=140th                                     FLASH
+D70	CIRCLE	D=124th                                     FLASH
+D71	SMT	W=100th               H=100th               FLASH
+
+NC Drill Setup
+--------------
+Format: ASCII, 2.4, imperial, absolute, eob=<CR><LF>, no zero suppression.
+Notes:  Tool sizes are diameters. Layer sets are in brackets - 0=TOP, 15=BOTTOM, 1-14=INNER.
+
+T01	20th (0-15)
+T02	45th (0-15)
+T03	50th (0-15)
+T04	25th (0-15)
+T05	40th (0-15)
+
+
+[END OF FILE]

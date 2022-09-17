@@ -1,0 +1,2146 @@
+Content-Type: multipart/related; start=<op.mhtml.1353768353706.6fe99d051c7a9d37@192.168.1.100>; boundary=----------deo98auUPLENdKsFjSytTj
+Content-Location: https://instruct1.cit.cornell.edu/courses/ee476/FinalProjects/s2001/jl175/EE476.htm
+Subject: =?utf-8?Q?EE=20476?=
+MIME-Version: 1.0
+
+------------deo98auUPLENdKsFjSytTj
+Content-Disposition: inline; filename=EE476.htm
+Content-Type: text/html; charset=windows-1252; name=EE476.htm
+Content-ID: <op.mhtml.1353768353706.6fe99d051c7a9d37@192.168.1.100>
+Content-Location: https://instruct1.cit.cornell.edu/courses/ee476/FinalProjects/s2001/jl175/EE476.htm
+Content-Transfer-Encoding: 8bit
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./EE476_files/filelist.xml">
+<link rel=Edit-Time-Data href="./EE476_files/editdata.mso">
+<link rel=OLE-Object-Data href="./EE476_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>EE 476</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Jeff S. Lee</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Jeff S. Lee</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>93</o:TotalTime>
+  <o:Created>2001-05-11T20:10:00Z</o:Created>
+  <o:LastSaved>2001-05-11T20:10:00Z</o:LastSaved>
+  <o:Pages>14</o:Pages>
+  <o:Words>1582</o:Words>
+  <o:Characters>9020</o:Characters>
+  <o:Company>Cornell University</o:Company>
+  <o:Lines>75</o:Lines>
+  <o:Paragraphs>18</o:Paragraphs>
+  <o:CharactersWithSpaces>11077</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-alt:Batang;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:"MS Mincho";
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:128;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 134676480 16 0 131072 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;
+	mso-font-charset:129;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1342176593 1775729915 48 0 524447 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+h1
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	mso-fareast-language:KO;
+	font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-language:KO;
+	font-weight:normal;}
+h3
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-language:KO;}
+h4
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-language:KO;}
+h5
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:16.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-language:KO;}
+h6
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-language:KO;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	color:#333333;
+	mso-fareast-language:KO;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	color:#333333;
+	mso-fareast-language:KO;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	color:#333333;
+	mso-fareast-language:KO;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.5in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Batang;
+	mso-fareast-language:KO;}
+span.EmailStyle25
+	{mso-style-type:personal;
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:windowtext;}
+span.EmailStyle26
+	{mso-style-type:personal;
+	mso-ansi-font-size:10.0pt;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:windowtext;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 66.0pt 1.0in 66.0pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:93988369;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1915276608 -1737606996 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:600;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:Batang;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1098">
+  <o:colormenu v:ext="edit" fillcolor="navy"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=navy lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoTitle><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoTitle><span style='color:white'>E ELE 476<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:26.0pt;mso-bidi-font-size:10.0pt;
+color:white'>Final Project<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>-<span
+style="mso-spacerun: yes">  </span>EKG Monitoring System - <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>Jeff S. Lee<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>Young Ho Cho<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:Batang;color:white;mso-ansi-language:EN-US;mso-fareast-language:
+KO;mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1037" type="#_x0000_t75" style='width:366pt;
+ height:273.75pt' o:ole="">
+ <v:imagedata src="./EE476_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=488 height=365
+src="./EE476_files/image002.jpg" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Paint.Picture" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1051102600">
+ </o:OLEObject>
+</xml><![endif]--><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Introduction<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph'><b><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in'><b><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'>U</span></b><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'>nexpected cardiac death, also known as “sudden death” is a
+frequently fatal form of arrhythmia which kills more than a quarter of a million
+people each year in the United States.<span style="mso-spacerun: yes">  
+</span>Confronted with the devastating effects of unexpected cardiac death and
+with the pursuit of advance understanding of cardiac diseases, my partner and I
+– Young Ho Cho and Jeff S. Lee - plan to design and build a heart monitoring
+instrument which measures the electrical activity of the heart, also known as
+an electrocardiogram (ECG / EKG).<span style="mso-spacerun: yes">  </span><b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'>Unexpected cardiac death can be further classified as
+ventricular fibrillation - irregular twitching of the ventricles replacing
+normal contractions - in which more than half of those victims die within an
+hour of the onset of symptoms and before any medical assistance.<span
+style="mso-spacerun: yes">  </span>According to the American Heart
+Association's 1999 Heart and Stroke Statistical Update, coronary heart disease
+caused 476,124 deaths in the United States in 1996 and since, it has been
+identified as the single largest killer of both men and women in this country
+and the world.<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>High
+level design<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><span
+style='mso-tab-count:1'>            </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><span style='mso-tab-count:1'>            </span>Our EKG
+monitoring instrument uses the Atmel Mega103 microcontroller to control and
+store the data acquired via EKG monitoring systems involved.<span
+style="mso-spacerun: yes">  </span>Our primary objective is to accurately
+measure the electrical activity of heart with EKG monitoring instrument.<span
+style="mso-spacerun: yes">  </span>This is achieved by building an
+instrumentation amplifier which is specifically designed for bio-electrical
+signal measurement.<span style="mso-spacerun: yes">  </span>In addition, two
+active filters – one high pass and one low pass – were employed to eliminate
+measurement errors.<span style="mso-spacerun: yes">  </span>The high pass
+filter was used to remove any dc drift with cut-off frequency of 0.2Hz, while
+the low pass filter was used to eliminate anti-aliasing effects.<span
+style="mso-spacerun: yes">  </span>More detailed hardware designs are described
+below.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><span style='mso-tab-count:1'>            </span>User input from
+the PinD0 initiates the data acquisition process. Once initiated, the signal
+acquired via EKG monitoring instrument goes through the Analog to Digital
+Converter of the microcontroller at sampling frequency of 720Hz and this data
+is stored in external SRAM.<span style="mso-spacerun: yes">  </span>Upon
+completion of data acquisition process, the user can initiate transmission of
+the stored data via the Hyperterminal to be interfaced with Matlab.<span
+style="mso-spacerun: yes">  </span>Data can be further analyzed with Matlab
+software for future studies, such as RR interval analysis, QT interval
+analysis.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Hardware
+Design<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph;text-indent:.5in'><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'>When detecting and recording the EKG signal, there are two
+main issues of concern that influence the fidelity of the signal.<span
+style="mso-spacerun: yes">  </span>The first is the signal to noise ratio.<span
+style="mso-spacerun: yes">  </span>That is, the ratio of the energy in the EKG
+signal to the energy in the noise signal.<span style="mso-spacerun: yes"> 
+</span>In general, noise is defined as electrical signals that are not part of
+the wanted EKG signal.<span style="mso-spacerun: yes">  </span>The other is the
+distortion of the signal, meaning that the relative contribution of any
+frequency component in the EKG signal should not be altered.<span
+style="mso-spacerun: yes">  </span>To meet the above conditions and
+requirements, a design for the amplification system proposed as shown below.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+Batang;color:white;mso-ansi-language:EN-US;mso-fareast-language:KO;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph'><!--[if gte vml 1]><v:shapetype id="_x0000_t202" coordsize="21600,21600"
+ o:spt="202" path="m0,0l0,21600,21600,21600,21600,0xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1080" type="#_x0000_t202" style='position:absolute;
+ left:0;text-align:left;margin-left:235.05pt;margin-top:-4.6pt;width:234pt;
+ height:612pt;z-index:28'>
+ <v:textbox style='mso-next-textbox:#_x0000_s1080'/>
+ <w:wrap anchorx="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:10'><span style='left:0px;position:absolute;left:313px;
+top:-6px;width:315px;height:819px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=315 height=819 align=left valign=top bgcolor=white
+  style='border:.75pt solid black;vertical-align:top;background:white'><![endif]><![if !mso]><span
+  style='position:absolute;left:0pt;z-index:28'>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div v:shape="_x0000_s1080" style='padding:3.6pt 7.2pt 3.6pt 7.2pt'
+    class=shape>
+    <p class=MsoNormal><span style='color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>Two bipolar leads shown on the left (i.e., they detect a
+    change in electric potential between two points) detect an electrical
+    potential change in the frontal plane.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoBodyText>Burr-Brown<span style='mso-tab-count:1'>      </span>INA126P
+    </p>
+    <p class=MsoBodyText>Instrumentation Amplifier - increases the signals by a
+    factor of up to 10000.</p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>Texas Instrument.<span style='mso-tab-count:1'>         </span>LF353<span
+    style='mso-tab-count:1'>  </span><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>Operational Amplifier - High-Pass Filter removes DC base
+    line drift by cutoff anything below 0.2 Hz.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoHeading8>Burr-Brown<span style='mso-tab-count:1'>      </span>ISO124<span
+    style="mso-spacerun: yes">   </span></p>
+    <p class=MsoHeading8>Isolation Amplifier - intended for safety
+    precaution.<span style="mso-spacerun: yes">  </span>This transmits the
+    signals optically, thus isolates the circuit from the patient.</p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>Texas Instrument.<span style='mso-tab-count:1'>         </span>LF353<span
+    style='mso-tab-count:1'>  </span><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>Operational Amplifier<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>Low-pass Filter accounts for Anti-aliasing effect.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>The figure displayed on the left illustrates distinctive
+    sections of EKG signals.<o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+    <p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+    color:#333333'>All components were powered by one 9V battery thus making
+    the EKG monitoring system much more safe.<o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  </span><![endif]><![if !mso & !vml]>&nbsp;<![endif]><![if !vml]></td>
+ </tr>
+</table>
+
+</span></span><![endif]><!--[if gte vml 1]><v:shapetype id="_x0000_t67"
+ coordsize="21600,21600" o:spt="67" adj="16200,5400" path="m0@0l@1@0@1,0@2,0@2@0,21600@0,10800,21600xe">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="val #1"/>
+  <v:f eqn="sum height 0 #1"/>
+  <v:f eqn="sum 10800 0 #1"/>
+  <v:f eqn="sum width 0 #0"/>
+  <v:f eqn="prod @4 @3 10800"/>
+  <v:f eqn="sum width 0 @5"/>
+ </v:formulas>
+ <v:path o:connecttype="custom" o:connectlocs="10800,0;0,@0;10800,21600;21600,@0"
+  o:connectangles="270,180,90,0" textboxrect="@1,0,@2,@6"/>
+ <v:handles>
+  <v:h position="#1,#0" xrange="0,10800" yrange="0,21600"/>
+ </v:handles>
+</v:shapetype><v:shape id="_x0000_s1088" type="#_x0000_t67" style='position:absolute;
+ left:0;text-align:left;margin-left:109.05pt;margin-top:121.4pt;width:18pt;
+ height:36pt;z-index:33'>
+ <v:textbox style='layout-flow:vertical-ideographic'/>
+ <w:wrap anchorx="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:15;left:0px;margin-left:141px;margin-top:158px;width:32px;
+height:56px'><img width=32 height=56 src="./EE476_files/image003.gif" v:shapes="_x0000_s1088"></span><![endif]><span
+style='color:white'><!--[if gte vml 1]><v:shape id="_x0000_i1025" type="#_x0000_t75"
+ style='width:153.75pt;height:122.25pt' o:ole="">
+ <v:imagedata src="./EE476_files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=205 height=163
+src="./EE476_files/image005.jpg" v:shapes="_x0000_i1025"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1051102608">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1084" type="#_x0000_t67" style='position:absolute;left:0;
+ text-align:left;margin-left:109.05pt;margin-top:315.1pt;width:18pt;height:27pt;
+ z-index:29'>
+ <v:textbox style='layout-flow:vertical-ideographic'/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:rect id="_x0000_s1076" style='position:absolute;left:0;
+ text-align:left;margin-left:19.05pt;margin-top:169.95pt;width:198pt;height:54pt;
+ z-index:26'>
+ <w:wrap anchorx="page"/>
+</v:rect><v:shapetype id="_x0000_t136" coordsize="21600,21600" o:spt="136"
+ adj="10800" path="m@7,0l@8,0m@5,21600l@6,21600e">
+ <v:formulas>
+  <v:f eqn="sum #0 0 10800"/>
+  <v:f eqn="prod #0 2 1"/>
+  <v:f eqn="sum 21600 0 @1"/>
+  <v:f eqn="sum 0 0 @2"/>
+  <v:f eqn="sum 21600 0 @3"/>
+  <v:f eqn="if @0 @3 0"/>
+  <v:f eqn="if @0 21600 @1"/>
+  <v:f eqn="if @0 0 @2"/>
+  <v:f eqn="if @0 @4 21600"/>
+  <v:f eqn="mid @5 @6"/>
+  <v:f eqn="mid @8 @5"/>
+  <v:f eqn="mid @7 @8"/>
+  <v:f eqn="mid @6 @7"/>
+  <v:f eqn="sum @6 0 @5"/>
+ </v:formulas>
+ <v:path textpathok="t" o:connecttype="custom" o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800"
+  o:connectangles="270,180,90,0"/>
+ <v:textpath on="t" fitshape="t"/>
+ <v:handles>
+  <v:h position="#0,bottomRight" xrange="6629,14971"/>
+ </v:handles>
+ <o:lock v:ext="edit" text="t" shapetype="t"/>
+</v:shapetype><v:shape id="_x0000_s1077" type="#_x0000_t136" style='position:absolute;
+ left:0;text-align:left;margin-left:55.05pt;margin-top:187.95pt;width:120pt;
+ height:17.25pt;z-index:27'>
+ <v:shadow on="t"/>
+ <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" string="Isolation Amplifier"/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1086" type="#_x0000_t67" style='position:absolute;
+ left:0;text-align:left;margin-left:109.05pt;margin-top:147.55pt;width:18pt;
+ height:27pt;z-index:31'>
+ <v:textbox style='layout-flow:vertical-ideographic'/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shapetype id="_x0000_t66" coordsize="21600,21600" o:spt="66"
+ adj="5400,5400" path="m@0,0l@0@1,21600@1,21600@2@0@2@0,21600,,10800xe">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="val #1"/>
+  <v:f eqn="sum 21600 0 #1"/>
+  <v:f eqn="prod #0 #1 10800"/>
+  <v:f eqn="sum #0 0 @3"/>
+ </v:formulas>
+ <v:path o:connecttype="custom" o:connectlocs="@0,0;0,10800;@0,21600;21600,10800"
+  o:connectangles="270,180,90,0" textboxrect="@4,@1,21600,@2"/>
+ <v:handles>
+  <v:h position="#0,#1" xrange="0,21600" yrange="0,10800"/>
+ </v:handles>
+</v:shapetype><v:shape id="_x0000_s1091" type="#_x0000_t66" style='position:absolute;
+ left:0;text-align:left;margin-left:217.05pt;margin-top:175.5pt;width:18pt;
+ height:9pt;z-index:36'>
+ <w:wrap anchorx="page"/>
+</v:shape><v:rect id="_x0000_s1073" style='position:absolute;left:0;
+ text-align:left;margin-left:19.05pt;margin-top:250.95pt;width:198pt;height:54pt;
+ z-index:23'>
+ <w:wrap anchorx="page"/>
+</v:rect><v:shape id="_x0000_s1074" type="#_x0000_t136" style='position:absolute;
+ left:0;text-align:left;margin-left:64.05pt;margin-top:268.2pt;width:102pt;
+ height:17.25pt;z-index:24'>
+ <v:shadow on="t"/>
+ <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" string="Low-Pass Filter"/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1075" type="#_x0000_t136" style='position:absolute;
+ left:0;text-align:left;margin-left:37.05pt;margin-top:286.95pt;width:162pt;
+ height:9pt;z-index:25'>
+ <v:shadow on="t"/>
+ <v:textpath style='font-family:"Arial Black";font-size:8pt;font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" string="(Anti-aliasing filter, Cutoff Freq = 1000Hz)&#13;&#10;"/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1085" type="#_x0000_t67" style='position:absolute;
+ left:0;text-align:left;margin-left:109.05pt;margin-top:231.35pt;width:18pt;
+ height:27pt;z-index:30'>
+ <v:textbox style='layout-flow:vertical-ideographic'/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1092" type="#_x0000_t66" style='position:absolute;
+ left:0;text-align:left;margin-left:217.05pt;margin-top:259.25pt;width:18pt;
+ height:9pt;z-index:37'>
+ <w:wrap anchorx="page"/>
+</v:shape><v:rect id="_x0000_s1067" style='position:absolute;left:0;
+ text-align:left;margin-left:19.05pt;margin-top:7.9pt;width:198pt;height:54pt;
+ z-index:18'>
+ <w:wrap anchorx="page"/>
+</v:rect><v:shape id="_x0000_s1068" type="#_x0000_t136" style='position:absolute;
+ left:0;text-align:left;margin-left:46.05pt;margin-top:16.95pt;width:143.25pt;
+ height:17.25pt;z-index:19'>
+ <v:shadow on="t"/>
+ <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" string="Instrumentation Amp."/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:rect id="_x0000_s1069" style='position:absolute;left:0;
+ text-align:left;margin-left:19.05pt;margin-top:88.95pt;width:198pt;height:54pt;
+ z-index:20'>
+ <w:wrap anchorx="page"/>
+</v:rect><v:shape id="_x0000_s1070" type="#_x0000_t136" style='position:absolute;
+ left:0;text-align:left;margin-left:64.05pt;margin-top:97.95pt;width:104.25pt;
+ height:17.25pt;z-index:21'>
+ <v:shadow on="t"/>
+ <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" string="High-Pass Filter"/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1072" type="#_x0000_t136" style='position:absolute;
+ left:0;text-align:left;margin-left:46.05pt;margin-top:124.95pt;width:2in;
+ height:9pt;z-index:22'>
+ <v:shadow on="t"/>
+ <v:textpath style='font-family:"Arial Black";font-size:8pt;font-style:italic;
+  v-text-kern:t' trim="t" fitpath="t" string="(DC Removal, Cutoff Freq = 0.2Hz)&#13;&#10;"/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1087" type="#_x0000_t67" style='position:absolute;
+ left:0;text-align:left;margin-left:109.05pt;margin-top:63.8pt;width:18pt;
+ height:27pt;z-index:32'>
+ <v:textbox style='layout-flow:vertical-ideographic'/>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1089" type="#_x0000_t66" style='position:absolute;
+ left:0;text-align:left;margin-left:217.05pt;margin-top:17.4pt;width:18pt;
+ height:9pt;z-index:34'>
+ <w:wrap anchorx="page"/>
+</v:shape><v:shape id="_x0000_s1090" type="#_x0000_t66" style='position:absolute;
+ left:0;text-align:left;margin-left:217.05pt;margin-top:91.7pt;width:18pt;
+ height:9pt;z-index:35'>
+ <w:wrap anchorx="page"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+
+<table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=25 height=11></td>
+  <td width=116></td>
+  <td width=32></td>
+  <td width=144></td>
+ </tr>
+ <tr>
+  <td height=181></td>
+  <td colspan=3 align=left valign=top><img width=292 height=181
+  src="./EE476_files/image006.gif" v:shapes="_x0000_s1067 _x0000_s1068 _x0000_s1069 _x0000_s1070 _x0000_s1072 _x0000_s1087 _x0000_s1089 _x0000_s1090"></td>
+ </tr>
+ <tr>
+  <td height=1></td>
+ </tr>
+ <tr>
+  <td height=107></td>
+  <td colspan=3 align=left valign=top><img width=292 height=107
+  src="./EE476_files/image007.gif" v:shapes="_x0000_s1076 _x0000_s1077 _x0000_s1086 _x0000_s1091"></td>
+ </tr>
+ <tr>
+  <td height=4></td>
+ </tr>
+ <tr>
+  <td height=104></td>
+  <td colspan=3 align=left valign=top><img width=292 height=104
+  src="./EE476_files/image008.gif" v:shapes="_x0000_s1073 _x0000_s1074 _x0000_s1075 _x0000_s1085 _x0000_s1092"></td>
+ </tr>
+ <tr>
+  <td height=8></td>
+ </tr>
+ <tr>
+  <td height=44></td>
+  <td></td>
+  <td align=left valign=top><img width=32 height=44
+  src="./EE476_files/image009.gif" v:shapes="_x0000_s1084"></td>
+ </tr>
+</table>
+
+</span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1093" type="#_x0000_t66"
+ style='position:absolute;margin-left:217.05pt;margin-top:1.05pt;width:18pt;
+ height:9pt;z-index:38'/><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+position:relative;z-index:20'><span style='position:absolute;left:285px;
+top:-3px;width:32px;height:20px'><img width=32 height=20
+src="./EE476_files/image010.gif" v:shapes="_x0000_s1093"></span></span><![endif]><span
+style='color:white'><span style="mso-spacerun: yes"> </span><span
+style="mso-spacerun: yes">       </span><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:198.75pt;height:123.75pt' o:ole="">
+ <v:imagedata src="./EE476_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=265 height=165
+src="./EE476_files/image012.jpg" v:shapes="_x0000_i1026"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1051102611">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:20.0pt;mso-bidi-font-size:10.0pt;
+color:white'><o:p></o:p></span></p>
+
+<p class=MsoCaption><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h3>
+
+<b><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:Batang;mso-ansi-language:EN-US;mso-fareast-language:
+KO;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<h3><span style='color:white'><span style='mso-tab-count:1'>            </span></span><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Instrumentation
+Amplifier – <o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:white'>The gain of this stage is set by
+connecting the external resistor R as shown:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:.5in'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>G = 5 + 80 Kohm
+/ R</span><!--[if gte vml 1]><v:shape id="_x0000_s1094" type="#_x0000_t75"
+ style='position:absolute;left:0;text-align:left;margin-left:0;margin-top:-4.6pt;
+ width:162.8pt;height:156.5pt;z-index:39;mso-position-horizontal:left;
+ mso-position-horizontal-relative:text;mso-position-vertical-relative:text'>
+ <v:imagedata src="./EE476_files/image013.png" o:title=""/>
+ <w:wrap type="square" side="right" anchorx="page"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="PBrush"
+ ShapeID="_x0000_s1094" DrawAspect="Content" ObjectID="_1051102613">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=217 height=209
+src="./EE476_files/image014.jpg" align=left hspace=12 v:shapes="_x0000_s1094"><![endif]>
+<span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:white'><span style="mso-spacerun: yes"> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent2><span style='color:white'>Our case, G = 800<br
+clear=all style='mso-special-character:line-break'>
+</span><span style='font-size:10.0pt;color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><span style='mso-tab-count:1'>            </span></span><b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Isolation
+Amplifier – <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><span style='mso-tab-count:1'>            </span><o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent3><span style='color:white'><span style='mso-tab-count:
+1'>            </span>The ISO124 isolation amplifier uses an input and an
+output section galvanically isolated by matched 1pF isolating capacitors built
+into the plastic package.<span style="mso-spacerun: yes">  </span>The input is
+duty-cycle modulated and transmitted digitally across the barrier.<span
+style="mso-spacerun: yes">  </span>The output section receives the modulated
+signal, converts it back to an analog voltage and removes the ripple component
+inherent in the demodulation.</span><span style='font-size:10.0pt;color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='color:white'><!--[if gte vml 1]><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:270.75pt;height:2in' o:ole="">
+ <v:imagedata src="./EE476_files/image015.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=361 height=192
+src="./EE476_files/image016.jpg" v:shapes="_x0000_i1028"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1051102615">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='color:white'><span style='mso-tab-count:1'>                </span></span><b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>High-Pass Filter
+–<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><span style='mso-tab-count:1'>            </span>The high pass
+filter was designed to have a cut-off frequency of f=0.2 Hz<span
+style='mso-tab-count:1'>           </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='color:white'><!--[if gte vml 1]><v:shape id="_x0000_i1029" type="#_x0000_t75"
+ style='width:243.75pt;height:96.75pt' o:ole="">
+ <v:imagedata src="./EE476_files/image017.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=325 height=129
+src="./EE476_files/image018.jpg" v:shapes="_x0000_i1029"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1051102617">
+ </o:OLEObject>
+</xml><![endif]--></span><b><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:white'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='color:white;font-weight:normal'><span style='mso-tab-count:
+1'>            </span>Assuming C1 = C2 = 1uF = C<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><span style='mso-tab-count:1'>            </span>R1=1.414 /wC =
+1.414 /1.256e-6 = 1.125e6 Ohm<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><span style='mso-tab-count:1'>                </span></span><b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Low Pass Filter
+– <o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:white'><span style='mso-tab-count:1'>                </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:white'>The low pass filter was designed for a
+cutoff frequency f = 1000Hz.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:.5in'><span
+style='color:white'><!--[if gte vml 1]><v:shape id="_x0000_i1030" type="#_x0000_t75"
+ style='width:258pt;height:99.75pt' o:ole="">
+ <v:imagedata src="./EE476_files/image019.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=344 height=133
+src="./EE476_files/image020.jpg" v:shapes="_x0000_i1030"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1051102619">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><span style='mso-tab-count:1'>                </span></span><b><span
+style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>DC-DC Converter
+–<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText2 style='margin-left:.5in'><span style='color:white'><span
+style='mso-tab-count:1'>            </span>1W Isolated Unregulated DC/DC
+Converters from Burr-Brown had been used to supply the power necessary for all
+components.<span style="mso-spacerun: yes">  </span>One 9V batter supplies
+power to Ateml board.<span style="mso-spacerun: yes">  </span>Vcc and ground
+from Atmel were connected to DC/DC converter in order to produce +12V and –12V
+output.<span style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='color:white'><span style='mso-tab-count:
+1'>                </span></span></b><span style='color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='color:white'><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:254.25pt;height:180pt' o:ole="">
+ <v:imagedata src="./EE476_files/image021.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=339 height=240
+src="./EE476_files/image022.jpg" v:shapes="_x0000_i1031"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="PBrush" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1051102621">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Software
+Design<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>Software – Since
+we were using Atmel’s Mega103 microcontroller, we were able to support external
+SRAM as well as the A/D converter. The EKG output was inputted into the A/D
+converter, where A/D conversion complete-interrupt was used to store the data
+into our array.<span style="mso-spacerun: yes">  </span>The program starts
+taking the data when PIND0 is pushed.<span style="mso-spacerun: yes"> 
+</span>Using timer 2 overflow interrupts, we were able to gain data acquisition
+of 720 data points per second.<span style="mso-spacerun: yes">  </span>The
+program constantly takes data until a character is received through the UART
+signaling that the computer is ready to receive the data, or the external SRAM
+runs out of space.<span style="mso-spacerun: yes">  </span>When the computer is
+ready to receive the data, we print out the data to the hyperterminal screen
+where the text can by captured by the hyperterm.<span style="mso-spacerun:
+yes">  </span>The data is then plotted in MATLAB.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>Things we would
+do differently next time - One of the things that we found out too late is that
+even though printing out the data is easier to code, it will take much time for
+us to print out all the data on to the hyperterm.<span style="mso-spacerun:
+yes">  </span>It did not hit me until too late that printing out that much data
+will take time.<span style="mso-spacerun: yes">  </span>We have tried to work
+with the XModem protocol as originally suggested, but I could not figure out
+why the CRC check was not functioning correctly.<span style="mso-spacerun:
+yes">  </span>Another thing that we neglected to do while trying to figure out
+the XModem protocol was that we did not put in a reset function for the code.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>Results of the
+design<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><span
+style='mso-tab-count:1'>            </span></span></b><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:white'>The EKG monitoring system
+performed very well.<span style="mso-spacerun: yes">  </span>The graph shows
+Matlab display of the acquired EMG signal at 360Hz after the A-D conversion
+process.<span style="mso-spacerun: yes">  </span>The bicep muscle was flexed
+approximately at 1Hz.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><span
+style="mso-spacerun: yes"> </span><b><span style="mso-spacerun: yes"> </span></b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:237.75pt;height:179.25pt'>
+ <v:imagedata src="./EE476_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=317 height=239
+src="./EE476_files/image024.gif" v:shapes="_x0000_i1032"><![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><span
+style='mso-tab-count:1'>            </span></span></b><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:white'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;color:white'>Future
+Development<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .75in'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'>Due to the size limit of RAM, the acquired signal can only be
+stored for approximately 2 minutes.<span style="mso-spacerun: yes">  </span>We would
+like to attach a storage device, which would enable us to store the data for
+more then six hours in the future.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .75in'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'>Data transfer is currently performed through two-step
+process.<span style="mso-spacerun: yes">  </span>Once all data is displayed
+through hyperterminal, the result is saved as a text file, which later would be
+loaded into Matlab.<span style="mso-spacerun: yes">  </span>This is a
+cumbersome process and we would like to export the data directly by using data
+acquisition system, provided in Matlab.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .75in'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'>Most commercial EKG monitoring system has more then one channel to
+acquire EKG signals.<span style="mso-spacerun: yes">  </span>We would like to
+add multiple channels to the circuit for future use.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-align:justify;text-justify:
+inter-ideograph;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .75in'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'>The current sampling frequency is set to be 720 Hz. However, we
+would like improve this by adding a User Interface that would allow adjustable
+frequency in the future.<o:p></o:p></span></p>
+
+<p class=MsoCaption><b><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+Batang;color:white;mso-ansi-language:EN-US;mso-fareast-language:KO;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:white'>Appendix<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoCaption><b><span style='font-size:18.0pt;mso-bidi-font-size:10.0pt;
+color:white'>EKG Monitoring System<o:p></o:p></span></b></p>
+
+<p class=MsoCaption><span style='color:white'>Block Diagram<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><span style="mso-spacerun: yes"> </span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><o:wrapblock><v:rect
+  id="_x0000_s1028" style='position:absolute;left:0;text-align:left;
+  margin-left:172.05pt;margin-top:-32.7pt;width:3in;height:36pt;z-index:1'>
+  <w:wrap anchorx="page"/>
+ </v:rect><v:shape id="_x0000_s1030" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:190.05pt;margin-top:-23.7pt;width:177.75pt;
+  height:17.25pt;z-index:2'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="Electrocardiogram Monitor"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:oval id="_x0000_s1032" style='position:absolute;left:0;
+  text-align:left;margin-left:226.05pt;margin-top:57.8pt;width:117pt;height:1in;
+  z-index:3'>
+  <w:wrap anchorx="page"/>
+ </v:oval><v:shape id="_x0000_s1033" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:244.05pt;margin-top:84.3pt;width:81pt;
+  height:18pt;z-index:4'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="Atmel mega103"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:shape id="_x0000_s1036" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:334.05pt;margin-top:30.25pt;width:81pt;
+  height:27.8pt;z-index:5'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="Port F&#13;&#10;A/D Converter"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:rect id="_x0000_s1051" style='position:absolute;left:0;
+  text-align:left;margin-left:37.05pt;margin-top:201.05pt;width:252pt;height:45pt;
+  z-index:6'>
+  <w:wrap anchorx="page"/>
+ </v:rect><v:shape id="_x0000_s1053" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:55.05pt;margin-top:219.05pt;width:220.5pt;
+  height:17.25pt;z-index:7'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="Data Display Via Hyperterminal Interface"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:line id="_x0000_s1054" style='position:absolute;left:0;
+  text-align:left;flip:x;z-index:8' from="145.05pt,129.05pt" to="262.05pt,201.05pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <w:wrap anchorx="page"/>
+ </v:line><v:shape id="_x0000_s1055" style='position:absolute;left:0;
+  text-align:left;margin-left:163.05pt;margin-top:156.05pt;width:12pt;height:27pt;
+  z-index:9;mso-position-horizontal:absolute;mso-position-vertical:absolute'
+  coordsize="240,540" path="m210,540c225,480,240,420,210,360,180,300,60,240,30,180,,120,30,30,30,0e"
+  filled="f">
+  <v:path arrowok="t"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:shape id="_x0000_s1056" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:154.05pt;margin-top:147.05pt;width:27pt;
+  height:9pt;z-index:10'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="UART"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:rect id="_x0000_s1057" style='position:absolute;left:0;
+  text-align:left;margin-left:343.05pt;margin-top:205.65pt;width:108pt;
+  height:45pt;z-index:11'>
+  <w:wrap anchorx="page"/>
+ </v:rect><v:shape id="_x0000_s1058" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:379.05pt;margin-top:223.65pt;width:33.75pt;
+  height:17.25pt;z-index:12'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="Pin D"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:line id="_x0000_s1061" style='position:absolute;left:0;
+  text-align:left;z-index:13' from="316.05pt,129.05pt" to="397.05pt,201.05pt">
+  <v:stroke startarrow="block" endarrow="block"/>
+  <w:wrap anchorx="page"/>
+ </v:line><v:shape id="_x0000_s1062" style='position:absolute;left:0;
+  text-align:left;margin-left:289.05pt;margin-top:31.5pt;width:54pt;height:18pt;
+  z-index:14;mso-position-horizontal:absolute;mso-position-vertical:absolute'
+  coordsize="1080,180" path="m0,0c120,90,240,180,360,180,480,180,600,,720,,840,,960,90,1080,180e"
+  filled="f">
+  <v:path arrowok="t"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:shape id="_x0000_s1063" style='position:absolute;left:0;
+  text-align:left;margin-left:370.05pt;margin-top:138.05pt;width:27pt;height:36pt;
+  z-index:15;mso-position-horizontal:absolute;mso-position-vertical:absolute'
+  coordsize="720,720" path="m0,720c45,570,90,420,180,360,270,300,450,420,540,360,630,300,690,60,720,0e"
+  filled="f">
+  <v:path arrowok="t"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:shape id="_x0000_s1065" type="#_x0000_t136" style='position:absolute;
+  left:0;text-align:left;margin-left:388.05pt;margin-top:129.05pt;width:27pt;
+  height:9pt;z-index:16'>
+  <v:shadow on="t"/>
+  <v:textpath style='font-family:"Arial Black";font-size:12pt;font-style:italic;
+   v-text-kern:t' trim="t" fitpath="t" string="Port D"/>
+  <w:wrap anchorx="page"/>
+ </v:shape><v:line id="_x0000_s1066" style='position:absolute;left:0;
+  text-align:left;z-index:17' from="289.05pt,5pt" to="289.05pt,59pt">
+  <v:stroke endarrow="block"/>
+  <w:wrap anchorx="page"/>
+ </v:line><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:22'><span style='left:0px;position:absolute;left:49px;
+ top:-44px;width:553px;height:379px'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=0 height=0></td>
+   <td width=180></td>
+   <td width=289></td>
+   <td width=84></td>
+  </tr>
+  <tr>
+   <td height=49></td>
+   <td></td>
+   <td align=left valign=top><img width=289 height=49
+   src="./EE476_files/image025.gif" v:shapes="_x0000_s1028 _x0000_s1030"></td>
+  </tr>
+  <tr>
+   <td height=1></td>
+  </tr>
+  <tr>
+   <td height=329></td>
+   <td colspan=3 align=left valign=top><img width=553 height=329
+   src="./EE476_files/image026.gif" v:shapes="_x0000_s1032 _x0000_s1033 _x0000_s1036 _x0000_s1051 _x0000_s1053 _x0000_s1054 _x0000_s1055 _x0000_s1056 _x0000_s1057 _x0000_s1058 _x0000_s1061 _x0000_s1062 _x0000_s1063 _x0000_s1065 _x0000_s1066"></td>
+  </tr>
+ </table>
+ </span></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<span style='font-size:10.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+Batang;color:white;mso-ansi-language:EN-US;mso-fareast-language:KO;mso-bidi-language:
+AR-SA'><br clear=all style='page-break-before:always'>
+</span><br style='mso-ignore:vglayout' clear=ALL>
+
+<p class=MsoNormal><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;
+color:white'>Source Code<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//Final Project - Young Ho Cho, Jeff S. Lee<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//EKG monitor source code<span style="mso-spacerun:
+yes">                                 </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//Takes 720 data points every second from the output of the A/D
+converter<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//when PIND0 is pushed.<span style="mso-spacerun: yes"> 
+</span>The result is outputted to the hyperterminal<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#include &lt;mega103.h&gt; <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#include &lt;stdio.h&gt;<span style="mso-spacerun: yes">      
+</span>//for debugging using printf, etc<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//timeout values for each task<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#define t1 1<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#define t2 30<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes"> </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#define maxData 30000<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//timer 1 constants <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#define prescale1 1<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>#define clear_on_match 8<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//the subroutines<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void sampleData(void); <span style='mso-tab-count:2'>       </span>//test
+for button press<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void keyCheck(void);<span style='mso-tab-count:2'>          </span>//for
+non-blocking<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void initialize(void); <span style='mso-tab-count:1'> </span>//all
+the usual mcu stuff <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">          </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>unsigned char reload;<span style='mso-tab-count:4'>                     </span>//timer
+0 reload to set 1 mSec<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>unsigned char time1, time2;<span style='mso-tab-count:3'>               </span>//task
+scheduling timeout counters<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>unsigned char cmdReady;<span style='mso-tab-count:4'>                   </span>//set
+when command is received<span style="mso-spacerun: yes">    </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>unsigned char stop;<span style="mso-spacerun:
+yes">                 </span>//stop flag<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>unsigned char data[maxData];<span style="mso-spacerun:
+yes">        </span>//array of data<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>int index;<span style="mso-spacerun:
+yes">                          </span>//index<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//**********************************************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//timer 2 overflow ISR<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>interrupt [TIM2_OVF] void timer2_overflow(void)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//reload to force 1 mSec
+overflow<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>TCNT2=reload;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">         </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//Decrement the three
+times if they are not already zero<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>if (time1&gt;0)<span
+style='mso-tab-count:1'>    </span>--time1;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>if (time2&gt;0)<span
+style='mso-tab-count:1'>    </span>--time2;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>} <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">                         </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//**********************************************************<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//ADC interrupt overflow ISR<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//when A/D converter is done, it reads the output and stores it<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>interrupt [ADC_INT] void ADC_done(void)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>{<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>int temp;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>temp = ADCW;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>temp = temp/4;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>data[index] = (char)
+temp;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>index++;<span
+style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>} <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes"> </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//**********************************************************<span
+style="mso-spacerun: yes">       </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//Entry point and task scheduler loop<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void main(void)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>{<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>initialize();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//main task scheduler
+loop -- never exits!<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>while(1)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>{<span
+style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>//sampleData(); <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>if (time1==0)<span
+style='mso-tab-count:1'> </span>sampleData();<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>if (time2==0)<span
+style='mso-tab-count:1'> </span>keyCheck();<span style="mso-spacerun: yes">   
+</span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>}<span
+style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>}<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//**********************************************************<span
+style="mso-spacerun: yes">          </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//sampleData<span style="mso-spacerun: yes">   </span>-- sample
+the data if array not full<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void sampleData(void) <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>int i;<span
+style='mso-tab-count:3'>                </span>//used for indexing in for loop<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>time1=t1; <span
+style="mso-spacerun: yes"> </span><span style='mso-tab-count:4'>                       </span>//reset
+the task timer <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>if(index==maxData) {}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//if the data array is
+not full, or it's not ready to output data,<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//read data<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>else if(cmdReady==0
+&amp;&amp; index&lt;maxData)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>{ <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>ADCSR = ADCSR | 0x40;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//if the comp is ready to
+output data, print the data<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>if(cmdReady==1 &amp;&amp;
+stop==0)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>{<span
+style="mso-spacerun: yes">    </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>for(i=0; i&lt;index;
+i++)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">     
+</span>printf(&quot;%d&quot;,data[i]);<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>}<span
+style="mso-spacerun: yes">                 </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>cmdReady=2;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>stop=1;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>index=0;<span
+style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>}<span
+style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//********************************************************** <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//keyCheck<span style="mso-spacerun: yes">  </span>-- non-blocking
+keyboard check every 30 mSec<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void keyCheck(void) <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>time2=t2;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>if (USR.7)<span
+style="mso-spacerun: yes">   </span><span style='mso-tab-count:2'>         </span>//RX
+done bit<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>cmdReady=1;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>if (!PIND.0)<span
+style="mso-spacerun: yes">      </span>//PinD0 pushed<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span>cmdReady=0;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>}<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//********************************************************** <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>//Set it all up<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>void initialize(void)<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>{<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>// Port A<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>DDRA=0x00;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>PORTA=0x00;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>// Port B<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>DDRB=0xff;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>PORTB=0x44;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>// Port D<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>DDRD=0x00;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>PORTD=0x00;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>// Port E<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>DDRE=0x00;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>PORTE=0x00;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">   </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//serial setup for
+debugging using printf, etc.<span style="mso-spacerun: yes">     </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>UCR = 0x10 + 0x08;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>UBRR = 25;<span
+style="mso-spacerun: yes">             </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//external SRAM<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>MCUCR = 0x80;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">                    </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//set up timer 2<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//for 720 data points per
+second<span style="mso-spacerun: yes">     </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//86.8 x (64x.25) microSec
+= 1.39 mSec, so prescale 64, and count 87 times.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>reload=256-87; //value
+for 1 Msec<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>TCNT2=reload;<span
+style='mso-tab-count:1'>   </span> //preload timer 1 so that is interrupts
+after 1 mSec.<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>TCCR2=3;<span
+style='mso-tab-count:2'>        </span>//prescalar to 64<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>TIMSK=0x40;<span
+style='mso-tab-count:1'>     </span><span style="mso-spacerun: yes">   </span><span
+style='mso-tab-count:1'>   </span>//turn on timer 0 overflow ISR<span
+style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//init the task timers<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>time1=t1;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>time2=t2;<span
+style="mso-spacerun: yes">    </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">                 </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>cmdReady=2;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>stop=0;<span
+style="mso-spacerun: yes">       </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">    </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>index=0;<span
+style="mso-spacerun: yes">       </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>ADMUX.2 = 0;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>ADMUX.1 = 0;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>ADMUX.0 = 0;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>ADCSR=0x80 + 0x09;<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>//crank up the ISRs<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>#asm<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span><span style='mso-tab-count:
+1'>    </span>sei<o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'><span style="mso-spacerun: yes">  </span>#endasm <o:p></o:p></span></p>
+
+<p class=MsoPlainText><span style='mso-fareast-font-family:"MS Mincho";
+color:white'>}<span style="mso-spacerun: yes">  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:white'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
+
+------------deo98auUPLENdKsFjSytTj--

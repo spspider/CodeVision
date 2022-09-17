@@ -1,0 +1,26 @@
+#define ADC_VREF_TYPE 1
+
+
+unsigned char read_adc(unsigned char adc_input)
+{
+ADMUX=adc_input|ADC_VREF_TYPE;
+// Start the AD conversion
+ADCSRA|=0x40;
+// Wait for the AD conversion to complete
+while ((ADCSRA & 0x10)==0);
+ADCSRA|=0x10;
+return ADCW;
+adc1 = ADCW;
+}
+
+/*
+interrupt [ADC_INT] void adc_isr(void){
+//if (U8==3){
+ADMUX=287+1; //287 - стандартное выражение, 1 - номер порта
+delay_us(20); //для стабилизации
+ADCSRA|=0b1100000;// включение непрерывного определения
+while ((ADCSRA & 0b1100000)==0);//ждем пока идет подсчет
+adc1 = ADCH;//заносим данные в f1
+//}
+}
+*/

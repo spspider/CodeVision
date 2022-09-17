@@ -1,0 +1,65 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Temp                                                              0160h        4
+STemp                                                             0164h        4
+Temp_min                                                          0168h        4
+CO_sensor                                                         016Ch        4
+lcd_buffer                                                        0170h       32
+uart_data                                                         0190h       16
+now_set                                                           01A0h        1
+rx_buffer                                                         01A1h       32
+rx_wr_index                                                       01C1h        1
+rx_rd_index                                                       01C2h        1
+rx_counter                                                        01C3h        1
+on                                                                01C4h        6
+nowPORT                                                           01CAh        6
+Timer_read_adc_1                                                  01D0h        1
+Timer_read_adc_2                                                  01D1h        1
+Timer_buzzer_active                                               01D2h        1
+Timer_buzzer_signal                                               01D3h        1
+Timer_buzzer_silence                                              01D4h        1
+Timer_buzzer_silence_1                                            01D5h        1
+Timer_buzzer_active_1                                             01D6h        1
+LCD_switch                                                        01D7h        1
+Timer_LCD                                                         01D8h        1
+Time_one_sec                                                      01D9h        1
+start_delay_switch                                                01DAh        1
+delay_switch                                                      01DBh        1
+is_on                                                             01DCh        1
+adc                                                               01DDh       12
+Temp_str                                                          01E9h       20
+Time_str                                                          01FDh       20
+_NeedTemp                                                         0211h       20
+_Time_sec                                                         0225h       20
+_Time_min                                                         0239h       20
+_Time_hour                                                        024Dh       20
+_CO_sensor                                                        0261h       20
+Time_sec_all                                                      0275h        2
+Time                                                              0277h        2
+Time_sec                                                          0279h        2
+Time_min                                                          027Bh        2
+Time_hour                                                         027Dh        2
+_seed                                                             027Fh        4
+_base_y                                                           0283h        4
+_lcd_x                                                            0287h        1
+_lcd_y                                                            0288h        1
+_lcd_maxx                                                         0289h        1
+p                                                                 028Ah        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+STempEE                                                           0000h        2
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+EEPromOut                                                         R5           1
+EEPromIn                                                          R4           1
+rx_buffer_overflow                                                R2.0      1bit
+i                                                                 R6,R7        2
+j                                                                 R8,R9        2
+databits                                                          R10,R11      2
+lcd_can_clear                                                     R13          1
+status_usart                                                      R12          1

@@ -1,0 +1,5 @@
+VERSION:1 SOURCE_TIMESTAMP:3A2C0EAD
+NODE:I LEVEL:0 LINE:1 "C:\cvavr2\inc\mega8.h"
+NODE:I LEVEL:0 LINE:7 "C:\cvavr2\inc\lcd.h"
+NODE:I LEVEL:0 LINE:8 "C:\cvavr2\inc\delay.h"
+NODE:V LEVEL:0 LINE:9 "num -> R4,R5"

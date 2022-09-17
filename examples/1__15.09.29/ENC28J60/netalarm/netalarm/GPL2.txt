@@ -1,0 +1,5 @@
+При разработки ПО для WolandSwitch использованы фрагменты кода товарища
+Guido Socher
+(Copyright: GPL V2 see: http://www.gnu.org/licenses/gpl.html)
+
+Соблюдайте соглашение лицензии GPL V2!

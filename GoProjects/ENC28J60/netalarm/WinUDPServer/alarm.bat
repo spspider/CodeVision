@@ -1,0 +1,1 @@
+@echo alarm > alarm.txt

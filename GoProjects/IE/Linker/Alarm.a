@@ -1,0 +1,927 @@
+;/*****************************************************
+;This program was produced by the
+;CodeWizardAVR V2.03.4 Standard
+;Automatic Program Generator
+;© Copyright 1998-2008 Pavel Haiduc, HP InfoTech s.r.l.
+;http://www.hpinfotech.com
+;
+;Project :
+;Version :
+;Date    : 18.04.2013
+;Author  :
+;Company :
+;Comments:
+;
+;
+;Chip type           : ATmega8
+;Program type        : Application
+;Clock frequency     : 8,000000 MHz
+;Memory model        : Small
+;External RAM size   : 0
+;Data Stack size     : 256
+;*****************************************************/
+;//#include <stdio.h>
+;////////
+;
+;#include <mega8.h>
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x80
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0x70
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0x60
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0x70
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;//#include <sleep.h>
+;#include <adc.c>
+;
+;#define ADC_VREF_TYPE 0x00
+;
+;// Read the AD conversion result
+;/*
+;unsigned int read_adc(unsigned char adc_input)
+;{
+;ADMUX=adc_input | (ADC_VREF_TYPE & 0xff);
+;// Delay needed for the stabilization of the ADC input voltage
+;//delay_us(10);
+;// Start the AD conversion
+;ADCSRA|=0x40;
+;// Wait for the AD conversion to complete
+;while ((ADCSRA & 0x10)==0);
+;ADCSRA|=0x10;
+;return ADCW;
+;}
+;*/
+;//#include <lcd.h>
+;#include <interrupt.c>
+;unsigned char disable_count=0,mini_stand_by,Count=0,alarm=0,Timer_1,Timer_2,Count_1,
+;pressed,Timer_wrong_pressed_enable,Timer_3,Timer_6,delay_after_alarm,Timer_4_ext,Timer_4,
+;shadow=0,Timer_signal_sinus,Timer_signal_sinus_enabled,alarm_recieved,
+;Count_this_event=0;
+;unsigned int stand_by=0, Timer_wrong_pressed,Timer_if_long_pressed;
+;//unsigned int voltage,Show_voltage;
+;//unsigned char Show_voltage_start,Timer_end_show_voltage;
+;//unsigned char U1,U3,U2[2],current_level[2],Timer_4;
+;
+;unsigned char already_enabled=0,Prev_Timer_signal_sinus=0;
+;char *word="";
+
+	.DSEG
+_0x3:
+	.BYTE 0x1
+;
+;interrupt [TIM0_OVF] void timer0_ovf_isr(void)
+; 0000 001E {
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+;PCODE: $0000000E VOL: 0
+;//PORTD=0b00010000;
+;
+;if ((disable_count==0)&&(alarm==0)&&(Count==0)&&(stand_by==0)&&(Timer_wrong_pressed_enable==0)){  //если ничего нет, то
+;PCODE: $0000000F VOL: 0
+;PCODE: $00000010 VOL: 0
+;PCODE: $00000011 VOL: 0
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+;PCODE: $00000014 VOL: 0
+;PCODE: $00000015 VOL: 0
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+;PCODE: $00000018 VOL: 0
+;PCODE: $00000019 VOL: 0
+;PCODE: $0000001A VOL: 0
+;PCODE: $0000001B VOL: 0
+;PCODE: $0000001C VOL: 0
+;PCODE: $0000001D VOL: 0
+;PCODE: $0000001E VOL: 0
+;PCODE: $0000001F VOL: 0
+;PCODE: $00000020 VOL: 0
+;PCODE: $00000021 VOL: 0
+;Timer_4_ext++;
+;PCODE: $00000022 VOL: 0
+;PCODE: $00000023 VOL: 0
+;PCODE: $00000024 VOL: 0
+;if (Timer_4_ext==200){
+;PCODE: $00000025 VOL: 0
+;PCODE: $00000026 VOL: 0
+;PCODE: $00000027 VOL: 0
+;Timer_4++;}
+;PCODE: $00000028 VOL: 0
+;PCODE: $00000029 VOL: 0
+;PCODE: $0000002A VOL: 0
+;if (Timer_4>=10){
+;PCODE: $0000002B VOL: 0
+;PCODE: $0000002C VOL: 0
+;PCODE: $0000002D VOL: 0
+;PCODE: $0000002E VOL: 0
+;    PORTD^=0b00100001;//то мигаем
+;PCODE: $0000002F VOL: 0
+;PCODE: $00000030 VOL: 0
+;PCODE: $00000031 VOL: 0
+;PCODE: $00000032 VOL: 0
+;PCODE: $00000033 VOL: 0
+;    Timer_4=0;
+;PCODE: $00000034 VOL: 0
+;PCODE: $00000035 VOL: 0
+;
+;}
+;
+;//пропадание питания на ножке PIND.3
+;if ((PIND.3==0)&&(stand_by==0)&&(Count_this_event<3)){  //на ножке ноль, не активно, и счет не больше 2х
+;PCODE: $00000036 VOL: 0
+;PCODE: $00000037 VOL: 0
+;PCODE: $00000038 VOL: 0
+;PCODE: $00000039 VOL: 0
+;PCODE: $0000003A VOL: 0
+;PCODE: $0000003B VOL: 0
+;PCODE: $0000003C VOL: 0
+;PCODE: $0000003D VOL: 0
+;PCODE: $0000003E VOL: 0
+;PCODE: $0000003F VOL: 0
+;PCODE: $00000040 VOL: 0
+;PCODE: $00000041 VOL: 0
+;PCODE: $00000042 VOL: 0
+;PCODE: $00000043 VOL: 0
+;PCODE: $00000044 VOL: 0
+;Count_this_event++;//считаем сколько раз мы уже пропадание мигали, что бы не заходил в цикл
+;PCODE: $00000045 VOL: 0
+;PCODE: $00000046 VOL: 0
+;PCODE: $00000047 VOL: 0
+;alarm=1;       //сигнал
+;PCODE: $00000048 VOL: 0
+;PCODE: $00000049 VOL: 0
+;shadow=1;
+;PCODE: $0000004A VOL: 0
+;PCODE: $0000004B VOL: 0
+;Count=0;
+;PCODE: $0000004C VOL: 0
+;stand_by=20000;//ожидание
+;PCODE: $0000004D VOL: 0
+;PCODE: $0000004E VOL: 0
+;//power off
+;}
+;if ((Count_this_event>=2)&&(PIND.3==1)){
+;PCODE: $0000004F VOL: 0
+;PCODE: $00000050 VOL: 0
+;PCODE: $00000051 VOL: 0
+;PCODE: $00000052 VOL: 0
+;PCODE: $00000053 VOL: 0
+;PCODE: $00000054 VOL: 0
+;PCODE: $00000055 VOL: 0
+;PCODE: $00000056 VOL: 0
+;PCODE: $00000057 VOL: 0
+;PCODE: $00000058 VOL: 0
+;PCODE: $00000059 VOL: 0
+;PCODE: $0000005A VOL: 0
+;shadow=0;
+;PCODE: $0000005B VOL: 0
+;PCODE: $0000005C VOL: 0
+;Count_this_event=0;}
+;PCODE: $0000005D VOL: 0
+;PCODE: $0000005E VOL: 0
+;
+;}
+;PCODE: $0000005F VOL: 0
+;
+;
+;
+;
+;
+;if ((Timer_wrong_pressed>6000)&&(stand_by==0)){//если срабатывали другие нажатия
+;PCODE: $00000060 VOL: 0
+;PCODE: $00000061 VOL: 0
+;PCODE: $00000062 VOL: 0
+;PCODE: $00000063 VOL: 0
+;PCODE: $00000064 VOL: 0
+;PCODE: $00000065 VOL: 0
+;PCODE: $00000066 VOL: 0
+;PCODE: $00000067 VOL: 0
+;PCODE: $00000068 VOL: 0
+;PCODE: $00000069 VOL: 0
+;PCODE: $0000006A VOL: 0
+;PORTD&=~0b00100000;
+;PCODE: $0000006B VOL: 0
+;PCODE: $0000006C VOL: 0
+;PCODE: $0000006D VOL: 0
+;PCODE: $0000006E VOL: 0
+;
+;disable_count=Count=Timer_wrong_pressed=0;
+;PCODE: $0000006F VOL: 0
+;PCODE: $00000070 VOL: 0
+;PCODE: $00000071 VOL: 0
+;PCODE: $00000072 VOL: 0
+;Timer_wrong_pressed_enable=0;
+;PCODE: $00000073 VOL: 0
+;}
+;
+;if (Timer_wrong_pressed_enable==1){
+;PCODE: $00000074 VOL: 0
+;PCODE: $00000075 VOL: 0
+;PCODE: $00000076 VOL: 0
+;PCODE: $00000077 VOL: 0
+;Timer_wrong_pressed++;
+;PCODE: $00000078 VOL: 0
+;PCODE: $00000079 VOL: 0
+;PCODE: $0000007A VOL: 0
+;PCODE: $0000007B VOL: 0
+;}
+;////////////////////
+;
+;//PORTD^=0b00000001;
+;////////////////////
+;if (PIND.2==1){
+;PCODE: $0000007C VOL: 0
+;PCODE: $0000007D VOL: 0
+;PCODE: $0000007E VOL: 0
+;PCODE: $0000007F VOL: 0
+;PCODE: $00000080 VOL: 0
+;
+;    if (already_enabled==0){
+;PCODE: $00000081 VOL: 0
+;PCODE: $00000082 VOL: 0
+;PCODE: $00000083 VOL: 0
+;    //if (Prev_Timer_signal_sinus!=0){
+;    //printf("%u-%u \n",Timer_signal_sinus,Prev_Timer_signal_sinus);
+;        if(Prev_Timer_signal_sinus-Timer_signal_sinus>20){
+;PCODE: $00000084 VOL: 0
+;PCODE: $00000085 VOL: 0
+;PCODE: $00000086 VOL: 0
+;PCODE: $00000087 VOL: 0
+;PCODE: $00000088 VOL: 0
+;PCODE: $00000089 VOL: 0
+;PCODE: $0000008A VOL: 0
+;            alarm_recieved=1;
+;PCODE: $0000008B VOL: 0
+;PCODE: $0000008C VOL: 0
+;            disable_count=0;
+;PCODE: $0000008D VOL: 0
+;            //stand_by=10;
+;            //printf("  #######");
+;            //printf("%u-%u \n",Timer_signal_sinus,Prev_Timer_signal_sinus);
+;            Timer_if_long_pressed=0;
+;PCODE: $0000008E VOL: 0
+;PCODE: $0000008F VOL: 0
+;            Timer_signal_sinus=0;
+;PCODE: $00000090 VOL: 0
+;PCODE: $00000091 VOL: 0
+;        //}
+;
+;        }
+;    //if(Timer_signal_sinus!=0){
+;    Prev_Timer_signal_sinus=Timer_signal_sinus;Timer_signal_sinus=0;
+;PCODE: $00000092 VOL: 0
+;PCODE: $00000093 VOL: 0
+;PCODE: $00000094 VOL: 0
+;PCODE: $00000095 VOL: 0
+;PCODE: $00000096 VOL: 0
+;    //}
+;
+;
+;    Timer_signal_sinus_enabled=1;
+;PCODE: $00000097 VOL: 0
+;PCODE: $00000098 VOL: 0
+;    already_enabled=1;
+;PCODE: $00000099 VOL: 0
+;PCODE: $0000009A VOL: 0
+;    }
+;
+;Timer_signal_sinus_enabled=1;
+;PCODE: $0000009B VOL: 0
+;PCODE: $0000009C VOL: 0
+;PCODE: $0000009D VOL: 0
+;
+;
+;if ((alarm==0)&&(stand_by==0)){
+;PCODE: $0000009E VOL: 0
+;PCODE: $0000009F VOL: 0
+;PCODE: $000000A0 VOL: 0
+;PCODE: $000000A1 VOL: 0
+;PCODE: $000000A2 VOL: 0
+;PCODE: $000000A3 VOL: 0
+;PCODE: $000000A4 VOL: 0
+;PCODE: $000000A5 VOL: 0
+;PCODE: $000000A6 VOL: 0
+;PCODE: $000000A7 VOL: 0
+;    Timer_if_long_pressed++;
+;PCODE: $000000A8 VOL: 0
+;PCODE: $000000A9 VOL: 0
+;PCODE: $000000AA VOL: 0
+;PCODE: $000000AB VOL: 0
+;        if (Timer_if_long_pressed>2000){//если зарегестрированно более 2000 прерываний
+;PCODE: $000000AC VOL: 0
+;PCODE: $000000AD VOL: 0
+;PCODE: $000000AE VOL: 0
+;        PORTD|=0b00100000;
+;PCODE: $000000AF VOL: 0
+;PCODE: $000000B0 VOL: 0
+;PCODE: $000000B1 VOL: 0
+;PCODE: $000000B2 VOL: 0
+;        Count=0;
+;PCODE: $000000B3 VOL: 0
+;        alarm=1;
+;PCODE: $000000B4 VOL: 0
+;PCODE: $000000B5 VOL: 0
+;        stand_by=10;
+;PCODE: $000000B6 VOL: 0
+;PCODE: $000000B7 VOL: 0
+;        }
+;    }
+;PCODE: $000000B8 VOL: 0
+;}
+;PCODE: $000000B9 VOL: 0
+;
+;//if(Timer_signal_sinus_enabled==1){
+;if (Timer_signal_sinus<254){
+;PCODE: $000000BA VOL: 0
+;PCODE: $000000BB VOL: 0
+;PCODE: $000000BC VOL: 0
+;PCODE: $000000BD VOL: 0
+;Timer_signal_sinus++;}
+;PCODE: $000000BE VOL: 0
+;PCODE: $000000BF VOL: 0
+;PCODE: $000000C0 VOL: 0
+;//}
+;//if (Timer_signal_sinus>250){Timer_signal_sinus=0;alarm_recieved=0;Timer_signal_sinus_enabled=0;}
+;/*
+;if (PIND.2==0){
+;
+;    if (Timer_signal_sinus>40){//40 - пауза после появления нуля, чем больше, тем меньше интервал между паузами
+;    alarm_recieved=1;
+;
+;    disable_count=0;
+;    Timer_if_long_pressed=0;
+;
+;    }
+;    if (Timer_signal_sinus>41){//далее обнуляем, что бы симмулировать счет
+;    alarm_recieved=0;
+;    Timer_signal_sinus_enabled=0;
+;    Timer_signal_sinus=0;
+;
+;
+;    }
+;
+;}
+;*/
+;///////
+;if (PIND.2==0){
+;PCODE: $000000C1 VOL: 0
+;PCODE: $000000C2 VOL: 0
+;PCODE: $000000C3 VOL: 0
+;PCODE: $000000C4 VOL: 0
+;already_enabled=0;
+;PCODE: $000000C5 VOL: 0
+;PCODE: $000000C6 VOL: 0
+;Timer_if_long_pressed=0;
+;PCODE: $000000C7 VOL: 0
+;PCODE: $000000C8 VOL: 0
+;disable_count=0;
+;PCODE: $000000C9 VOL: 0
+;}
+;///////
+;
+;if ((alarm_recieved==1)&&(alarm==0)&&(stand_by==0)) {//если есть сигнал, сигнал еще не срабатывал, сигналка не включена
+;PCODE: $000000CA VOL: 0
+;PCODE: $000000CB VOL: 0
+;PCODE: $000000CC VOL: 0
+;PCODE: $000000CD VOL: 0
+;PCODE: $000000CE VOL: 0
+;PCODE: $000000CF VOL: 0
+;PCODE: $000000D0 VOL: 0
+;PCODE: $000000D1 VOL: 0
+;PCODE: $000000D2 VOL: 0
+;PCODE: $000000D3 VOL: 0
+;PCODE: $000000D4 VOL: 0
+;PCODE: $000000D5 VOL: 0
+;PCODE: $000000D6 VOL: 0
+;PCODE: $000000D7 VOL: 0
+;alarm_recieved=0;
+;PCODE: $000000D8 VOL: 0
+;PCODE: $000000D9 VOL: 0
+;if (disable_count==0){
+;PCODE: $000000DA VOL: 0
+;PCODE: $000000DB VOL: 0
+;    disable_count=1;
+;PCODE: $000000DC VOL: 0
+;PCODE: $000000DD VOL: 0
+;    Timer_wrong_pressed_enable=1;
+;PCODE: $000000DE VOL: 0
+;PCODE: $000000DF VOL: 0
+;    Timer_wrong_pressed=0;
+;PCODE: $000000E0 VOL: 0
+;PCODE: $000000E1 VOL: 0
+;    PORTD|=0b00100000;
+;PCODE: $000000E2 VOL: 0
+;PCODE: $000000E3 VOL: 0
+;PCODE: $000000E4 VOL: 0
+;PCODE: $000000E5 VOL: 0
+;
+;    //lcd_gotoxy(0, 0); // Переводим курсор на первый символ первой строки
+;    //lcd_clear();
+;    //lcd_puts(word);
+;
+;     //показывает найденное напряжение//   PORTD|=0b00100000;
+;    Count++;
+;PCODE: $000000E6 VOL: 0
+;    stand_by=2;
+;PCODE: $000000E7 VOL: 0
+;PCODE: $000000E8 VOL: 0
+;        if (Count==5){
+;PCODE: $000000E9 VOL: 0
+;PCODE: $000000EA VOL: 0
+;PCODE: $000000EB VOL: 0
+;        Count=0;
+;PCODE: $000000EC VOL: 0
+;        alarm=1;
+;PCODE: $000000ED VOL: 0
+;PCODE: $000000EE VOL: 0
+;        }
+;}
+;PCODE: $000000EF VOL: 0
+;
+;
+;}
+;PCODE: $000000F0 VOL: 0
+;
+;
+;if((PIND.2==0)&&(stand_by==0)){
+;PCODE: $000000F1 VOL: 0
+;PCODE: $000000F2 VOL: 0
+;PCODE: $000000F3 VOL: 0
+;PCODE: $000000F4 VOL: 0
+;PCODE: $000000F5 VOL: 0
+;PCODE: $000000F6 VOL: 0
+;PCODE: $000000F7 VOL: 0
+;PCODE: $000000F8 VOL: 0
+;PCODE: $000000F9 VOL: 0
+;PCODE: $000000FA VOL: 0
+;PCODE: $000000FB VOL: 0
+;PCODE: $000000FC VOL: 0
+;
+;}
+;
+;if (alarm==1){ //сигнализация сработала
+;PCODE: $000000FD VOL: 0
+;PCODE: $000000FE VOL: 0
+;PCODE: $000000FF VOL: 0
+;PCODE: $00000100 VOL: 0
+;Timer_1++;
+;PCODE: $00000101 VOL: 0
+;if (pressed==0){
+;PCODE: $00000102 VOL: 0
+;PCODE: $00000103 VOL: 0
+;if (shadow==0){
+;PCODE: $00000104 VOL: 0
+;PCODE: $00000105 VOL: 0
+;PCODE: $00000106 VOL: 0
+;PORTD|=0b10010000;
+;PCODE: $00000107 VOL: 0
+;PCODE: $00000108 VOL: 0
+;PCODE: $00000109 VOL: 0
+;PCODE: $0000010A VOL: 0
+;PORTC|=0b00000100;//запись видеорегистратора
+;PCODE: $0000010B VOL: 0
+;PCODE: $0000010C VOL: 0
+;PCODE: $0000010D VOL: 0
+;PCODE: $0000010E VOL: 0
+;}
+;else{
+;PCODE: $0000010F VOL: 0
+;PCODE: $00000110 VOL: 0
+;PORTD|=0b00010000;
+;PCODE: $00000111 VOL: 0
+;PCODE: $00000112 VOL: 0
+;PCODE: $00000113 VOL: 0
+;PCODE: $00000114 VOL: 0
+;}
+;PCODE: $00000115 VOL: 0
+;//DDRD|=0b00010000;
+;pressed=1;}
+;PCODE: $00000116 VOL: 0
+;PCODE: $00000117 VOL: 0
+;
+;
+;if (Timer_1>250){
+;PCODE: $00000118 VOL: 0
+;PCODE: $00000119 VOL: 0
+;PCODE: $0000011A VOL: 0
+;PCODE: $0000011B VOL: 0
+;Timer_2++;
+;PCODE: $0000011C VOL: 0
+;Timer_1=0;
+;PCODE: $0000011D VOL: 0
+;}
+;
+;if (Timer_2>10){
+;PCODE: $0000011E VOL: 0
+;PCODE: $0000011F VOL: 0
+;PCODE: $00000120 VOL: 0
+;PCODE: $00000121 VOL: 0
+;
+;if (shadow==0){
+;PCODE: $00000122 VOL: 0
+;PCODE: $00000123 VOL: 0
+;PCODE: $00000124 VOL: 0
+;    PORTD^=0b10010000;//включаем второе нажатие
+;PCODE: $00000125 VOL: 0
+;PCODE: $00000126 VOL: 0
+;PCODE: $00000127 VOL: 0
+;PCODE: $00000128 VOL: 0
+;PCODE: $00000129 VOL: 0
+;    }
+;    else{
+;PCODE: $0000012A VOL: 0
+;PCODE: $0000012B VOL: 0
+;    PORTD^=0b00010000;//включаем второе нажатие
+;PCODE: $0000012C VOL: 0
+;PCODE: $0000012D VOL: 0
+;PCODE: $0000012E VOL: 0
+;PCODE: $0000012F VOL: 0
+;PCODE: $00000130 VOL: 0
+;    }
+;PCODE: $00000131 VOL: 0
+;    //DDRD^=0b00010000;
+;    Timer_2=0;
+;PCODE: $00000132 VOL: 0
+;    Count_1++;
+;PCODE: $00000133 VOL: 0
+;}
+;if (Count_1>2){
+;PCODE: $00000134 VOL: 0
+;PCODE: $00000135 VOL: 0
+;PCODE: $00000136 VOL: 0
+;PCODE: $00000137 VOL: 0
+;if (shadow==0){
+;PCODE: $00000138 VOL: 0
+;PCODE: $00000139 VOL: 0
+;PCODE: $0000013A VOL: 0
+;PORTD&=~0b10010000;
+;PCODE: $0000013B VOL: 0
+;PCODE: $0000013C VOL: 0
+;PCODE: $0000013D VOL: 0
+;PCODE: $0000013E VOL: 0
+;}
+;else{
+;PCODE: $0000013F VOL: 0
+;PCODE: $00000140 VOL: 0
+;PORTD&=~0b00010000;
+;PCODE: $00000141 VOL: 0
+;PCODE: $00000142 VOL: 0
+;PCODE: $00000143 VOL: 0
+;PCODE: $00000144 VOL: 0
+;}
+;PCODE: $00000145 VOL: 0
+;//DDRD&=~0b00001000;
+;Count_1=0;
+;PCODE: $00000146 VOL: 0
+;pressed=0;
+;PCODE: $00000147 VOL: 0
+;
+;//stand_by=20000;
+;alarm=0;
+;PCODE: $00000148 VOL: 0
+;delay_after_alarm=1;
+;PCODE: $00000149 VOL: 0
+;PCODE: $0000014A VOL: 0
+;}
+;
+;
+;}
+;PCODE: $0000014B VOL: 0
+;if (mini_stand_by>0){
+;PCODE: $0000014C VOL: 0
+;PCODE: $0000014D VOL: 0
+;PCODE: $0000014E VOL: 0
+;PCODE: $0000014F VOL: 0
+;mini_stand_by--;
+;PCODE: $00000150 VOL: 0
+;}
+;if (mini_stand_by==2){
+;PCODE: $00000151 VOL: 0
+;PCODE: $00000152 VOL: 0
+;PCODE: $00000153 VOL: 0
+;PCODE: $00000154 VOL: 0
+;stand_by=2;
+;PCODE: $00000155 VOL: 0
+;PCODE: $00000156 VOL: 0
+;}
+;if (stand_by>0){
+;PCODE: $00000157 VOL: 0
+;PCODE: $00000158 VOL: 0
+;PCODE: $00000159 VOL: 0
+;PCODE: $0000015A VOL: 0
+;Timer_3++;
+;PCODE: $0000015B VOL: 0
+;    if (Timer_3>5){
+;PCODE: $0000015C VOL: 0
+;PCODE: $0000015D VOL: 0
+;PCODE: $0000015E VOL: 0
+;        if (delay_after_alarm==1){
+;PCODE: $0000015F VOL: 0
+;PCODE: $00000160 VOL: 0
+;PCODE: $00000161 VOL: 0
+;        Timer_6++;
+;PCODE: $00000162 VOL: 0
+;PCODE: $00000163 VOL: 0
+;PCODE: $00000164 VOL: 0
+;            if (Timer_6==20){
+;PCODE: $00000165 VOL: 0
+;PCODE: $00000166 VOL: 0
+;PCODE: $00000167 VOL: 0
+;            PORTD^=0b00100000;
+;PCODE: $00000168 VOL: 0
+;PCODE: $00000169 VOL: 0
+;PCODE: $0000016A VOL: 0
+;PCODE: $0000016B VOL: 0
+;PCODE: $0000016C VOL: 0
+;            Timer_6=0;
+;PCODE: $0000016D VOL: 0
+;PCODE: $0000016E VOL: 0
+;            }
+;        }
+;PCODE: $0000016F VOL: 0
+;    stand_by--;
+;PCODE: $00000170 VOL: 0
+;PCODE: $00000171 VOL: 0
+;PCODE: $00000172 VOL: 0
+;PCODE: $00000173 VOL: 0
+;PCODE: $00000174 VOL: 0
+;    Timer_3=0;
+;PCODE: $00000175 VOL: 0
+;    }
+;   }
+;PCODE: $00000176 VOL: 0
+;if ((stand_by==0)&&(delay_after_alarm==1)){
+;PCODE: $00000177 VOL: 0
+;PCODE: $00000178 VOL: 0
+;PCODE: $00000179 VOL: 0
+;PCODE: $0000017A VOL: 0
+;PCODE: $0000017B VOL: 0
+;PCODE: $0000017C VOL: 0
+;PCODE: $0000017D VOL: 0
+;PCODE: $0000017E VOL: 0
+;PCODE: $0000017F VOL: 0
+;PCODE: $00000180 VOL: 0
+;PCODE: $00000181 VOL: 0
+;delay_after_alarm=0;
+;PCODE: $00000182 VOL: 0
+;PCODE: $00000183 VOL: 0
+;}
+;
+;// Place your code here
+;
+;}
+;PCODE: $00000184 VOL: 0
+;PCODE: $00000185 VOL: 0
+;PCODE: $00000186 VOL: 0
+;PCODE: $00000187 VOL: 0
+;
+;
+;
+;
+;#asm
+;PCODE: $00000188 VOL: 0
+
+;PCODE: $00000189 VOL: 0
+   .equ __lcd_port=0x18 ;PORTB
+;PCODE: $0000018A VOL: 0
+
+;PCODE: $0000018B VOL: 0
+;PCODE: $0000018C VOL: 0
+; 0000 0027 #endasm  // Инициализируем PORTB как порт ЖКИ
+;
+;//////
+;// Timer 0 overflow interrupt service routine
+;
+;
+;// Declare your global variables here
+;// Выход из спящего режима и обработка внешнего прерывания INT0
+; interrupt [EXT_INT0] void ext_int0_isr(void)
+; 0000 0030  {
+;PCODE: $0000018D VOL: 0
+;PCODE: $0000018E VOL: 0
+; 0000 0031  //MCUCR&=~0b00001000;
+; 0000 0032  //sleep_disable();
+; 0000 0033  }
+;PCODE: $0000018F VOL: 0
+;PCODE: $00000190 VOL: 0
+;PCODE: $00000191 VOL: 0
+;
+;void main(void)
+; 0000 0036 {
+;PCODE: $00000192 VOL: 0
+; 0000 0037 // Declare your local variables here
+; 0000 0038 
+; 0000 0039 // Input/Output Ports initialization
+; 0000 003A // Port B initialization
+; 0000 003B // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 003C // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 003D PORTB=0x00;
+;PCODE: $00000193 VOL: 0
+;PCODE: $00000194 VOL: 0
+; 0000 003E DDRB=0b00000000;
+;PCODE: $00000195 VOL: 0
+;PCODE: $00000196 VOL: 0
+; 0000 003F 
+; 0000 0040 // Port C initialization
+; 0000 0041 // Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 0042 // State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 0043 PORTC=0x00;
+;PCODE: $00000197 VOL: 0
+;PCODE: $00000198 VOL: 0
+; 0000 0044 DDRC=0b10000111;
+;PCODE: $00000199 VOL: 0
+;PCODE: $0000019A VOL: 0
+; 0000 0045 
+; 0000 0046 // Port D initialization
+; 0000 0047 // Func7=In Func6=In Func5=In Func4=In Func3=In Func2=In Func1=In Func0=In
+; 0000 0048 // State7=T State6=T State5=T State4=T State3=T State2=T State1=T State0=T
+; 0000 0049 PORTD=0b00000000;
+;PCODE: $0000019B VOL: 0
+;PCODE: $0000019C VOL: 0
+; 0000 004A DDRD=0b10111101;//0,1 - передача, примем; 2-вход поворотника;3-выход на зарядку;4-кнопка ганритуры(нв ноль) 5- светодиод статуса,7- светодиод включения звонка
+;PCODE: $0000019D VOL: 0
+;PCODE: $0000019E VOL: 0
+; 0000 004B 
+; 0000 004C // Timer/Counter 0 initialization
+; 0000 004D // Clock source: System Clock
+; 0000 004E // Clock value: 8000,000 kHz
+; 0000 004F TCCR0=0x01;
+;PCODE: $0000019F VOL: 0
+;PCODE: $000001A0 VOL: 0
+; 0000 0050 TCNT0=0x00;
+;PCODE: $000001A1 VOL: 0
+;PCODE: $000001A2 VOL: 0
+; 0000 0051 
+; 0000 0052 // Timer/Counter 1 initialization
+; 0000 0053 // Clock source: System Clock
+; 0000 0054 // Clock value: Timer 1 Stopped
+; 0000 0055 // Mode: Normal top=FFFFh
+; 0000 0056 // OC1A output: Discon.
+; 0000 0057 // OC1B output: Discon.
+; 0000 0058 // Noise Canceler: Off
+; 0000 0059 // Input Capture on Falling Edge
+; 0000 005A // Timer 1 Overflow Interrupt: Off
+; 0000 005B // Input Capture Interrupt: Off
+; 0000 005C // Compare A Match Interrupt: Off
+; 0000 005D // Compare B Match Interrupt: Off
+; 0000 005E TCCR1A=0x00;
+;PCODE: $000001A3 VOL: 0
+;PCODE: $000001A4 VOL: 0
+; 0000 005F TCCR1B=0x00;
+;PCODE: $000001A5 VOL: 0
+;PCODE: $000001A6 VOL: 0
+; 0000 0060 TCNT1H=0x00;
+;PCODE: $000001A7 VOL: 0
+;PCODE: $000001A8 VOL: 0
+; 0000 0061 TCNT1L=0x00;
+;PCODE: $000001A9 VOL: 0
+;PCODE: $000001AA VOL: 0
+; 0000 0062 ICR1H=0x00;
+;PCODE: $000001AB VOL: 0
+;PCODE: $000001AC VOL: 0
+; 0000 0063 ICR1L=0x00;
+;PCODE: $000001AD VOL: 0
+;PCODE: $000001AE VOL: 0
+; 0000 0064 OCR1AH=0x00;
+;PCODE: $000001AF VOL: 0
+;PCODE: $000001B0 VOL: 0
+; 0000 0065 OCR1AL=0x00;
+;PCODE: $000001B1 VOL: 0
+;PCODE: $000001B2 VOL: 0
+; 0000 0066 OCR1BH=0x00;
+;PCODE: $000001B3 VOL: 0
+;PCODE: $000001B4 VOL: 0
+; 0000 0067 OCR1BL=0x00;
+;PCODE: $000001B5 VOL: 0
+;PCODE: $000001B6 VOL: 0
+; 0000 0068 
+; 0000 0069 // Timer/Counter 2 initialization
+; 0000 006A // Clock source: System Clock
+; 0000 006B // Clock value: Timer 2 Stopped
+; 0000 006C // Mode: Normal top=FFh
+; 0000 006D // OC2 output: Disconnected
+; 0000 006E ASSR=0x00;
+;PCODE: $000001B7 VOL: 0
+;PCODE: $000001B8 VOL: 0
+; 0000 006F TCCR2=0x00;
+;PCODE: $000001B9 VOL: 0
+;PCODE: $000001BA VOL: 0
+; 0000 0070 TCNT2=0x00;
+;PCODE: $000001BB VOL: 0
+;PCODE: $000001BC VOL: 0
+; 0000 0071 OCR2=0x00;
+;PCODE: $000001BD VOL: 0
+;PCODE: $000001BE VOL: 0
+; 0000 0072 
+; 0000 0073 // External Interrupt(s) initialization
+; 0000 0074 // INT0: Off
+; 0000 0075 // INT1: Off
+; 0000 0076 //MCUCR=0x00;
+; 0000 0077 
+; 0000 0078 //GICR|=0x40;
+; 0000 0079 MCUCR=0x30;
+;PCODE: $000001BF VOL: 0
+;PCODE: $000001C0 VOL: 0
+; 0000 007A //GIFR=0x40;
+; 0000 007B 
+; 0000 007C 
+; 0000 007D // Timer(s)/Counter(s) Interrupt(s) initialization
+; 0000 007E TIMSK=0x01;
+;PCODE: $000001C1 VOL: 0
+;PCODE: $000001C2 VOL: 0
+; 0000 007F 
+; 0000 0080 
+; 0000 0081 
+; 0000 0082 // USART initialization
+; 0000 0083 // Communication Parameters: 8 Data, 1 Stop, No Parity
+; 0000 0084 // USART Receiver: Off
+; 0000 0085 // USART Transmitter: On
+; 0000 0086 // USART Mode: Asynchronous
+; 0000 0087 // USART Baud Rate: 110
+; 0000 0088 /*
+; 0000 0089 UCSRA=0x00;
+; 0000 008A UCSRB=0x08;
+; 0000 008B UCSRC=0x86;
+; 0000 008C UBRRH=0x02;
+; 0000 008D UBRRL=0x37;
+; 0000 008E */
+; 0000 008F 
+; 0000 0090 //UCSRA=0x00;
+; 0000 0091 //UCSRB=0x18;
+; 0000 0092 //UCSRC=0x86;
+; 0000 0093 //UBRRH=0x00;
+; 0000 0094 //UBRRL=0x0C;
+; 0000 0095 
+; 0000 0096 
+; 0000 0097 PORTD=0x00;
+;PCODE: $000001C3 VOL: 0
+;PCODE: $000001C4 VOL: 0
+; 0000 0098 DDRD=0xff;
+;PCODE: $000001C5 VOL: 0
+;PCODE: $000001C6 VOL: 0
+; 0000 0099 PORTD.0=1;
+;PCODE: $000001C7 VOL: 0
+;PCODE: $000001C8 VOL: 0
+; 0000 009A //////////////////////
+; 0000 009B 
+; 0000 009C 
+; 0000 009D //lcd_init(16); // Инициализация ЖКИ на 16 символов
+; 0000 009E // Analog Comparator initialization
+; 0000 009F // Analog Comparator: Off
+; 0000 00A0 // Analog Comparator Input Capture by Timer/Counter 1: Off
+; 0000 00A1 ACSR=0x80;
+;PCODE: $000001C9 VOL: 0
+;PCODE: $000001CA VOL: 0
+; 0000 00A2 SFIOR=0x00;
+;PCODE: $000001CB VOL: 0
+;PCODE: $000001CC VOL: 0
+; 0000 00A3 // ADC initialization
+; 0000 00A4 // ADC Clock frequency: 500,000 kHz
+; 0000 00A5 // ADC Voltage Reference: AREF pin
+; 0000 00A6 ADMUX=ADC_VREF_TYPE & 0xff;
+;PCODE: $000001CD VOL: 0
+;PCODE: $000001CE VOL: 0
+; 0000 00A7 ADCSRA=0x81;
+;PCODE: $000001CF VOL: 0
+;PCODE: $000001D0 VOL: 0
+; 0000 00A8 // Global enable interrupts
+; 0000 00A9 #asm("sei")
+;PCODE: $000001D1 VOL: 0
+	sei
+;PCODE: $000001D2 VOL: 0
+; 0000 00AA #asm("sleep")
+;PCODE: $000001D3 VOL: 0
+	sleep
+;PCODE: $000001D4 VOL: 0
+; 0000 00AB while (1)
+;PCODE: $000001D5 VOL: 0
+; 0000 00AC       {
+; 0000 00AD       #include <while.c>
+; 0000 00AE 
+; 0000 00AF 
+; 0000 00B0       // Place your code here
+; 0000 00B1 
+; 0000 00B2       };
+;PCODE: $000001D6 VOL: 0
+;PCODE: $000001D7 VOL: 0
+; 0000 00B3 }
+;PCODE: $000001D8 VOL: 0
+;PCODE: $000001D9 VOL: 0
+;PCODE: $000001DA VOL: 0

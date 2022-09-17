@@ -1,0 +1,6 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"Rx.c" LINE:51
+timer1_compa_isr DSTACK_USAGE:12 DSTACK_LEVEL:12 FILE:"Rx.c" LINE:11
+printf DSTACK_USAGE:6 DSTACK_LEVEL:18 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1334
+_print DSTACK_USAGE:20 DSTACK_LEVEL:38 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:376
+_put DSTACK_USAGE:7 DSTACK_LEVEL:45 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:228
+putchar DSTACK_USAGE:1 DSTACK_LEVEL:46 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:163

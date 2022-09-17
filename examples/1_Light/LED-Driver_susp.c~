@@ -1,0 +1,90 @@
+void Dig_1S(){
+switch (Dig1){
+case 1: {U2[3][n2]=1;break;}
+case 2: {U2[6][n2]=1;break;}
+case 3: {U2[6][n2]=1;U2[3][n2]=1;break;}
+case 4: {U2[1][n2]=1;break;}
+case 5: {U2[1][n2]=1;U2[3][n2]=1;break;}
+case 6: {U2[1][n2]=1;U2[6][n2]=1;break;}
+case 7: {U2[1][n2]=1;U2[6][n2]=1;U2[3][n2]=1;break;}
+case 8: {U2[0][n2]=1;break;}
+case 9: {U2[0][n2]=1;U2[3][n2]=1;break;}
+default: ;
+}
+}
+void Dig_2S(){
+switch (Dig2){
+case 1: {U2[4][n2]=1;break;}
+case 2: {U2[2][n2]=1;break;}
+case 3: {U2[4][n2]=1;U2[2][n2]=1;break;}
+case 4: {U2[5][n2]=1;break;}
+case 5: {U2[5][n2]=1;U2[4][n2]=1;break;}
+case 6: {U2[2][n2]=1;U2[5][n2]=1;break;}
+case 7: {U2[2][n2]=1;U2[5][n2]=1;U2[4][n2]=1;break;}
+case 8: {U2[7][n2]=1;break;}
+case 9: {U2[4][n2]=1;U2[7][n2]=1;break;}
+default: ;
+}
+}
+void Dig_0S(){
+//for (n2=0;n2<=3;n2++){
+for (U3=0;U3<=7;U3++){U2[U3][0]=0;}
+for (U3=0;U3<=7;U3++){U2[U3][1]=0;}
+for (U3=0;U3<=7;U3++){U2[U3][2]=0;}
+PORTB&=~0b11111111;
+//DDRD|=0b00000000;DDRD&=~0b11100000;
+}
+void U4MS()
+{
+if (U4==0){DDRD|=0b10000000;DDRD&=~0b01100000;}
+if (U4==1){DDRD|=0b00100000;DDRD&=~0b11000000;}
+if (U4==2){DDRD|=0b01000000;DDRD&=~0b10100000;}
+}
+
+
+void PWM1S(){
+if (U2[0][n2]==1){PORTB|=0b00000001;}
+if (U2[0][n2]==0){PORTB&=~0b00000001;}
+if (U2[1][n2]==1){PORTB|=0b00000010;}
+if (U2[1][n2]==0){PORTB&=~0b00000010;}
+if (U2[2][n2]==1){PORTB|=0b00000100;}
+if (U2[2][n2]==0){PORTB&=~0b00000100;}
+if (U2[3][n2]==1){PORTB|=0b00010000;}
+if (U2[3][n2]==0){PORTB&=~0b00010000;}
+if (U2[4][n2]==1){PORTB|=0b00100000;}
+if (U2[4][n2]==0){PORTB&=~0b00100000;}
+if (U2[5][n2]==1){PORTB|=0b01000000;}
+if (U2[5][n2]==0){PORTB&=~0b01000000;}
+if (U2[6][n2]==1){PORTB|=0b10000000;}
+if (U2[6][n2]==0){PORTB&=~0b10000000;}
+if (U2[7][n2]==1){PORTB|=0b00001000;}
+if (U2[7][n2]==0){PORTB&=~0b00001000;}
+}
+
+
+
+void Dig1_(){
+//if (PWM_Susp==0){
+PWM1S();
+Timer_4++;
+if (Timer_4==10){U4++;Timer_4=0;
+//U4++;
+if (U4==3){U4=0;}
+
+Number[0] = hour;
+Number[1] = min;
+Number[2] = sec;
+Dig_0S();
+n1=n2=U4;
+
+U4MS();
+
+Num2[n1]=0;
+while (Number[n1] >= 10){Number[n1] -= 10;Num2[n1]++;}
+  Dig1 = Number[n1];
+  Dig2 = Num2[n1];
+
+Dig_1S();
+Dig_2S();
+}
+}

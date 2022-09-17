@@ -1,0 +1,12 @@
+VERSION:1 SOURCE_TIMESTAMP:3B3CADF5
+NODE:I LEVEL:0 LINE:18 "C:\Program Files\cvavr2\inc\mega8.h"
+NODE:I LEVEL:0 LINE:19 "C:\Program Files\cvavr2\inc\stdio.h"
+NODE:I LEVEL:0 LINE:20 "C:\Program Files\cvavr2\inc\delay.h"
+NODE:I LEVEL:0 LINE:21 "C:\Program Files\cvavr2\inc\math.h"
+NODE:V LEVEL:0 LINE:23 "M -> RAM:????"
+NODE:V LEVEL:0 LINE:23 "M0 -> RAM:????"
+NODE:V LEVEL:0 LINE:23 "M1 -> RAM:????"
+NODE:V LEVEL:0 LINE:24 "OVF_T0 -> R4,R5"
+NODE:V LEVEL:0 LINE:24 "OVF_T1 -> R6,R7"
+NODE:V LEVEL:0 LINE:24 "OVF_T2 -> R8,R9"
+NODE:V LEVEL:0 LINE:25 "Mx -> R10,R11"

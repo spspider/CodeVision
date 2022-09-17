@@ -1,0 +1,18 @@
+LIBRARY USB2LPT
+DESCRIPTION "USB2LPT Eigenschaftsseiten-Lieferant"
+;DESCRIPTION "USB2LPT Property Sheet Provider"
+EXETYPE WINDOWS
+HEAPSIZE 1024
+EXPORTS
+	WEP		@1	RESIDENTNAME
+	EnumPropPages	@2
+	CoDeviceInstall	@3
+IMPORTS
+	LoadLibraryEx32W	=KERNEL.513
+	FreeLibrary32W		=KERNEL.514
+	GetProcAddress32W	=KERNEL.515
+	_CallProcEx32W		=KERNEL.518
+	PropertySheet		=COMMCTRL.159
+	CreatePropertySheetPage	=COMMCTRL.160
+	DestroyPropertySheetPage=COMMCTRL.161
+

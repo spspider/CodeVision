@@ -1,0 +1,71 @@
+#include "mega8.h"
+#include "_type.h"
+#include "_lcd.h"
+#include "delay.h"
+#include "_clock.h"
+
+tClock2 Clock;
+
+void lcd_putn(byte v) {
+lcd_put(v/10+48);
+lcd_put(v%10+48);
+}
+
+void ClockShow() {
+lcd_xy(0,0);
+lcd_putn(Clock.Hour);
+lcd_put(':');
+lcd_putn(Clock.Minute);
+lcd_put(':');
+lcd_putn(Clock.Second);
+lcd_xy(0,1);
+switch (Clock.DayWeek) {
+case 0:lcd_putsf("SUN");break;
+case 1:lcd_putsf("MON");break;
+case 2:lcd_putsf("TUE");break;
+case 3:lcd_putsf("WED");break;
+case 4:lcd_putsf("THU");break;
+case 5:lcd_putsf("FRI");break;
+case 6:lcd_putsf("SAT");break;
+} 
+lcd_xy(6,1);
+lcd_putn(Clock.Day);
+lcd_put('.');
+lcd_putn(Clock.Month);
+lcd_putsf(".20");
+lcd_putn(Clock.Year);
+}
+
+void SetClock() {
+Clock.Second=0;
+Clock.Minute=29;
+Clock.Hour=23;
+Clock.Day=1;
+Clock.DayWeek=3; //Среда
+Clock.Month=8;
+Clock.Year=12;
+}
+
+void main() {
+DDRB=0x3f;                     
+ACSR=0x80;
+lcd_init();
+SetClock();
+clock_init(&Clock,CLOCK_TYPE_CLOCK2);
+#asm("sei");
+
+lcd_clear();
+lcd_ctr(LCD_CTR_ON);
+lcd_xy(5,0);
+lcd_putsf("WELCOM");
+lcd_xy(0,1);
+lcd_putsf("Clk of ASYNC TMR");
+
+delay_ms(2000);
+lcd_clear();
+
+while (1) {
+if (clock_update()==0) continue;
+ClockShow();
+}
+}

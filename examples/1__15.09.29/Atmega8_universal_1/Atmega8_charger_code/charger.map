@@ -1,0 +1,31 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+_data                                                             0160h       10
+Voltage1                                                          016Ah        1
+adc                                                               016Bh       10
+Voltage2                                                          0175h        4
+_seed                                                             0179h        4
+_base_y                                                           017Dh        4
+_lcd_x                                                            0181h        1
+_lcd_y                                                            0182h        1
+_lcd_maxx                                                         0183h        1
+p                                                                 0184h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+Timer_read_adc_1                                                  R5           1
+Timer_read_adc_2                                                  R4           1
+Temp1                                                             R7           1
+_str                                                              R6           1
+Timer_buzzer_1                                                    R9           1
+Timer_buzzer_active                                               R8           1
+Timer_buzzer_signal                                               R11          1
+Timer_buzzer_silence                                              R10          1
+Timer_buzzer_silence_1                                            R13          1
+Timer_buzzer_active_1                                             R12          1

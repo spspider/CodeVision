@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embedded Web Server</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+        
+        <div id="wrap">
+            
+            <h1>Megadeivce production facility</h1>
+            
+            <div id="mid">
+                <a target="_blank" href="http://we.easyelectronics.ru/">we.easyelectronics.ru</a>
+                |
+                <a target="_blank" href="/i/picture.jpg">картинка</a>
+                |
+                <a target="_blank" href="http://redsh.ru/camera.php">камера</a>
+                |
+                <a target="_blank" href="http://redsh.vk.com/">don't click!</a>
+            </div>
+        
+            <!-- Chat -->
+            <div id="chat">
+                <p>Чятик</p>
+                <textarea id="chat-text" readonly></textarea><br>
+                <input id="chat-say" type="text" maxlength="32">
+            </div>
+            
+            <div id="rightcolumn">
+                
+                <p>Примеры из поста:</p>
+
+                <!-- LED -->
+                <div id="led-control">
+                    <p>Управление светодиодиком</p><br>
+                    <img id="led-on" src="i/led-on.gif">
+                    <img id="led-off" style="display: none;" src="i/led-off.gif">
+                </div>
+
+                <!-- DS1820 -->
+                <div id="ds1820-example">
+                    <p>Чтение данных с DS1820</p>
+                    <div id="ds1820-value">N/A</div>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                //by <a href="http://redsh.ru/">redsh</a> |
+                ATmega32 + ENC28J60
+            </div>
+
+        </div>
+		
+	</body>
+</html>

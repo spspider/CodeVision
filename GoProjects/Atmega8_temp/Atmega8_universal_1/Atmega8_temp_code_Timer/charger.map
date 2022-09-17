@@ -1,0 +1,35 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+on                                                                0160h        6
+nowPORT                                                           0166h        6
+Temp                                                              016Ch        4
+STemp                                                             0170h        4
+Temp_min                                                          0174h        4
+Time_sec_all                                                      0178h        2
+Startsomedelay                                                    017Ah        1
+delayneed                                                         017Bh        1
+Timer_IR                                                          017Ch        1
+Timer_IR_Start                                                    017Dh        1
+count1bit                                                         017Eh        1
+devider                                                           017Fh        1
+databits                                                          0180h        2
+show_data                                                         0182h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+Timer_read_adc_1                                                  R5           1
+Timer_read_adc_2                                                  R4           1
+Timer_buzzer_active                                               R7           1
+Timer_buzzer_signal                                               R6           1
+Timer_buzzer_silence                                              R9           1
+Timer_buzzer_silence_1                                            R8           1
+Timer_buzzer_active_1                                             R11          1
+LCD_switch                                                        R10          1
+Timer_LCD                                                         R13          1
+Time_one_sec                                                      R12          1

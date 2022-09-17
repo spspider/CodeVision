@@ -1,0 +1,7 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"charger.c" LINE:68
+sprintf DSTACK_USAGE:8 DSTACK_LEVEL:8 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1284
+_print DSTACK_USAGE:92 DSTACK_LEVEL:100 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1033
+_ftoe DSTACK_USAGE:16 DSTACK_LEVEL:116 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:974
+floor DSTACK_USAGE:4 DSTACK_LEVEL:120 FILE:"C:\Program Files\cvavr2\lib\math.lib" LINE:478
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:124 FILE:"C:\Program Files\cvavr2\lib\math.lib" LINE:420
+usart_rx_isr DSTACK_USAGE:24 DSTACK_LEVEL:148 FILE:"USART.c" LINE:45

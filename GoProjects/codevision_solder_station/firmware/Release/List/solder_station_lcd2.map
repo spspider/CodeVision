@@ -1,0 +1,71 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+lcd_buffer                                                                        0x0160      20
+choose                                                                            0x0174       6
+sec                                                                               0x017A       1
+min                                                                               0x017B       1
+hour                                                                              0x017C       1
+port                                                                              0x017D       1
+PWM_width                                                                         0x017E       1
+PWM_step                                                                          0x017F       2
+heater_on                                                                         0x0181       2
+sec_heat                                                                          0x0183       2
+lcd_switcher                                                                      0x0185       1
+BTN1_pressed                                                                      0x0186       1
+BTN2_pressed                                                                      0x0187       1
+lcd_freeze                                                                        0x0188       1
+heater_swither                                                                    0x0189       1
+start                                                                             0x018A       1
+now_tempB_prev                                                                    0x018B       1
+sec_profile                                                                       0x018C       2
+now_tempU_prev                                                                    0x018E       1
+set_tempB                                                                         0x018F       1
+set_tempU                                                                         0x0190       1
+PWM_setted                                                                        0x0191       2
+heat_sec_on                                                                       0x0193       2
+heat_sec_off                                                                      0x0195       2
+k                                                                                 0x0197       1
+_base_y                                                                           0x0198       4
+_lcd_x                                                                            0x019C       1
+_lcd_y                                                                            0x019D       1
+_lcd_maxx                                                                         0x019E       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+set_tempB_eep                                                                     0x0000       1
+set_tempU_eep                                                                     0x0001       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+Timer_1                                                                           R5           1
+lcd_stateU                                                                        R4           1
+lcd_stateB                                                                        R7           1
+BTN3_pressed                                                                      R2.0      1bit
+now_tempU                                                                         R8,R9        2
+now_tempB                                                                         R10,R11      2
+set_tempB_prev                                                                    R12,R13      2
+show_lcd                                                                          R6           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+choose_v                                                                          0x000AD     30
+timer0_ovf_isr                                                                    0x000CB    125
+timer1_ovf_isr                                                                    0x00148     91
+read_adc                                                                          0x001A3     14
+main                                                                              0x001B1    902
+put_buff_G100                                                                     0x00537     59
+_print_G100                                                                       0x00572    446
+sprintf                                                                           0x00730     51
+_lcd_write_nibble_G101                                                            0x00763     37
+_lcd_write_data                                                                   0x00788     12
+lcd_gotoxy                                                                        0x00794     17
+lcd_clear                                                                         0x007A5     18
+lcd_putchar                                                                       0x007B7     32
+lcd_puts                                                                          0x007D7     17
+lcd_init                                                                          0x007E8     59
+strlen                                                                            0x00823     12
+strlenf                                                                           0x0082F     13

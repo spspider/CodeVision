@@ -1,0 +1,10 @@
+C:\Program Files\cvavr2\inc\mega8.h
+C:\Program Files\cvavr2\inc\delay.h
+C:\Program Files\cvavr2\inc\stdlib.h
+LED-Driver.c
+Time.c
+ADC.c
+IR.c
+IR_Driver.c
+Beep.c
+While.c

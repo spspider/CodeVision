@@ -1,0 +1,66 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+lcd_buffer                                                                        0x0160      16
+adc                                                                               0x0170       6
+PWM_width_now                                                                     0x0176       6
+PWM_width_set                                                                     0x017C       6
+PWM_step                                                                          0x0182       6
+period                                                                            0x0188       6
+displace                                                                          0x018E       3
+Width_C4                                                                          0x0191       1
+Width_C4_now                                                                      0x0192       1
+PWM_width_c                                                                       0x0193       1
+Timer_nan_sec                                                                     0x0194       1
+Timer_sec                                                                         0x0195       1
+cycle                                                                             0x0196       1
+_base_y                                                                           0x0197       4
+_lcd_x                                                                            0x019B       1
+_lcd_y                                                                            0x019C       1
+_lcd_maxx                                                                         0x019D       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+freq                                                                              R4,R5        2
+och                                                                               R6,R7        2
+PWM_width                                                                         R9           1
+port                                                                              R8           1
+Timer_2                                                                           R11          1
+Timer_3                                                                           R10          1
+PWM_wide                                                                          R13          1
+PWM_max_voltage                                                                   R12          1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Timer_reset                                                                       0x0006B      6
+timer0_ovf_isr                                                                    0x00071     64
+timer1_ovf_isr                                                                    0x000B1      1
+timer1_compa_isr                                                                  0x000B2    332
+timer2_ovf_isr                                                                    0x001FE     80
+read_adc                                                                          0x0024E     14
+main                                                                              0x0025C    160
+put_buff_G100                                                                     0x002FC     45
+_print_G100                                                                       0x00329    281
+sprintf                                                                           0x00442     44
+_lcd_delay_G101                                                                   0x0046E      4
+_lcd_ready                                                                        0x00472     17
+_lcd_write_nibble_G101                                                            0x00483      8
+_lcd_write_data                                                                   0x0048B     14
+_lcd_read_nibble_G101                                                             0x00499      7
+lcd_read_byte0_G101                                                               0x004A0      8
+lcd_gotoxy                                                                        0x004A8     18
+lcd_clear                                                                         0x004BA     15
+lcd_putchar                                                                       0x004C9     37
+lcd_puts                                                                          0x004EE     14
+lcd_putsf                                                                         0x004FC     18
+_long_delay_G101                                                                  0x0050E      5
+_lcd_init_write_G101                                                              0x00513     11
+lcd_init                                                                          0x0051E     45
+strlen                                                                            0x0054B     11
+strlenf                                                                           0x00556     12

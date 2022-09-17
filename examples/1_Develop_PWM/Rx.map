@@ -1,0 +1,32 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+adc                                                               0169h       12
+U2                                                                0175h        7
+sig1                                                              017Ch        2
+_adc0                                                             017Eh        4
+_adc1                                                             0182h        4
+_str4                                                             0186h        2
+input_index                                                       0188h        1
+_base_y                                                           0189h        4
+_lcd_x                                                            018Dh        1
+_lcd_y                                                            018Eh        1
+_lcd_maxx                                                         018Fh        1
+_seed                                                             0190h        4
+p                                                                 0194h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+port                                                              R5           1
+Timer_1                                                           R4           1
+Timer_2                                                           R7           1
+Timer_4                                                           R6           1
+Timer_3                                                           R8,R9        2
+U1                                                                R11          1
+U3                                                                R10          1
+_str3                                                             R12,R13      2

@@ -1,0 +1,18 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+prin                                                              0160h        1
+p                                                                 0161h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+adc0                                                              R4,R5        2
+adc1                                                              R6,R7        2
+adc2                                                              R8,R9        2
+adc3                                                              R10,R11      2
+adc4                                                              R12,R13      2

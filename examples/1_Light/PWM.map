@@ -1,0 +1,75 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+d                                                                 0160h        2
+d1                                                                0162h        2
+d2                                                                0164h        2
+d3                                                                0166h        2
+bit1                                                              0168h        1
+bit0                                                              0169h        1
+shiftd                                                            016Ah        1
+Check_1                                                           016Bh        1
+adress2                                                           016Ch        1
+adress3                                                           016Dh        1
+adress4                                                           016Eh        1
+adress7                                                           016Fh        1
+FreqT                                                             0170h        1
+U1                                                                0171h        1
+U2                                                                0172h       32
+sig1                                                              0192h       32
+U3                                                                01B2h        1
+Timer_3                                                           01B3h        2
+Timer_9                                                           01B5h        2
+Number                                                            01B7h        6
+Timefreq                                                          01BDh        2
+U4                                                                01BFh        1
+bitEr1                                                            01C0h        1
+bitEr0                                                            01C1h        1
+Timer_1                                                           01C2h        1
+Timer_2                                                           01C3h        1
+Timer_4                                                           01C4h        1
+Timer_7                                                           01C5h        1
+Timer_8                                                           01C6h        1
+n                                                                 01C7h        1
+n1                                                                01C8h      255
+n2                                                                02C7h        1
+IR_Tr                                                             02C8h        1
+PWM_Susp                                                          02C9h        1
+Clock_Susp                                                        02CAh        1
+U8                                                                02CBh        1
+U9                                                                02CCh        1
+Bee                                                               02CDh        1
+Dig1                                                              02CEh        1
+Dig2                                                              02CFh        1
+Num2                                                              02D0h        3
+l_up                                                              02D3h        1
+l_dwn                                                             02D4h        1
+dig_a                                                             02D5h        1
+dig_b                                                             02D6h        1
+dig_c                                                             02D7h        1
+adc1                                                              02D8h        1
+_seed                                                             02D9h        4
+p                                                                 02DDh        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+sec                                                               R5           1
+mins                                                              R4           1
+hour                                                              R7           1
+hour_a1                                                           R6           1
+mins_a1                                                           R9           1
+sec_a1                                                            R8           1
+hour_a2                                                           R11          1
+mins_a2                                                           R10          1
+sec_a2                                                            R13          1
+Timer1                                                            R12          1
+U10                                                               R2.0      1bit
+IR_1                                                              R2.1      1bit
+IR_2                                                              R2.2      1bit
+IR_S                                                              R2.3      1bit
+L_ON                                                              R2.4      1bit

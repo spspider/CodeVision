@@ -1,0 +1,96 @@
+
+Timer_LCD++;
+Timer_read_adc_1++;
+if(Timer_read_adc_1==50){
+Timer_read_adc_2++;
+Timer_read_adc_1=0;
+}
+
+
+if (Temp<STemp){
+PORTD|=0b00100000;
+}
+if (Temp>STemp){
+PORTD&=~0b00100000;
+}
+if ((Temp<Temp_min)&&(Temp!=0.00)){
+Temp_min=Temp;
+}
+//Temp_min
+//Temp_count=Temp;
+//unsigned char
+// Temp_count=fabs(Temp);
+ 
+//if (Temp_count!=Temp_old){
+ //Time_sec_all=47568;
+    //Time_all=Time_hour*60+Time_min*60+Time_sec;
+//    Time=((Time_sec_all*(STemp-Temp))/(Temp-Temp_old));
+//    Temp_old=Temp;
+    Time_hour=Time_sec_all/60.0/60.0;
+    Time_min=((Time_sec_all/60.0)-(Time_hour*60.0));
+    Time_sec=((Time_sec_all)-((Time_min*60.0)+(Time_hour*60.0*60.0)));
+    //Time_sec_all=0;
+//Time_now=Time_hour+":"+Time_min+":"+Time_sec;   
+//}
+
+//берем параметры
+if(Timer_read_adc_2==8){
+adc[0]=read_adc(0);//чтение температуры
+
+}if(Timer_read_adc_2==10){
+adc[2]=read_adc(2);//чтение установленной температуры
+Timer_read_adc_2=0;   // Выводим строку _str на дисплей ЖКИ 
+}           
+
+Temp=adc[0]/18.52631578947368;
+STemp=adc[2]/42.625;
+
+if (Timer_LCD==250){
+//отображение
+
+
+if (LCD_switch==0){
+sprintf(Temp_str, "T:%.1f", Temp);
+sprintf(_NeedTemp," ST:%.1f",STemp);
+//sprintf(_NeedTemp," ST:%.1f",NeedTemp_LCD);
+sprintf(Time_str," time:%d",Time);
+
+sprintf(_Time_hour,"%d:",Time_hour);
+sprintf(_Time_min,"%d:",Time_min);
+sprintf(_Time_sec,"%d",Time_sec);
+
+sprintf(_Temp_min,"min:%.1f",Temp_min);
+
+//sprintf(Time_str," time:%d",Time_sec_all);
+              
+
+lcd_clear();
+lcd_gotoxy(0,0);
+lcd_puts(Temp_str);
+lcd_puts(_NeedTemp);
+lcd_gotoxy(0,1);
+lcd_puts(_Time_hour);
+lcd_puts(_Time_min);
+lcd_puts(_Time_sec);
+lcd_gotoxy(7,1);
+lcd_puts(_Temp_min);
+
+
+
+//lcd_puts(Time_str);
+}
+/////////////////////////////////////////////////////////////////////
+if (LCD_switch==1){
+
+//show_data=bcd2bin(show_data);
+
+sprintf(_show_data, "D:%d", show_data);
+
+lcd_clear();
+lcd_gotoxy(0,0);
+lcd_puts(_show_data);
+
+}
+Timer_LCD=0;
+}
+

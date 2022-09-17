@@ -1,0 +1,9 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"charger.c" LINE:59
+lcd_init DSTACK_USAGE:1 DSTACK_LEVEL:1 FILE:"C:\Program Files\cvavr2\lib\lcd.lib" LINE:252
+_lcd_init_write DSTACK_USAGE:1 DSTACK_LEVEL:2 FILE:"C:\Program Files\cvavr2\lib\lcd.lib" LINE:234
+timer0_ovf_isr DSTACK_USAGE:12 DSTACK_LEVEL:14 FILE:"interrupt.c" LINE:36
+sprintf DSTACK_USAGE:8 DSTACK_LEVEL:22 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1284
+_print DSTACK_USAGE:92 DSTACK_LEVEL:114 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1033
+_ftoe DSTACK_USAGE:16 DSTACK_LEVEL:130 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:974
+floor DSTACK_USAGE:4 DSTACK_LEVEL:134 FILE:"C:\Program Files\cvavr2\lib\math.lib" LINE:478
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:138 FILE:"C:\Program Files\cvavr2\lib\math.lib" LINE:420

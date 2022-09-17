@@ -1,0 +1,8 @@
+if ((disable_count==0)&&(alarm==0)&&(stand_by==0)&&(Count==0)){
+
+
+if (Timer_3>=4000){
+PORTD^=0b00100000;
+Timer_3=0;
+}
+}

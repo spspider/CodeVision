@@ -1,0 +1,9 @@
+VERSION:1 SOURCE_TIMESTAMP:3B1D686C
+NODE:I LEVEL:0 LINE:1 "C:\Program Files\cvavr2\inc\mega8.h"
+NODE:I LEVEL:0 LINE:2 "C:\Program Files\cvavr2\inc\delay.h"
+NODE:V LEVEL:0 LINE:4 "sek -> R5"
+NODE:V LEVEL:0 LINE:5 "min -> R4"
+NODE:V LEVEL:0 LINE:6 "hour -> R7"
+NODE:V LEVEL:0 LINE:7 "Dig -> RAM:????"
+NODE:V LEVEL:0 LINE:8 "Disp6 -> R6"
+NODE:V LEVEL:0 LINE:8 "Disp7 -> R9"

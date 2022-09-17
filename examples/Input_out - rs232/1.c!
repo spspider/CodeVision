@@ -1,0 +1,6 @@
+VERSION:1 SOURCE_TIMESTAMP:3D1A66B4
+NODE:V LEVEL:0 LINE:1 "data1 -> R5"
+NODE:I LEVEL:0 LINE:2 "C:\Program Files\cvavr2\inc\mega8.h"
+NODE:I LEVEL:0 LINE:3 "C:\Program Files\cvavr2\inc\stdio.h"
+NODE:I LEVEL:0 LINE:4 "C:\Program Files\cvavr2\inc\delay.h"
+NODE:I LEVEL:0 LINE:5 "rs232.c"

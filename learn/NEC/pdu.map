@@ -1,0 +1,19 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+icr1                                                              00E5h        2
+icr2                                                              00E7h        2
+flag                                                              00E9h        1
+buf                                                               00EAh        5
+data                                                              00EFh        1
+countBit                                                          00F0h        1
+countByte                                                         00F1h        1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+currentState                                                      R4,R5        2

@@ -1,0 +1,37 @@
+You can test these new versions of driver,
+by using one of the language's .INF file.
+The help files are missed, there is only a German and an English help file.
+If you install any other language, the hardware wizard misses
+the usb2lpt.hlp file. Choose either English (en) or German (de) help file.
+
+The 64 bit drivers are bare functional, you can run
+Kurzschlusstest.exe and Brenner.exe, but there is currently
+no I/O redirecting.
+As none of the drivers are signed, you must disable sign enforcement
+for 64 bit systems (press F8 at Windows startup).
+
+Change log (+ added feature, - bugfix, * changed):
+ 090503	initial BETA version - without firmware update
++090520	added Russian and Turkish resource (now 10 languages)
+-090610	SubD & Bits graphics position for changing font sizes
+-090616	Invisible bit names on Vista (it's a Vista bug?)
++090616	x64 compilation, not yet tested
++090617	added firmware update and short-circuit test, not tested
+-090630	short-circuit test now functional, firmware update will not work
+	Invisible bit names on Win98 (it's a documentation bug!)
+-091005	Almost-not-working .SYS driver under Win98/Me (hmpf!!)
+	Decision to split usb2lpt.dll into different language versions
+*091010	Split usb2lpt.dll with one language per file (not as executable yet)
++091013	(Hopefully) Multi-processor-safe driver usb2lpt.ntx86.sys,
+	to be copied and renamed manually to system32/drivers/usb2lpt.sys.
+	Stolen debug registers seems to not occur anymore on MP machines!
++091020	Source code added for language-dependent DLL and INF(!) files,
+	in Device Manager, localized strings should occur.
+	Some internal changes to driver code to move toward a two-file
+	solution introducing a universal PORTTRAP.SYS helper DLL.
+*091108	Re-arranged source tree, truly independent language DLLs and INFs.
+	Functional Makefile. BAD_POOL_CALLER bug fixed in usb2lpt.ntx86.sys.
+	This should be a final BETA while testing the 3 drivers on 3 platforms.
+-091109	New BSOD bug MULTIPLE_IRP_COMPLETE_REQUESTS fixed.
+	There is still a PAGE_FAULT BSOD bug on system shutdown.
+-091116	Last known BSOD: PAGE_FAULT fixed!

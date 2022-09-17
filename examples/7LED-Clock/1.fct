@@ -1,0 +1,3 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"untitled.c" LINE:56
+Display DSTACK_USAGE:4 DSTACK_LEVEL:4 FILE:"untitled.c" LINE:28
+timer1_compa_isr DSTACK_USAGE:1 DSTACK_LEVEL:5 FILE:"untitled.c" LINE:11

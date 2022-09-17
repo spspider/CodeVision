@@ -1,0 +1,6 @@
+VERSION:1 SOURCE_TIMESTAMP:42427829
+NODE:I LEVEL:0 LINE:1 "C:\Program Files\cvavr2\inc\mega8.h"
+NODE:I LEVEL:0 LINE:24 "variables.c"
+NODE:I LEVEL:0 LINE:25 "C:\Program Files\cvavr2\inc\delay.h"
+NODE:M LEVEL:0 LINE:27 "ADC_VREF_TYPE"
+NODE:I LEVEL:0 LINE:137 "while.c"

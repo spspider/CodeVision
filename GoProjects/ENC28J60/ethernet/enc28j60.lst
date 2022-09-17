@@ -1,0 +1,1204 @@
+   1               		.file	"enc28j60.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	enc28j60ReadOp
+  18               	enc28j60ReadOp:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0000 C198      		cbi 56-32,1
+  26               	.LM3:
+  27 0002 962F      		mov r25,r22
+  28 0004 9F71      		andi r25,lo8(31)
+  29 0006 982B      		or r25,r24
+  30 0008 9FB9      		out 47-32,r25
+  31               	.L2:
+  32               	.LM4:
+  33 000a 779B      		sbis 46-32,7
+  34 000c 00C0      		rjmp .L2
+  35               	.LM5:
+  36 000e 1FB8      		out 47-32,__zero_reg__
+  37               	.L3:
+  38               	.LM6:
+  39 0010 779B      		sbis 46-32,7
+  40 0012 00C0      		rjmp .L3
+  41               	.LM7:
+  42 0014 67FF      		sbrs r22,7
+  43 0016 00C0      		rjmp .L4
+  44               	.LM8:
+  45 0018 1FB8      		out 47-32,__zero_reg__
+  46               	.L5:
+  47               	.LM9:
+  48 001a 779B      		sbis 46-32,7
+  49 001c 00C0      		rjmp .L5
+  50               	.L4:
+  51               	.LM10:
+  52 001e C19A      		sbi 56-32,1
+  53               	.LM11:
+  54 0020 8FB1      		in r24,47-32
+  55               	.LVL1:
+  56               	/* epilogue start */
+  57               	.LM12:
+  58 0022 0895      		ret
+  59               	.LFE6:
+  61               	.global	enc28j60WriteOp
+  63               	enc28j60WriteOp:
+  64               	.LFB7:
+  65               	.LM13:
+  66               	.LVL2:
+  67               	/* prologue: function */
+  68               	/* frame size = 0 */
+  69               	.LM14:
+  70 0024 C198      		cbi 56-32,1
+  71               	.LM15:
+  72 0026 6F71      		andi r22,lo8(31)
+  73               	.LVL3:
+  74 0028 682B      		or r22,r24
+  75 002a 6FB9      		out 47-32,r22
+  76               	.L11:
+  77               	.LM16:
+  78 002c 779B      		sbis 46-32,7
+  79 002e 00C0      		rjmp .L11
+  80               	.LM17:
+  81 0030 4FB9      		out 47-32,r20
+  82               	.L12:
+  83               	.LM18:
+  84 0032 779B      		sbis 46-32,7
+  85 0034 00C0      		rjmp .L12
+  86               	.LM19:
+  87 0036 C19A      		sbi 56-32,1
+  88               	/* epilogue start */
+  89               	.LM20:
+  90 0038 0895      		ret
+  91               	.LFE7:
+  93               	.global	enc28j60ReadBuffer
+  95               	enc28j60ReadBuffer:
+  96               	.LFB8:
+  97               	.LM21:
+  98               	.LVL4:
+  99               	/* prologue: function */
+ 100               	/* frame size = 0 */
+ 101 003a AC01      		movw r20,r24
+ 102 003c FB01      		movw r30,r22
+ 103               	.LM22:
+ 104 003e C198      		cbi 56-32,1
+ 105               	.LM23:
+ 106 0040 8AE3      		ldi r24,lo8(58)
+ 107               	.LVL5:
+ 108 0042 8FB9      		out 47-32,r24
+ 109               	.LVL6:
+ 110               	.L17:
+ 111               	.LM24:
+ 112 0044 779B      		sbis 46-32,7
+ 113 0046 00C0      		rjmp .L17
+ 114 0048 9A01      		movw r18,r20
+ 115 004a DF01      		movw r26,r30
+ 116 004c 00C0      		rjmp .L18
+ 117               	.LVL7:
+ 118               	.L20:
+ 119               	.LM25:
+ 120 004e 1FB8      		out 47-32,__zero_reg__
+ 121               	.L19:
+ 122               	.LM26:
+ 123 0050 779B      		sbis 46-32,7
+ 124 0052 00C0      		rjmp .L19
+ 125               	.LM27:
+ 126 0054 2150      		subi r18,lo8(-(-1))
+ 127 0056 3040      		sbci r19,hi8(-(-1))
+ 128               	.LM28:
+ 129 0058 8FB1      		in r24,47-32
+ 130 005a 8D93      		st X+,r24
+ 131               	.LVL8:
+ 132               	.L18:
+ 133               	.LM29:
+ 134 005c 2115      		cp r18,__zero_reg__
+ 135 005e 3105      		cpc r19,__zero_reg__
+ 136 0060 01F4      		brne .L20
+ 137               	.LM30:
+ 138 0062 E40F      		add r30,r20
+ 139 0064 F51F      		adc r31,r21
+ 140               	.LVL9:
+ 141 0066 1082      		st Z,__zero_reg__
+ 142               	.LM31:
+ 143 0068 C19A      		sbi 56-32,1
+ 144               	/* epilogue start */
+ 145               	.LM32:
+ 146 006a 0895      		ret
+ 147               	.LFE8:
+ 149               	.global	enc28j60WriteBuffer
+ 151               	enc28j60WriteBuffer:
+ 152               	.LFB9:
+ 153               	.LM33:
+ 154               	.LVL10:
+ 155               	/* prologue: function */
+ 156               	/* frame size = 0 */
+ 157 006c 9C01      		movw r18,r24
+ 158 006e FB01      		movw r30,r22
+ 159               	.LM34:
+ 160 0070 C198      		cbi 56-32,1
+ 161               	.LM35:
+ 162 0072 8AE7      		ldi r24,lo8(122)
+ 163               	.LVL11:
+ 164 0074 8FB9      		out 47-32,r24
+ 165               	.LVL12:
+ 166               	.L25:
+ 167               	.LM36:
+ 168 0076 779B      		sbis 46-32,7
+ 169 0078 00C0      		rjmp .L25
+ 170 007a 00C0      		rjmp .L32
+ 171               	.L28:
+ 172               	.LM37:
+ 173 007c 8081      		ld r24,Z
+ 174 007e 8FB9      		out 47-32,r24
+ 175               	.L27:
+ 176               	.LM38:
+ 177 0080 779B      		sbis 46-32,7
+ 178 0082 00C0      		rjmp .L27
+ 179               	.LM39:
+ 180 0084 2150      		subi r18,lo8(-(-1))
+ 181 0086 3040      		sbci r19,hi8(-(-1))
+ 182               	.LM40:
+ 183 0088 3196      		adiw r30,1
+ 184               	.LVL13:
+ 185               	.L32:
+ 186               	.LM41:
+ 187 008a 2115      		cp r18,__zero_reg__
+ 188 008c 3105      		cpc r19,__zero_reg__
+ 189 008e 01F4      		brne .L28
+ 190               	.LM42:
+ 191 0090 C19A      		sbi 56-32,1
+ 192               	/* epilogue start */
+ 193               	.LM43:
+ 194 0092 0895      		ret
+ 195               	.LFE9:
+ 197               	.global	enc28j60SetBank
+ 199               	enc28j60SetBank:
+ 200               	.LFB10:
+ 201               	.LM44:
+ 202               	.LVL14:
+ 203               	/* prologue: function */
+ 204               	/* frame size = 0 */
+ 205 0094 482F      		mov r20,r24
+ 206               	.LM45:
+ 207 0096 282F      		mov r18,r24
+ 208 0098 30E0      		ldi r19,lo8(0)
+ 209 009a 2076      		andi r18,lo8(96)
+ 210 009c 3070      		andi r19,hi8(96)
+ 211 009e 8091 0000 		lds r24,Enc28j60Bank
+ 212               	.LVL15:
+ 213 00a2 90E0      		ldi r25,lo8(0)
+ 214 00a4 2817      		cp r18,r24
+ 215 00a6 3907      		cpc r19,r25
+ 216 00a8 01F0      		breq .L39
+ 217               	.LBB62:
+ 218               	.LBB63:
+ 219               	.LM46:
+ 220 00aa C198      		cbi 56-32,1
+ 221               	.LM47:
+ 222 00ac 8FEB      		ldi r24,lo8(-65)
+ 223 00ae 8FB9      		out 47-32,r24
+ 224               	.L35:
+ 225               	.LM48:
+ 226 00b0 779B      		sbis 46-32,7
+ 227 00b2 00C0      		rjmp .L35
+ 228               	.LM49:
+ 229 00b4 83E0      		ldi r24,lo8(3)
+ 230 00b6 8FB9      		out 47-32,r24
+ 231               	.L36:
+ 232               	.LM50:
+ 233 00b8 779B      		sbis 46-32,7
+ 234 00ba 00C0      		rjmp .L36
+ 235               	.LM51:
+ 236 00bc C19A      		sbi 56-32,1
+ 237               	.LBE63:
+ 238               	.LBE62:
+ 239               	.LBB64:
+ 240               	.LBB65:
+ 241               	.LM52:
+ 242 00be C198      		cbi 56-32,1
+ 243               	.LM53:
+ 244 00c0 8FE9      		ldi r24,lo8(-97)
+ 245 00c2 8FB9      		out 47-32,r24
+ 246               	.L37:
+ 247               	.LM54:
+ 248 00c4 779B      		sbis 46-32,7
+ 249 00c6 00C0      		rjmp .L37
+ 250               	.LBE65:
+ 251               	.LBE64:
+ 252               	.LM55:
+ 253 00c8 85E0      		ldi r24,5
+ 254 00ca 3595      	1:	asr r19
+ 255 00cc 2795      		ror r18
+ 256 00ce 8A95      		dec r24
+ 257 00d0 01F4      		brne 1b
+ 258               	.LBB67:
+ 259               	.LBB66:
+ 260               	.LM56:
+ 261 00d2 2FB9      		out 47-32,r18
+ 262               	.L38:
+ 263               	.LM57:
+ 264 00d4 779B      		sbis 46-32,7
+ 265 00d6 00C0      		rjmp .L38
+ 266               	.LM58:
+ 267 00d8 C19A      		sbi 56-32,1
+ 268               	.LBE66:
+ 269               	.LBE67:
+ 270               	.LM59:
+ 271 00da 4076      		andi r20,lo8(96)
+ 272 00dc 4093 0000 		sts Enc28j60Bank,r20
+ 273               	.L39:
+ 274 00e0 0895      		ret
+ 275               	.LFE10:
+ 277               	.global	enc28j60Read
+ 279               	enc28j60Read:
+ 280               	.LFB11:
+ 281               	.LM60:
+ 282               	.LVL16:
+ 283 00e2 1F93      		push r17
+ 284               	/* prologue: function */
+ 285               	/* frame size = 0 */
+ 286 00e4 182F      		mov r17,r24
+ 287               	.LM61:
+ 288 00e6 00D0      		rcall enc28j60SetBank
+ 289               	.LVL17:
+ 290               	.LM62:
+ 291 00e8 80E0      		ldi r24,lo8(0)
+ 292 00ea 612F      		mov r22,r17
+ 293 00ec 00D0      		rcall enc28j60ReadOp
+ 294               	/* epilogue start */
+ 295               	.LM63:
+ 296 00ee 1F91      		pop r17
+ 297               	.LVL18:
+ 298 00f0 0895      		ret
+ 299               	.LFE11:
+ 301               	.global	enc28j60Write
+ 303               	enc28j60Write:
+ 304               	.LFB13:
+ 305               	.LM64:
+ 306               	.LVL19:
+ 307 00f2 0F93      		push r16
+ 308 00f4 1F93      		push r17
+ 309               	/* prologue: function */
+ 310               	/* frame size = 0 */
+ 311 00f6 182F      		mov r17,r24
+ 312 00f8 062F      		mov r16,r22
+ 313               	.LM65:
+ 314 00fa 00D0      		rcall enc28j60SetBank
+ 315               	.LVL20:
+ 316               	.LBB68:
+ 317               	.LBB69:
+ 318               	.LM66:
+ 319 00fc C198      		cbi 56-32,1
+ 320               	.LM67:
+ 321 00fe 1F71      		andi r17,lo8(31)
+ 322 0100 1064      		ori r17,lo8(64)
+ 323 0102 1FB9      		out 47-32,r17
+ 324               	.L47:
+ 325               	.LM68:
+ 326 0104 779B      		sbis 46-32,7
+ 327 0106 00C0      		rjmp .L47
+ 328               	.LM69:
+ 329 0108 0FB9      		out 47-32,r16
+ 330               	.L48:
+ 331               	.LM70:
+ 332 010a 779B      		sbis 46-32,7
+ 333 010c 00C0      		rjmp .L48
+ 334               	.LM71:
+ 335 010e C19A      		sbi 56-32,1
+ 336               	/* epilogue start */
+ 337               	.LBE69:
+ 338               	.LBE68:
+ 339               	.LM72:
+ 340 0110 1F91      		pop r17
+ 341               	.LVL21:
+ 342 0112 0F91      		pop r16
+ 343               	.LVL22:
+ 344 0114 0895      		ret
+ 345               	.LFE13:
+ 347               	.global	enc28j60PhyReadH
+ 349               	enc28j60PhyReadH:
+ 350               	.LFB12:
+ 351               	.LM73:
+ 352               	.LVL23:
+ 353               	/* prologue: function */
+ 354               	/* frame size = 0 */
+ 355 0116 682F      		mov r22,r24
+ 356               	.LM74:
+ 357 0118 84ED      		ldi r24,lo8(-44)
+ 358               	.LVL24:
+ 359 011a 00D0      		rcall enc28j60Write
+ 360               	.LVL25:
+ 361               	.LM75:
+ 362 011c 82ED      		ldi r24,lo8(-46)
+ 363 011e 61E0      		ldi r22,lo8(1)
+ 364 0120 00D0      		rcall enc28j60Write
+ 365               	.LBB70:
+ 366               	.LBB71:
+ 367               	.LBB72:
+ 368               	.LBB73:
+ 369               	.LM76:
+ 370 0122 8CE3      		ldi r24,lo8(60)
+ 371               	.LVL26:
+ 372               	/* #APP */
+ 373               	 ;  83 "d:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 374 0124 8A95      		1: dec r24
+ 375 0126 01F4      		brne 1b
+ 376               	 ;  0 "" 2
+ 377               	/* #NOAPP */
+ 378               	.L53:
+ 379               	.LBE73:
+ 380               	.LBE72:
+ 381               	.LBE71:
+ 382               	.LBE70:
+ 383               	.LM77:
+ 384 0128 8AEE      		ldi r24,lo8(-22)
+ 385               	.LVL27:
+ 386 012a 00D0      		rcall enc28j60Read
+ 387 012c 80FD      		sbrc r24,0
+ 388 012e 00C0      		rjmp .L53
+ 389               	.LM78:
+ 390 0130 82ED      		ldi r24,lo8(-46)
+ 391 0132 60E0      		ldi r22,lo8(0)
+ 392 0134 00D0      		rcall enc28j60Write
+ 393               	.LM79:
+ 394 0136 89ED      		ldi r24,lo8(-39)
+ 395 0138 00D0      		rcall enc28j60Read
+ 396               	.LM80:
+ 397 013a 90E0      		ldi r25,lo8(0)
+ 398               	/* epilogue start */
+ 399 013c 0895      		ret
+ 400               	.LFE12:
+ 402               	.global	enc28j60PhyWrite
+ 404               	enc28j60PhyWrite:
+ 405               	.LFB14:
+ 406               	.LM81:
+ 407               	.LVL28:
+ 408 013e 0F93      		push r16
+ 409 0140 1F93      		push r17
+ 410               	/* prologue: function */
+ 411               	/* frame size = 0 */
+ 412 0142 982F      		mov r25,r24
+ 413 0144 162F      		mov r17,r22
+ 414 0146 072F      		mov r16,r23
+ 415               	.LVL29:
+ 416               	.LM82:
+ 417 0148 84ED      		ldi r24,lo8(-44)
+ 418               	.LVL30:
+ 419 014a 692F      		mov r22,r25
+ 420               	.LVL31:
+ 421 014c 00D0      		rcall enc28j60Write
+ 422               	.LVL32:
+ 423               	.LM83:
+ 424 014e 86ED      		ldi r24,lo8(-42)
+ 425 0150 612F      		mov r22,r17
+ 426 0152 00D0      		rcall enc28j60Write
+ 427               	.LM84:
+ 428 0154 87ED      		ldi r24,lo8(-41)
+ 429 0156 602F      		mov r22,r16
+ 430 0158 00D0      		rcall enc28j60Write
+ 431               	.LBB74:
+ 432               	.LBB75:
+ 433               	.LBB76:
+ 434               	.LBB77:
+ 435               	.LM85:
+ 436 015a 1CE3      		ldi r17,lo8(60)
+ 437               	.LVL33:
+ 438 015c 00C0      		rjmp .L57
+ 439               	.L58:
+ 440 015e 812F      		mov r24,r17
+ 441               	.LVL34:
+ 442               	/* #APP */
+ 443               	 ;  83 "d:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 444 0160 8A95      		1: dec r24
+ 445 0162 01F4      		brne 1b
+ 446               	 ;  0 "" 2
+ 447               	/* #NOAPP */
+ 448               	.L57:
+ 449               	.LBE77:
+ 450               	.LBE76:
+ 451               	.LBE75:
+ 452               	.LBE74:
+ 453               	.LM86:
+ 454 0164 8AEE      		ldi r24,lo8(-22)
+ 455               	.LVL35:
+ 456 0166 00D0      		rcall enc28j60Read
+ 457 0168 80FD      		sbrc r24,0
+ 458 016a 00C0      		rjmp .L58
+ 459               	/* epilogue start */
+ 460               	.LM87:
+ 461 016c 1F91      		pop r17
+ 462 016e 0F91      		pop r16
+ 463               	.LVL36:
+ 464 0170 0895      		ret
+ 465               	.LFE14:
+ 467               	.global	enc28j60clkout
+ 469               	enc28j60clkout:
+ 470               	.LFB15:
+ 471               	.LM88:
+ 472               	.LVL37:
+ 473               	/* prologue: function */
+ 474               	/* frame size = 0 */
+ 475               	.LM89:
+ 476 0172 682F      		mov r22,r24
+ 477 0174 6770      		andi r22,lo8(7)
+ 478 0176 85E7      		ldi r24,lo8(117)
+ 479               	.LVL38:
+ 480 0178 00D0      		rcall enc28j60Write
+ 481               	/* epilogue start */
+ 482               	.LM90:
+ 483 017a 0895      		ret
+ 484               	.LFE15:
+ 486               	.global	enc28j60Init
+ 488               	enc28j60Init:
+ 489               	.LFB16:
+ 490               	.LM91:
+ 491               	.LVL39:
+ 492 017c CF93      		push r28
+ 493 017e DF93      		push r29
+ 494               	/* prologue: function */
+ 495               	/* frame size = 0 */
+ 496 0180 EC01      		movw r28,r24
+ 497               	.LM92:
+ 498 0182 B99A      		sbi 55-32,1
+ 499               	.LM93:
+ 500 0184 C19A      		sbi 56-32,1
+ 501               	.LM94:
+ 502 0186 87B3      		in r24,55-32
+ 503               	.LVL40:
+ 504 0188 8862      		ori r24,lo8(40)
+ 505 018a 87BB      		out 55-32,r24
+ 506               	.LM95:
+ 507 018c BC98      		cbi 55-32,4
+ 508               	.LM96:
+ 509 018e C398      		cbi 56-32,3
+ 510               	.LM97:
+ 511 0190 C598      		cbi 56-32,5
+ 512               	.LM98:
+ 513 0192 C29A      		sbi 56-32,2
+ 514               	.LM99:
+ 515 0194 80E5      		ldi r24,lo8(80)
+ 516 0196 8DB9      		out 45-32,r24
+ 517               	.LM100:
+ 518 0198 709A      		sbi 46-32,0
+ 519               	.LBB78:
+ 520               	.LBB79:
+ 521               	.LM101:
+ 522 019a C198      		cbi 56-32,1
+ 523               	.LM102:
+ 524 019c 8FEF      		ldi r24,lo8(-1)
+ 525 019e 8FB9      		out 47-32,r24
+ 526               	.L63:
+ 527               	.LM103:
+ 528 01a0 779B      		sbis 46-32,7
+ 529 01a2 00C0      		rjmp .L63
+ 530               	.LM104:
+ 531 01a4 8FEF      		ldi r24,lo8(-1)
+ 532 01a6 8FB9      		out 47-32,r24
+ 533               	.L64:
+ 534               	.LM105:
+ 535 01a8 779B      		sbis 46-32,7
+ 536 01aa 00C0      		rjmp .L64
+ 537               	.LM106:
+ 538 01ac C19A      		sbi 56-32,1
+ 539               	.LBE79:
+ 540               	.LBE78:
+ 541               	.LBB80:
+ 542               	.LBB81:
+ 543               	.LM107:
+ 544 01ae 8DEC      		ldi r24,lo8(-51)
+ 545               	.LVL41:
+ 546               	/* #APP */
+ 547               	 ;  83 "d:/winavr-20090313/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 548 01b0 8A95      		1: dec r24
+ 549 01b2 01F4      		brne 1b
+ 550               	 ;  0 "" 2
+ 551               	/* #NOAPP */
+ 552               	.LBE81:
+ 553               	.LBE80:
+ 554               	.LM108:
+ 555 01b4 1092 0000 		sts (gNextPacketPtr)+1,__zero_reg__
+ 556 01b8 1092 0000 		sts gNextPacketPtr,__zero_reg__
+ 557               	.LM109:
+ 558 01bc 88E0      		ldi r24,lo8(8)
+ 559               	.LVL42:
+ 560 01be 60E0      		ldi r22,lo8(0)
+ 561 01c0 00D0      		rcall enc28j60Write
+ 562               	.LM110:
+ 563 01c2 89E0      		ldi r24,lo8(9)
+ 564 01c4 60E0      		ldi r22,lo8(0)
+ 565 01c6 00D0      		rcall enc28j60Write
+ 566               	.LM111:
+ 567 01c8 8CE0      		ldi r24,lo8(12)
+ 568 01ca 60E0      		ldi r22,lo8(0)
+ 569 01cc 00D0      		rcall enc28j60Write
+ 570               	.LM112:
+ 571 01ce 8DE0      		ldi r24,lo8(13)
+ 572 01d0 60E0      		ldi r22,lo8(0)
+ 573 01d2 00D0      		rcall enc28j60Write
+ 574               	.LM113:
+ 575 01d4 8AE0      		ldi r24,lo8(10)
+ 576 01d6 6EEF      		ldi r22,lo8(-2)
+ 577 01d8 00D0      		rcall enc28j60Write
+ 578               	.LM114:
+ 579 01da 8BE0      		ldi r24,lo8(11)
+ 580 01dc 69E1      		ldi r22,lo8(25)
+ 581 01de 00D0      		rcall enc28j60Write
+ 582               	.LM115:
+ 583 01e0 84E0      		ldi r24,lo8(4)
+ 584 01e2 6FEF      		ldi r22,lo8(-1)
+ 585 01e4 00D0      		rcall enc28j60Write
+ 586               	.LM116:
+ 587 01e6 85E0      		ldi r24,lo8(5)
+ 588 01e8 69E1      		ldi r22,lo8(25)
+ 589 01ea 00D0      		rcall enc28j60Write
+ 590               	.LM117:
+ 591 01ec 86E0      		ldi r24,lo8(6)
+ 592 01ee 6FEF      		ldi r22,lo8(-1)
+ 593 01f0 00D0      		rcall enc28j60Write
+ 594               	.LM118:
+ 595 01f2 87E0      		ldi r24,lo8(7)
+ 596 01f4 6FE1      		ldi r22,lo8(31)
+ 597 01f6 00D0      		rcall enc28j60Write
+ 598               	.LM119:
+ 599 01f8 88E3      		ldi r24,lo8(56)
+ 600 01fa 60EB      		ldi r22,lo8(-80)
+ 601 01fc 00D0      		rcall enc28j60Write
+ 602               	.LM120:
+ 603 01fe 88E2      		ldi r24,lo8(40)
+ 604 0200 6FE3      		ldi r22,lo8(63)
+ 605 0202 00D0      		rcall enc28j60Write
+ 606               	.LM121:
+ 607 0204 89E2      		ldi r24,lo8(41)
+ 608 0206 60E3      		ldi r22,lo8(48)
+ 609 0208 00D0      		rcall enc28j60Write
+ 610               	.LM122:
+ 611 020a 80E3      		ldi r24,lo8(48)
+ 612 020c 69EF      		ldi r22,lo8(-7)
+ 613 020e 00D0      		rcall enc28j60Write
+ 614               	.LM123:
+ 615 0210 81E3      		ldi r24,lo8(49)
+ 616 0212 67EF      		ldi r22,lo8(-9)
+ 617 0214 00D0      		rcall enc28j60Write
+ 618               	.LM124:
+ 619 0216 80EC      		ldi r24,lo8(-64)
+ 620 0218 6DE0      		ldi r22,lo8(13)
+ 621 021a 00D0      		rcall enc28j60Write
+ 622               	.LM125:
+ 623 021c 81EC      		ldi r24,lo8(-63)
+ 624 021e 60E0      		ldi r22,lo8(0)
+ 625 0220 00D0      		rcall enc28j60Write
+ 626               	.LBB82:
+ 627               	.LBB83:
+ 628               	.LM126:
+ 629 0222 C198      		cbi 56-32,1
+ 630               	.LM127:
+ 631 0224 82E8      		ldi r24,lo8(-126)
+ 632 0226 8FB9      		out 47-32,r24
+ 633               	.L65:
+ 634               	.LM128:
+ 635 0228 779B      		sbis 46-32,7
+ 636 022a 00C0      		rjmp .L65
+ 637               	.LM129:
+ 638 022c 82E3      		ldi r24,lo8(50)
+ 639 022e 8FB9      		out 47-32,r24
+ 640               	.L66:
+ 641               	.LM130:
+ 642 0230 779B      		sbis 46-32,7
+ 643 0232 00C0      		rjmp .L66
+ 644               	.LM131:
+ 645 0234 C19A      		sbi 56-32,1
+ 646               	.LBE83:
+ 647               	.LBE82:
+ 648               	.LM132:
+ 649 0236 86EC      		ldi r24,lo8(-58)
+ 650 0238 62E1      		ldi r22,lo8(18)
+ 651 023a 00D0      		rcall enc28j60Write
+ 652               	.LM133:
+ 653 023c 87EC      		ldi r24,lo8(-57)
+ 654 023e 6CE0      		ldi r22,lo8(12)
+ 655 0240 00D0      		rcall enc28j60Write
+ 656               	.LM134:
+ 657 0242 84EC      		ldi r24,lo8(-60)
+ 658 0244 62E1      		ldi r22,lo8(18)
+ 659 0246 00D0      		rcall enc28j60Write
+ 660               	.LM135:
+ 661 0248 8AEC      		ldi r24,lo8(-54)
+ 662 024a 6CED      		ldi r22,lo8(-36)
+ 663 024c 00D0      		rcall enc28j60Write
+ 664               	.LM136:
+ 665 024e 8BEC      		ldi r24,lo8(-53)
+ 666 0250 65E0      		ldi r22,lo8(5)
+ 667 0252 00D0      		rcall enc28j60Write
+ 668               	.LM137:
+ 669 0254 84EE      		ldi r24,lo8(-28)
+ 670 0256 6881      		ld r22,Y
+ 671 0258 00D0      		rcall enc28j60Write
+ 672               	.LM138:
+ 673 025a 85EE      		ldi r24,lo8(-27)
+ 674 025c 6981      		ldd r22,Y+1
+ 675 025e 00D0      		rcall enc28j60Write
+ 676               	.LM139:
+ 677 0260 82EE      		ldi r24,lo8(-30)
+ 678 0262 6A81      		ldd r22,Y+2
+ 679 0264 00D0      		rcall enc28j60Write
+ 680               	.LM140:
+ 681 0266 83EE      		ldi r24,lo8(-29)
+ 682 0268 6B81      		ldd r22,Y+3
+ 683 026a 00D0      		rcall enc28j60Write
+ 684               	.LM141:
+ 685 026c 80EE      		ldi r24,lo8(-32)
+ 686 026e 6C81      		ldd r22,Y+4
+ 687 0270 00D0      		rcall enc28j60Write
+ 688               	.LM142:
+ 689 0272 81EE      		ldi r24,lo8(-31)
+ 690 0274 6D81      		ldd r22,Y+5
+ 691 0276 00D0      		rcall enc28j60Write
+ 692               	.LM143:
+ 693 0278 80E1      		ldi r24,lo8(16)
+ 694 027a 60E0      		ldi r22,lo8(256)
+ 695 027c 71E0      		ldi r23,hi8(256)
+ 696 027e 00D0      		rcall enc28j60PhyWrite
+ 697               	.LM144:
+ 698 0280 8FE1      		ldi r24,lo8(31)
+ 699 0282 00D0      		rcall enc28j60SetBank
+ 700               	.LBB84:
+ 701               	.LBB85:
+ 702               	.LM145:
+ 703 0284 C198      		cbi 56-32,1
+ 704               	.LM146:
+ 705 0286 8BE9      		ldi r24,lo8(-101)
+ 706 0288 8FB9      		out 47-32,r24
+ 707               	.L67:
+ 708               	.LM147:
+ 709 028a 779B      		sbis 46-32,7
+ 710 028c 00C0      		rjmp .L67
+ 711               	.LM148:
+ 712 028e 80EC      		ldi r24,lo8(-64)
+ 713 0290 8FB9      		out 47-32,r24
+ 714               	.L68:
+ 715               	.LM149:
+ 716 0292 779B      		sbis 46-32,7
+ 717 0294 00C0      		rjmp .L68
+ 718               	.LM150:
+ 719 0296 C19A      		sbi 56-32,1
+ 720               	.LBE85:
+ 721               	.LBE84:
+ 722               	.LBB86:
+ 723               	.LBB87:
+ 724               	.LM151:
+ 725 0298 C198      		cbi 56-32,1
+ 726               	.LM152:
+ 727 029a 8FE9      		ldi r24,lo8(-97)
+ 728 029c 8FB9      		out 47-32,r24
+ 729               	.L69:
+ 730               	.LM153:
+ 731 029e 779B      		sbis 46-32,7
+ 732 02a0 00C0      		rjmp .L69
+ 733               	.LM154:
+ 734 02a2 84E0      		ldi r24,lo8(4)
+ 735 02a4 8FB9      		out 47-32,r24
+ 736               	.L70:
+ 737               	.LM155:
+ 738 02a6 779B      		sbis 46-32,7
+ 739 02a8 00C0      		rjmp .L70
+ 740               	.LM156:
+ 741 02aa C19A      		sbi 56-32,1
+ 742               	/* epilogue start */
+ 743               	.LBE87:
+ 744               	.LBE86:
+ 745               	.LM157:
+ 746 02ac DF91      		pop r29
+ 747 02ae CF91      		pop r28
+ 748               	.LVL43:
+ 749 02b0 0895      		ret
+ 750               	.LFE16:
+ 752               	.global	enc28j60getrev
+ 754               	enc28j60getrev:
+ 755               	.LFB17:
+ 756               	.LM158:
+ 757               	/* prologue: function */
+ 758               	/* frame size = 0 */
+ 759               	.LM159:
+ 760 02b2 82E7      		ldi r24,lo8(114)
+ 761 02b4 00D0      		rcall enc28j60Read
+ 762               	/* epilogue start */
+ 763               	.LM160:
+ 764 02b6 0895      		ret
+ 765               	.LFE17:
+ 767               	.global	enc28j60linkup
+ 769               	enc28j60linkup:
+ 770               	.LFB18:
+ 771               	.LM161:
+ 772               	/* prologue: function */
+ 773               	/* frame size = 0 */
+ 774               	.LM162:
+ 775 02b8 81E1      		ldi r24,lo8(17)
+ 776 02ba 00D0      		rcall enc28j60PhyReadH
+ 777 02bc 20E0      		ldi r18,lo8(0)
+ 778 02be 892B      		or r24,r25
+ 779 02c0 01F0      		breq .L83
+ 780 02c2 21E0      		ldi r18,lo8(1)
+ 781               	.L83:
+ 782               	.LM163:
+ 783 02c4 822F      		mov r24,r18
+ 784               	/* epilogue start */
+ 785 02c6 0895      		ret
+ 786               	.LFE18:
+ 788               	.global	enc28j60PacketSend
+ 790               	enc28j60PacketSend:
+ 791               	.LFB19:
+ 792               	.LM164:
+ 793               	.LVL44:
+ 794 02c8 DF92      		push r13
+ 795 02ca EF92      		push r14
+ 796 02cc FF92      		push r15
+ 797 02ce 0F93      		push r16
+ 798 02d0 1F93      		push r17
+ 799 02d2 CF93      		push r28
+ 800 02d4 DF93      		push r29
+ 801               	/* prologue: function */
+ 802               	/* frame size = 0 */
+ 803 02d6 EC01      		movw r28,r24
+ 804 02d8 8B01      		movw r16,r22
+ 805               	.LBB88:
+ 806               	.LBB89:
+ 807               	.LM165:
+ 808 02da 3FE9      		ldi r19,lo8(-97)
+ 809 02dc D32E      		mov r13,r19
+ 810               	.LM166:
+ 811 02de 20E8      		ldi r18,lo8(-128)
+ 812 02e0 F22E      		mov r15,r18
+ 813               	.LBE89:
+ 814               	.LBE88:
+ 815               	.LBB91:
+ 816               	.LBB92:
+ 817               	.LM167:
+ 818 02e2 9FEB      		ldi r25,lo8(-65)
+ 819 02e4 E92E      		mov r14,r25
+ 820 02e6 00C0      		rjmp .L113
+ 821               	.LVL45:
+ 822               	.L91:
+ 823               	.LBE92:
+ 824               	.LBE91:
+ 825               	.LM168:
+ 826 02e8 8CE1      		ldi r24,lo8(28)
+ 827 02ea 00D0      		rcall enc28j60Read
+ 828 02ec 81FF      		sbrs r24,1
+ 829 02ee 00C0      		rjmp .L113
+ 830               	.LBB94:
+ 831               	.LBB90:
+ 832               	.LM169:
+ 833 02f0 C198      		cbi 56-32,1
+ 834               	.LM170:
+ 835 02f2 DFB8      		out 47-32,r13
+ 836               	.L87:
+ 837               	.LM171:
+ 838 02f4 779B      		sbis 46-32,7
+ 839 02f6 00C0      		rjmp .L87
+ 840               	.LM172:
+ 841 02f8 FFB8      		out 47-32,r15
+ 842               	.L88:
+ 843               	.LM173:
+ 844 02fa 779B      		sbis 46-32,7
+ 845 02fc 00C0      		rjmp .L88
+ 846               	.LM174:
+ 847 02fe C19A      		sbi 56-32,1
+ 848               	.LBE90:
+ 849               	.LBE94:
+ 850               	.LBB95:
+ 851               	.LBB93:
+ 852               	.LM175:
+ 853 0300 C198      		cbi 56-32,1
+ 854               	.LM176:
+ 855 0302 EFB8      		out 47-32,r14
+ 856               	.L89:
+ 857               	.LM177:
+ 858 0304 779B      		sbis 46-32,7
+ 859 0306 00C0      		rjmp .L89
+ 860               	.LM178:
+ 861 0308 FFB8      		out 47-32,r15
+ 862               	.L90:
+ 863               	.LM179:
+ 864 030a 779B      		sbis 46-32,7
+ 865 030c 00C0      		rjmp .L90
+ 866               	.LM180:
+ 867 030e C19A      		sbi 56-32,1
+ 868               	.LVL46:
+ 869               	.L113:
+ 870               	.LBE93:
+ 871               	.LBE95:
+ 872               	.LM181:
+ 873 0310 80E0      		ldi r24,lo8(0)
+ 874 0312 6FE1      		ldi r22,lo8(31)
+ 875 0314 00D0      		rcall enc28j60ReadOp
+ 876 0316 83FD      		sbrc r24,3
+ 877 0318 00C0      		rjmp .L91
+ 878               	.LM182:
+ 879 031a 82E0      		ldi r24,lo8(2)
+ 880 031c 6FEF      		ldi r22,lo8(-1)
+ 881 031e 00D0      		rcall enc28j60Write
+ 882               	.LM183:
+ 883 0320 83E0      		ldi r24,lo8(3)
+ 884 0322 69E1      		ldi r22,lo8(25)
+ 885 0324 00D0      		rcall enc28j60Write
+ 886               	.LM184:
+ 887 0326 CE01      		movw r24,r28
+ 888 0328 8150      		subi r24,lo8(-(-1))
+ 889 032a 682F      		mov r22,r24
+ 890 032c 86E0      		ldi r24,lo8(6)
+ 891 032e 00D0      		rcall enc28j60Write
+ 892               	.LM185:
+ 893 0330 9E01      		movw r18,r28
+ 894 0332 2150      		subi r18,lo8(-(6655))
+ 895 0334 364E      		sbci r19,hi8(-(6655))
+ 896 0336 87E0      		ldi r24,lo8(7)
+ 897 0338 632F      		mov r22,r19
+ 898 033a 00D0      		rcall enc28j60Write
+ 899               	.LBB96:
+ 900               	.LBB97:
+ 901               	.LM186:
+ 902 033c C198      		cbi 56-32,1
+ 903               	.LM187:
+ 904 033e 8AE7      		ldi r24,lo8(122)
+ 905 0340 8FB9      		out 47-32,r24
+ 906               	.L92:
+ 907               	.LM188:
+ 908 0342 779B      		sbis 46-32,7
+ 909 0344 00C0      		rjmp .L92
+ 910               	.LM189:
+ 911 0346 1FB8      		out 47-32,__zero_reg__
+ 912               	.L93:
+ 913               	.LM190:
+ 914 0348 779B      		sbis 46-32,7
+ 915 034a 00C0      		rjmp .L93
+ 916               	.LM191:
+ 917 034c C19A      		sbi 56-32,1
+ 918               	.LBE97:
+ 919               	.LBE96:
+ 920               	.LBB98:
+ 921               	.LBB99:
+ 922               	.LM192:
+ 923 034e C198      		cbi 56-32,1
+ 924               	.LM193:
+ 925 0350 8AE7      		ldi r24,lo8(122)
+ 926 0352 8FB9      		out 47-32,r24
+ 927               	.L94:
+ 928               	.LM194:
+ 929 0354 779B      		sbis 46-32,7
+ 930 0356 00C0      		rjmp .L94
+ 931 0358 00C0      		rjmp .L114
+ 932               	.L97:
+ 933               	.LM195:
+ 934 035a F801      		movw r30,r16
+ 935 035c 8081      		ld r24,Z
+ 936 035e 8FB9      		out 47-32,r24
+ 937               	.L96:
+ 938               	.LM196:
+ 939 0360 779B      		sbis 46-32,7
+ 940 0362 00C0      		rjmp .L96
+ 941               	.LM197:
+ 942 0364 2197      		sbiw r28,1
+ 943               	.LM198:
+ 944 0366 0F5F      		subi r16,lo8(-(1))
+ 945 0368 1F4F      		sbci r17,hi8(-(1))
+ 946               	.L114:
+ 947               	.LM199:
+ 948 036a 2097      		sbiw r28,0
+ 949 036c 01F4      		brne .L97
+ 950               	.LM200:
+ 951 036e C19A      		sbi 56-32,1
+ 952               	.LBE99:
+ 953               	.LBE98:
+ 954               	.LBB100:
+ 955               	.LBB101:
+ 956               	.LM201:
+ 957 0370 C198      		cbi 56-32,1
+ 958               	.LM202:
+ 959 0372 8FE9      		ldi r24,lo8(-97)
+ 960 0374 8FB9      		out 47-32,r24
+ 961               	.L98:
+ 962               	.LM203:
+ 963 0376 779B      		sbis 46-32,7
+ 964 0378 00C0      		rjmp .L98
+ 965               	.LM204:
+ 966 037a 88E0      		ldi r24,lo8(8)
+ 967 037c 8FB9      		out 47-32,r24
+ 968               	.L99:
+ 969               	.LM205:
+ 970 037e 779B      		sbis 46-32,7
+ 971 0380 00C0      		rjmp .L99
+ 972               	.LM206:
+ 973 0382 C19A      		sbi 56-32,1
+ 974               	/* epilogue start */
+ 975               	.LBE101:
+ 976               	.LBE100:
+ 977               	.LM207:
+ 978 0384 DF91      		pop r29
+ 979 0386 CF91      		pop r28
+ 980               	.LVL47:
+ 981 0388 1F91      		pop r17
+ 982 038a 0F91      		pop r16
+ 983               	.LVL48:
+ 984 038c FF90      		pop r15
+ 985 038e EF90      		pop r14
+ 986 0390 DF90      		pop r13
+ 987 0392 0895      		ret
+ 988               	.LFE19:
+ 990               	.global	enc28j60hasRxPkt
+ 992               	enc28j60hasRxPkt:
+ 993               	.LFB20:
+ 994               	.LM208:
+ 995               	/* prologue: function */
+ 996               	/* frame size = 0 */
+ 997               	.LM209:
+ 998 0394 89E3      		ldi r24,lo8(57)
+ 999 0396 00D0      		rcall enc28j60Read
+ 1000 0398 8111      		cpse r24,__zero_reg__
+ 1001 039a 81E0      		ldi r24,lo8(1)
+ 1002               	.L116:
+ 1003               	.LM210:
+ 1004 039c 0895      		ret
+ 1005               	.LFE20:
+ 1007               	.global	enc28j60PacketReceive
+ 1009               	enc28j60PacketReceive:
+ 1010               	.LFB21:
+ 1011               	.LM211:
+ 1012               	.LVL49:
+ 1013 039e 8F92      		push r8
+ 1014 03a0 9F92      		push r9
+ 1015 03a2 AF92      		push r10
+ 1016 03a4 BF92      		push r11
+ 1017 03a6 CF92      		push r12
+ 1018 03a8 DF92      		push r13
+ 1019 03aa EF92      		push r14
+ 1020 03ac FF92      		push r15
+ 1021 03ae 0F93      		push r16
+ 1022 03b0 1F93      		push r17
+ 1023 03b2 CF93      		push r28
+ 1024 03b4 DF93      		push r29
+ 1025               	/* prologue: function */
+ 1026               	/* frame size = 0 */
+ 1027 03b6 5C01      		movw r10,r24
+ 1028 03b8 4B01      		movw r8,r22
+ 1029               	.LM212:
+ 1030 03ba 89E3      		ldi r24,lo8(57)
+ 1031               	.LVL50:
+ 1032 03bc 00D0      		rcall enc28j60Read
+ 1033               	.LVL51:
+ 1034 03be 8823      		tst r24
+ 1035 03c0 01F4      		brne .L119
+ 1036 03c2 C0E0      		ldi r28,lo8(0)
+ 1037 03c4 D0E0      		ldi r29,hi8(0)
+ 1038               	.LVL52:
+ 1039 03c6 00C0      		rjmp .L120
+ 1040               	.LVL53:
+ 1041               	.L119:
+ 1042               	.LM213:
+ 1043 03c8 6091 0000 		lds r22,gNextPacketPtr
+ 1044 03cc 1091 0000 		lds r17,gNextPacketPtr+1
+ 1045 03d0 80E0      		ldi r24,lo8(0)
+ 1046 03d2 00D0      		rcall enc28j60Write
+ 1047               	.LM214:
+ 1048 03d4 81E0      		ldi r24,lo8(1)
+ 1049 03d6 612F      		mov r22,r17
+ 1050 03d8 00D0      		rcall enc28j60Write
+ 1051               	.LM215:
+ 1052 03da 8AE3      		ldi r24,lo8(58)
+ 1053 03dc 60E0      		ldi r22,lo8(0)
+ 1054 03de 00D0      		rcall enc28j60ReadOp
+ 1055 03e0 182F      		mov r17,r24
+ 1056               	.LM216:
+ 1057 03e2 8AE3      		ldi r24,lo8(58)
+ 1058 03e4 60E0      		ldi r22,lo8(0)
+ 1059 03e6 00D0      		rcall enc28j60ReadOp
+ 1060 03e8 382F      		mov r19,r24
+ 1061 03ea 20E0      		ldi r18,lo8(0)
+ 1062 03ec E12E      		mov r14,r17
+ 1063 03ee FF24      		clr r15
+ 1064 03f0 E22A      		or r14,r18
+ 1065 03f2 F32A      		or r15,r19
+ 1066 03f4 F092 0000 		sts (gNextPacketPtr)+1,r15
+ 1067 03f8 E092 0000 		sts gNextPacketPtr,r14
+ 1068               	.LM217:
+ 1069 03fc 8AE3      		ldi r24,lo8(58)
+ 1070 03fe 60E0      		ldi r22,lo8(0)
+ 1071 0400 00D0      		rcall enc28j60ReadOp
+ 1072 0402 C82E      		mov r12,r24
+ 1073               	.LM218:
+ 1074 0404 8AE3      		ldi r24,lo8(58)
+ 1075 0406 60E0      		ldi r22,lo8(0)
+ 1076 0408 00D0      		rcall enc28j60ReadOp
+ 1077 040a D82E      		mov r13,r24
+ 1078               	.LM219:
+ 1079 040c 8AE3      		ldi r24,lo8(58)
+ 1080 040e 60E0      		ldi r22,lo8(0)
+ 1081 0410 00D0      		rcall enc28j60ReadOp
+ 1082 0412 082F      		mov r16,r24
+ 1083               	.LVL54:
+ 1084 0414 10E0      		ldi r17,lo8(0)
+ 1085               	.LVL55:
+ 1086               	.LM220:
+ 1087 0416 8AE3      		ldi r24,lo8(58)
+ 1088 0418 60E0      		ldi r22,lo8(0)
+ 1089 041a 00D0      		rcall enc28j60ReadOp
+ 1090               	.LM221:
+ 1091 041c 382F      		mov r19,r24
+ 1092 041e 20E0      		ldi r18,lo8(0)
+ 1093 0420 202B      		or r18,r16
+ 1094 0422 312B      		or r19,r17
+ 1095 0424 27FD      		sbrc r18,7
+ 1096 0426 00C0      		rjmp .L121
+ 1097 0428 C0E0      		ldi r28,lo8(0)
+ 1098 042a D0E0      		ldi r29,hi8(0)
+ 1099               	.LVL56:
+ 1100 042c 00C0      		rjmp .L122
+ 1101               	.LVL57:
+ 1102               	.L121:
+ 1103               	.LM222:
+ 1104 042e CC2D      		mov r28,r12
+ 1105               	.LVL58:
+ 1106 0430 D0E0      		ldi r29,lo8(0)
+ 1107               	.LVL59:
+ 1108               	.LM223:
+ 1109 0432 9D2D      		mov r25,r13
+ 1110 0434 80E0      		ldi r24,lo8(0)
+ 1111 0436 C82B      		or r28,r24
+ 1112 0438 D92B      		or r29,r25
+ 1113               	.LVL60:
+ 1114               	.LM224:
+ 1115 043a C501      		movw r24,r10
+ 1116 043c 0197      		sbiw r24,1
+ 1117 043e 2497      		sbiw r28,4
+ 1118 0440 8C17      		cp r24,r28
+ 1119 0442 9D07      		cpc r25,r29
+ 1120 0444 00F4      		brsh .L123
+ 1121 0446 EC01      		movw r28,r24
+ 1122               	.L123:
+ 1123               	.LM225:
+ 1124 0448 CE01      		movw r24,r28
+ 1125 044a B401      		movw r22,r8
+ 1126 044c 00D0      		rcall enc28j60ReadBuffer
+ 1127               	.L122:
+ 1128               	.LM226:
+ 1129 044e DE2C      		mov r13,r14
+ 1130 0450 8CE0      		ldi r24,lo8(12)
+ 1131 0452 6E2D      		mov r22,r14
+ 1132 0454 00D0      		rcall enc28j60Write
+ 1133               	.LM227:
+ 1134 0456 8DE0      		ldi r24,lo8(13)
+ 1135 0458 6F2D      		mov r22,r15
+ 1136 045a 00D0      		rcall enc28j60Write
+ 1137               	.LM228:
+ 1138 045c 8701      		movw r16,r14
+ 1139               	.LVL61:
+ 1140 045e 0150      		subi r16,lo8(-(-1))
+ 1141 0460 1040      		sbci r17,hi8(-(-1))
+ 1142 0462 89E1      		ldi r24,hi8(6655)
+ 1143 0464 0F3F      		cpi r16,lo8(6655)
+ 1144 0466 1807      		cpc r17,r24
+ 1145 0468 00F0      		brlo .L124
+ 1146               	.LM229:
+ 1147 046a 8CE0      		ldi r24,lo8(12)
+ 1148 046c 6EEF      		ldi r22,lo8(-2)
+ 1149 046e 00D0      		rcall enc28j60Write
+ 1150               	.LM230:
+ 1151 0470 8DE0      		ldi r24,lo8(13)
+ 1152 0472 69E1      		ldi r22,lo8(25)
+ 1153 0474 00C0      		rjmp .L131
+ 1154               	.L124:
+ 1155               	.LM231:
+ 1156 0476 DA94      		dec r13
+ 1157 0478 8CE0      		ldi r24,lo8(12)
+ 1158 047a 6D2D      		mov r22,r13
+ 1159 047c 00D0      		rcall enc28j60Write
+ 1160               	.LM232:
+ 1161 047e 8DE0      		ldi r24,lo8(13)
+ 1162 0480 612F      		mov r22,r17
+ 1163               	.LVL62:
+ 1164               	.L131:
+ 1165 0482 00D0      		rcall enc28j60Write
+ 1166               	.LBB102:
+ 1167               	.LBB103:
+ 1168               	.LM233:
+ 1169 0484 C198      		cbi 56-32,1
+ 1170               	.LM234:
+ 1171 0486 8EE9      		ldi r24,lo8(-98)
+ 1172 0488 8FB9      		out 47-32,r24
+ 1173               	.L126:
+ 1174               	.LM235:
+ 1175 048a 779B      		sbis 46-32,7
+ 1176 048c 00C0      		rjmp .L126
+ 1177               	.LM236:
+ 1178 048e 80E4      		ldi r24,lo8(64)
+ 1179 0490 8FB9      		out 47-32,r24
+ 1180               	.L127:
+ 1181               	.LM237:
+ 1182 0492 779B      		sbis 46-32,7
+ 1183 0494 00C0      		rjmp .L127
+ 1184               	.LM238:
+ 1185 0496 C19A      		sbi 56-32,1
+ 1186               	.L120:
+ 1187               	.LBE103:
+ 1188               	.LBE102:
+ 1189               	.LM239:
+ 1190 0498 CE01      		movw r24,r28
+ 1191               	.LVL63:
+ 1192               	/* epilogue start */
+ 1193 049a DF91      		pop r29
+ 1194               	.LVL64:
+ 1195 049c CF91      		pop r28
+ 1196 049e 1F91      		pop r17
+ 1197               	.LVL65:
+ 1198 04a0 0F91      		pop r16
+ 1199 04a2 FF90      		pop r15
+ 1200 04a4 EF90      		pop r14
+ 1201 04a6 DF90      		pop r13
+ 1202 04a8 CF90      		pop r12
+ 1203 04aa BF90      		pop r11
+ 1204 04ac AF90      		pop r10
+ 1205               	.LVL66:
+ 1206 04ae 9F90      		pop r9
+ 1207 04b0 8F90      		pop r8
+ 1208               	.LVL67:
+ 1209 04b2 0895      		ret
+ 1210               	.LFE21:
+ 1212               		.lcomm Enc28j60Bank,1
+ 1213               		.lcomm gNextPacketPtr,2
+ 1358               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 enc28j60.c
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:2      *ABS*:0000003f __SREG__
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:3      *ABS*:0000003e __SP_H__
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:4      *ABS*:0000003d __SP_L__
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:5      *ABS*:00000034 __CCP__
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:6      *ABS*:00000000 __tmp_reg__
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:7      *ABS*:00000001 __zero_reg__
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:18     .text:00000000 enc28j60ReadOp
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:63     .text:00000024 enc28j60WriteOp
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:95     .text:0000003a enc28j60ReadBuffer
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:151    .text:0000006c enc28j60WriteBuffer
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:199    .text:00000094 enc28j60SetBank
+                             .bss:00000000 Enc28j60Bank
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:279    .text:000000e2 enc28j60Read
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:303    .text:000000f2 enc28j60Write
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:349    .text:00000116 enc28j60PhyReadH
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:404    .text:0000013e enc28j60PhyWrite
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:469    .text:00000172 enc28j60clkout
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:488    .text:0000017c enc28j60Init
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:1212   .bss:00000001 gNextPacketPtr
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:754    .text:000002b2 enc28j60getrev
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:769    .text:000002b8 enc28j60linkup
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:790    .text:000002c8 enc28j60PacketSend
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:992    .text:00000394 enc28j60hasRxPkt
+D:\DOCUME~1\Admin\LOCALS~1\Temp/ccnVv5Lp.s:1009   .text:0000039e enc28j60PacketReceive
+
+UNDEFINED SYMBOLS
+__do_clear_bss

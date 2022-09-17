@@ -1,0 +1,61 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Temp                                                              0160h        4
+STemp                                                             0164h        4
+Temp_min                                                          0168h        4
+lcd_buffer                                                        016Ch       32
+uart_data                                                         018Ch       16
+now_set                                                           019Ch        1
+rx_buffer                                                         019Dh       32
+rx_wr_index                                                       01BDh        1
+rx_rd_index                                                       01BEh        1
+rx_counter                                                        01BFh        1
+on                                                                01C0h        6
+nowPORT                                                           01C6h        6
+Timer_read_adc_1                                                  01CCh        1
+Timer_read_adc_2                                                  01CDh        1
+Timer_buzzer_active                                               01CEh        1
+Timer_buzzer_signal                                               01CFh        1
+Timer_buzzer_silence                                              01D0h        1
+Timer_buzzer_silence_1                                            01D1h        1
+Timer_buzzer_active_1                                             01D2h        1
+LCD_switch                                                        01D3h        1
+Timer_LCD                                                         01D4h        1
+Time_one_sec                                                      01D5h        1
+adc                                                               01D6h       12
+Temp_str                                                          01E2h       20
+Time_str                                                          01F6h       20
+_NeedTemp                                                         020Ah       20
+_Time_sec                                                         021Eh       20
+_Time_min                                                         0232h       20
+_Time_hour                                                        0246h       20
+_Temp_min                                                         025Ah       20
+Time_sec_all                                                      026Eh        2
+Time                                                              0270h        2
+Time_sec                                                          0272h        2
+Time_min                                                          0274h        2
+Time_hour                                                         0276h        2
+_seed                                                             0278h        4
+_base_y                                                           027Ch        4
+_lcd_x                                                            0280h        1
+_lcd_y                                                            0281h        1
+_lcd_maxx                                                         0282h        1
+p                                                                 0283h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+STempEE                                                           0000h        2
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+EEPromOut                                                         R5           1
+EEPromIn                                                          R4           1
+rx_buffer_overflow                                                R2.0      1bit
+i                                                                 R6,R7        2
+j                                                                 R8,R9        2
+databits                                                          R10,R11      2
+lcd_can_clear                                                     R13          1
+status_usart                                                      R12          1

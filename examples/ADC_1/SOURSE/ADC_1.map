@@ -1,0 +1,27 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+data                                                              0160h        1
+rx_buffer                                                         0161h        8
+rx_wr_index                                                       0169h        1
+rx_rd_index                                                       016Ah        1
+rx_counter                                                        016Bh        1
+p                                                                 016Ch        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+adc0                                                              R4,R5        2
+Timer1                                                            R6,R7        2
+Timer2                                                            R8,R9        2
+Timer_2                                                           R11          1
+Timer_3                                                           R10          1
+sig1                                                              R13          1
+U2                                                                R12          1
+a                                                                 R2.0      1bit
+U1                                                                R2.1      1bit
+rx_buffer_overflow                                                R2.2      1bit

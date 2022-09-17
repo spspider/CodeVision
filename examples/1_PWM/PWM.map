@@ -1,0 +1,19 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Timer_3                                                           0160h        2
+U2                                                                0162h        8
+sig1                                                              016Ah        8
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+Timer_1                                                           R4,R5        2
+Timer_2                                                           R6,R7        2
+Timer_4                                                           R8,R9        2
+U1                                                                R10,R11      2
+U3                                                                R12,R13      2

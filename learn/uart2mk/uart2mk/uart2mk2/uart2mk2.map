@@ -1,0 +1,27 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+lcd_buffer                                                        0160h       32
+uart_data                                                         0180h       16
+rx_buffer                                                         0190h       32
+_base_y                                                           01B0h        4
+_lcd_y                                                            01B4h        1
+_lcd_maxx                                                         01B5h        1
+p                                                                 01B6h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+i                                                                 R4,R5        2
+j                                                                 R6,R7        2
+lcd_can_clear                                                     R9           1
+status_usart                                                      R8           1
+rx_wr_index                                                       R11          1
+rx_rd_index                                                       R10          1
+rx_counter                                                        R13          1
+rx_buffer_overflow                                                R2.0      1bit
+_lcd_x                                                            R12          1

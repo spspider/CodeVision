@@ -1,0 +1,21 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Fx                                                                0160h        4
+N0                                                                0164h        4
+M0                                                                0168h        4
+N                                                                 016Ch        4
+M                                                                 0170h        4
+p                                                                 0174h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+OVF_T0                                                            R4,R5        2
+OVF_T1                                                            R6,R7        2
+Ntakt                                                             R8,R9        2
+Mx                                                                R10,R11      2

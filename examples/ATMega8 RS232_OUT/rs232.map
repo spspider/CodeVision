@@ -1,0 +1,17 @@
+CodeVisionAVR C Compiler V1.24.8b Standard
+(C) Copyright 1998-2006 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+File: C:\Documents and Settings\Администратор\Рабочий стол\ATMega8 RS232\rs232.c
+Global variables memory map:
+
+Variable                          Address   Size
+__ds18b20_scratch_pad.temp_lsb                                        160h      1
+__ds18b20_scratch_pad.temp_msb                                        161h      1
+__ds18b20_scratch_pad.temp_high                                       162h      1
+__ds18b20_scratch_pad.temp_low                                        163h      1
+__ds18b20_scratch_pad.conf_register                                   164h      1
+__ds18b20_scratch_pad.res1                                            165h      1
+__ds18b20_scratch_pad.res2                                            166h      1
+__ds18b20_scratch_pad.res3                                            167h      1
+__ds18b20_scratch_pad.crc                                             168h      1

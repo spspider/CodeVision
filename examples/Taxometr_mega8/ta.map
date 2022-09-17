@@ -1,0 +1,20 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+M                                                                 0160h        4
+M0                                                                0164h        4
+M1                                                                0168h        4
+p                                                                 016Ch        2
+_seed                                                             016Eh        4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+OVF_T0                                                            R4,R5        2
+OVF_T1                                                            R6,R7        2
+OVF_T2                                                            R8,R9        2
+Mx                                                                R10,R11      2

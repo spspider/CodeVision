@@ -1,0 +1,7 @@
+VERSION:1 SOURCE_TIMESTAMP:3B8EAC1D
+NODE:I LEVEL:0 LINE:24 "C:\Program Files\cvavr2\inc\mega8.h"
+NODE:I LEVEL:0 LINE:30 "C:\Program Files\cvavr2\inc\lcd.h"
+NODE:I LEVEL:0 LINE:31 "C:\Program Files\cvavr2\inc\delay.h"
+NODE:V LEVEL:0 LINE:33 "sek -> R4,R5"
+NODE:V LEVEL:0 LINE:34 "min -> R6,R7"
+NODE:V LEVEL:0 LINE:35 "hour -> R8,R9"

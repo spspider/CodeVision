@@ -1,0 +1,50 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Dig                                                               0160h       17
+Timer_5                                                           0171h        1
+TimeHW                                                            0172h        1
+Timer_7                                                           0173h        1
+Dis1                                                              0174h        1
+Dis2                                                              0175h        1
+Timer_9                                                           0176h        1
+Timer_10                                                          0177h        1
+Timer_3                                                           0178h        1
+Timer_2                                                           0179h        1
+Timer_8                                                           017Ah        1
+Timer_11                                                          017Bh        1
+Timer_4                                                           017Ch        1
+Timer_6                                                           017Dh        1
+Timer_12                                                          017Eh        1
+p                                                                 017Fh        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+adc                                                               R5           1
+cycleL                                                            R4           1
+MS                                                                R7           1
+cycleN                                                            R6           1
+Disp6                                                             R9           1
+Disp7                                                             R8           1
+Other                                                             R11          1
+Num2                                                              R10          1
+Num3                                                              R13          1
+BipL                                                              R12          1
+PINC5                                                             R2.0      1bit
+PINC4                                                             R2.1      1bit
+PIND7                                                             R2.2      1bit
+PIND4                                                             R2.3      1bit
+PIND0                                                             R2.4      1bit
+PIND01                                                            R2.5      1bit
+DisOther                                                          R2.6      1bit
+Bip                                                               R2.7      1bit
+HW                                                                R3.0      1bit
+INJ                                                               R3.1      1bit
+cycle                                                             R3.2      1bit
+HW_1                                                              R3.3      1bit
+INJ_1                                                             R3.4      1bit

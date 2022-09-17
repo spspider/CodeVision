@@ -1,0 +1,7 @@
+VERSION:3 SOURCE_TIMESTAMP:3EBE003D
+NODE:M LEVEL:0 LINE:16 "TIM_H"
+NODE:I LEVEL:0 LINE:18 "D:\cvavreval\inc\mega8535.h"
+NODE:I LEVEL:0 LINE:19 "K:\avr_proj\CodeVision\PDU\NEC\lcd_lib.h"
+NODE:I LEVEL:0 LINE:20 "K:\avr_proj\CodeVision\PDU\NEC\bcd.h"
+NODE:I LEVEL:0 LINE:21 "K:\avr_proj\CodeVision\PDU\NEC\bits_macros.h"
+NODE:M LEVEL:0 LINE:23 "FCPU"

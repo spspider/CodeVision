@@ -1,0 +1,2 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"charger.c" LINE:59
+timer0_ovf_isr DSTACK_USAGE:20 DSTACK_LEVEL:20 FILE:"interrupt.c" LINE:54

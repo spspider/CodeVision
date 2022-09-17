@@ -1,0 +1,25 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+rx_buffer                                                         0160h        8
+tx_buffer                                                         0168h        8
+p                                                                 0170h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+prin                                                              R5           1
+data                                                              R4           1
+status                                                            R7           1
+data1                                                             R6           1
+rx_wr_index                                                       R9           1
+rx_rd_index                                                       R8           1
+rx_counter                                                        R11          1
+rx_buffer_overflow                                                R2.0      1bit
+tx_wr_index                                                       R10          1
+tx_rd_index                                                       R13          1
+tx_counter                                                        R12          1

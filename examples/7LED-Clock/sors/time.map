@@ -1,0 +1,17 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Dig                                                               0160h       10
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+sek                                                               R5           1
+min                                                               R4           1
+hour                                                              R7           1
+Disp6                                                             R6           1
+Disp7                                                             R9           1

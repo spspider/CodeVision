@@ -1,0 +1,4 @@
+LIBRARY USB2LPT
+EXPORTS
+	EnumPropPages
+	CoDeviceInstall

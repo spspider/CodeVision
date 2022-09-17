@@ -1,0 +1,20 @@
+# Writing all output to: D:\My Documents\Programming\Projects_CodeVision\GoProjects\Atmega8_temp\Atmega8_universal_1\Atmega8_temp_scheme\Atmega8_universal.log
+set pad_wire_necking on
+bus diagonal
+fanout 5
+route 100
+clean 2
+route 100 16
+clean 2
+route 100 16
+clean 2
+route 100 16
+clean 2
+route 100 16
+clean 2
+route 100 16
+clean 2
+filter 5
+recorner diagonal
+status_file
+

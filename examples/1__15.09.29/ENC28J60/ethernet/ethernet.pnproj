@@ -1,0 +1,1 @@
+<Project name="Ethernet"><File path="1w.c"></File><File path="1w.h"></File><File path="ds18x20.h"></File><File path="enc28j60.c"></File><File path="enc28j60.h"></File><File path="ip_arp_udp_tcp.c"></File><File path="ip_arp_udp_tcp.h"></File><File path="main.c"></File><File path="Makefile"></File><File path="http.h"></File><File path="net.h"></File></Project>

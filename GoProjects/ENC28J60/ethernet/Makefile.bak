@@ -1,0 +1,50 @@
+# makefile, written by guido socher
+
+MCU=atmega8
+DUDECPUTYPE=m8
+#MCU=atmega328p
+#DUDECPUTYPE=m328
+#
+LOADCMD=avrdude
+LOADARG=-p $(DUDECPUTYPE) -c stk500v2 -e -U flash:w:
+#
+#
+MSG_END = завершено
+MSG_CLEANING = Удаление файлов
+MSG_LINKING = Линкую
+CC=avr-gcc
+OBJCOPY=avr-objcopy
+# optimize for size:
+CFLAGS=-g -mmcu=$(MCU) -Wall -Wstrict-prototypes -Os -mcall-prologues
+#-------------------
+#.PHONY: Ethernet_Termometr 
+
+ 
+all: Ethernet.hex  
+	@echo
+	@echo $(MSG_END)
+#-------------------
+	
+
+Ethernet.hex : Ethernet.out 
+	$(OBJCOPY) -R .eeprom -O  ihex Ethernet.out    
+	avr-size Ethernet.out
+Ethernet.out : main.o ip_arp_udp_tcp.o enc28j60.o 1w.o
+	$(CC) $(CFLAGS) -o Ethernet.out -Wl,-Map,eth_rem_dev_tcp.map main.o ip_arp_udp_tcp.o enc28j60.o 1w.o
+enc28j60.o : enc28j60.c avr_compat.h timeout.h enc28j60.h
+	$(CC) $(CFLAGS) -Os -c enc28j60.c
+1w.o : 1w.c 1w.h
+	$(CC) $(CFLAGS) -Os -c 1w.c	
+ip_arp_udp_tcp.o : ip_arp_udp_tcp.c net.h avr_compat.h enc28j60.h
+	$(CC) $(CFLAGS) -Os -c ip_arp_udp_tcp.c
+main.o : main.c ip_arp_udp_tcp.h avr_compat.h enc28j60.h timeout.h net.h 1w.h
+	$(CC) $(CFLAGS) -Os -c main.c
+
+#------------------
+
+clean:	
+	@echo $(MSG_CLEANING)
+	rm -f *.o *.map *.out Ethernet.hex
+	@echo $(MSG_END)	
+	@echo
+#-------------------

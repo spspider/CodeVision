@@ -1,0 +1,7 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"1.c" LINE:13
+printf DSTACK_USAGE:6 DSTACK_LEVEL:6 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1334
+_print DSTACK_USAGE:20 DSTACK_LEVEL:26 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:376
+_put DSTACK_USAGE:7 DSTACK_LEVEL:33 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:228
+putchar DSTACK_USAGE:1 DSTACK_LEVEL:34 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:163
+usart_rx_isr DSTACK_USAGE:14 DSTACK_LEVEL:48 FILE:"rs232.c" LINE:29
+putchar DSTACK_USAGE:1 DSTACK_LEVEL:49 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:163

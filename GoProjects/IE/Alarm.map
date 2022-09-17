@@ -1,0 +1,35 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Timer_6                                                           0161h        1
+delay_after_alarm                                                 0162h        1
+Timer_4_ext                                                       0163h        1
+Timer_4                                                           0164h        1
+shadow                                                            0165h        1
+Timer_signal_sinus                                                0166h        1
+Timer_signal_sinus_enabled                                        0167h        1
+alarm_recieved                                                    0168h        1
+Count_this_event                                                  0169h        1
+stand_by                                                          016Ah        2
+Timer_wrong_pressed                                               016Ch        2
+Timer_if_long_pressed                                             016Eh        2
+already_enabled                                                   0170h        1
+Prev_Timer_signal_sinus                                           0171h        1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+disable_count                                                     R5           1
+mini_stand_by                                                     R4           1
+Count                                                             R7           1
+alarm                                                             R6           1
+Timer_1                                                           R9           1
+Timer_2                                                           R8           1
+Count_1                                                           R11          1
+pressed                                                           R10          1
+Timer_wrong_pressed_enable                                        R13          1
+Timer_3                                                           R12          1

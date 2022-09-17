@@ -1,0 +1,9 @@
+C:\Program Files\cvavr2\inc\mega8.h
+C:\Program Files\cvavr2\inc\delay.h
+C:\Program Files\cvavr2\inc\spi.h
+C:\Program Files\cvavr2\inc\bcd.h
+allPWM.c
+interrupt.c
+buzzer.c
+IR.c
+while.c

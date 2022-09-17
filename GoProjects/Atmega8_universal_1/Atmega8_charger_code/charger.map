@@ -1,0 +1,55 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+on                                                                0160h        6
+off                                                               0166h        6
+PWM                                                               016Ch        6
+nowPORT                                                           0172h        6
+adc                                                               0178h       12
+Time_sec                                                          0184h        2
+Voltage2                                                          0186h        4
+Temp                                                              018Ah        4
+SetVoltage                                                        018Eh        4
+VoltPower                                                         0192h        4
+VoltBat1                                                          0196h        4
+VoltBat2                                                          019Ah        4
+VoltBat3                                                          019Eh        4
+VoltBat4                                                          01A2h        4
+Voltage2_old                                                      01A6h        4
+Time                                                              01AAh        4
+Voltage2_str                                                      01AEh       20
+SetVoltage_str                                                    01C2h       20
+VoltPower_str                                                     01D6h       20
+Time_str                                                          01EAh       20
+VoltBat1_str                                                      01FEh       20
+VoltBat2_str                                                      0212h       20
+VoltBat3_str                                                      0226h       20
+VoltBat4_str                                                      023Ah       20
+now_is_charge                                                     024Eh        1
+now_is_discharge                                                  024Fh        1
+pressed_PIND_0                                                    0250h        1
+pressed_PIND_1                                                    0251h        1
+_seed                                                             0252h        4
+_base_y                                                           0256h        4
+_lcd_x                                                            025Ah        1
+_lcd_y                                                            025Bh        1
+_lcd_maxx                                                         025Ch        1
+p                                                                 025Dh        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+n                                                                 R5           1
+PWMmax                                                            R4           1
+Timer_read_adc_1                                                  R7           1
+Timer_read_adc_2                                                  R6           1
+Timer_buzzer_active                                               R9           1
+Timer_buzzer_signal                                               R8           1
+Timer_buzzer_silence                                              R11          1
+Timer_buzzer_silence_1                                            R10          1
+Timer_buzzer_active_1                                             R13          1
+LCD_switch                                                        R12          1

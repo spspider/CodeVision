@@ -1,0 +1,36 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+lcd_buffer                                                        0160h       16
+adc                                                               0170h        6
+PWM_width_now                                                     0176h        6
+PWM_width_set                                                     017Ch        6
+PWM_step                                                          0182h        6
+period                                                            0188h        6
+displace                                                          018Eh        3
+Width_C4                                                          0191h        1
+Width_C4_now                                                      0192h        1
+PWM_width_c                                                       0193h        1
+Timer_nan_sec                                                     0194h        1
+Timer_sec                                                         0195h        1
+cycle                                                             0196h        1
+_base_y                                                           0197h        4
+_lcd_x                                                            019Bh        1
+_lcd_y                                                            019Ch        1
+_lcd_maxx                                                         019Dh        1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+freq                                                              R4,R5        2
+och                                                               R6,R7        2
+PWM_width                                                         R9           1
+port                                                              R8           1
+Timer_2                                                           R11          1
+Timer_3                                                           R10          1
+PWM_wide                                                          R13          1
+PWM_max_voltage                                                   R12          1

@@ -1,0 +1,130 @@
+#include <mega8.h>
+#include <delay.h>        // подключаем библиотеку задержки
+int f1, g1;
+//////////////////////////////////////////////////
+interrupt [ADC_INT] void adc_isr(void)                      //стандартное прерывание по ADC от CVAVR
+{
+ADMUX=287+1; //287 - стандартное выражение, 1 - номер порта
+delay_us(10); //для стабилизации
+ADCSRA|=0b1100000;// включение непрерывного определения
+while ((ADCSRA & 0b1100000)==0);//ждем пока идет подсчет
+f1 = ADCH;//заносим данные в f1
+
+ADMUX=287+2;
+delay_us(10);
+ADCSRA|=0b1100000;
+g1 = ADCH;
+while ((ADCSRA & 0b1100000)==0);
+}
+
+//////////////////////////////////////////////////
+// unsigned char sek;        // переменная сек.
+ unsigned char min;        // пересенная мин.
+ unsigned char hour;       // переменная часов
+ unsigned char Dig[10];
+ char Disp6, Disp7;
+
+/*interrupt [EXT_INT0] (void)  // таймер выставлен на частоту 1 Гц
+{
+       PORTD=128;
+       PORTB=253;         // выводим точку
+ 
+ if (PINC.2==0) // если нажата первая кнопка
+  {        
+  
+  //delay_ms(200);
+  }
+  else
+  {
+  g1 = g1/16.6666;
+  }
+  if (PINC.3==0) // если нажата вторая кнопка
+  {
+  min--; // к значению часы вычитаем единицу у
+  }
+}
+*/
+
+// Declare your global variables here
+
+void Display (unsigned int Number) //Ф-ция для разложения десятичного цисла
+{
+  unsigned char Num2, Num3;
+  Num2=0, Num3=0;
+    while (Number >= 10)
+  {
+    Number -= 10;  
+    Num3++; 
+  }
+  Num2 = Number;
+  Disp6 = Dig[Num3];
+  Disp7 = Dig[Num2];
+   
+} 
+void Dig_init() //Массив для отображения цифр на семисегментном индикаторе
+{
+  Dig[0] = 95;   // Сейчас у нас схема с общим катодом
+  Dig[1] = 24;
+  Dig[2] = 109;
+  Dig[3] = 124;
+  Dig[4] = 58;
+  Dig[5] = 118;
+  Dig[6] = 119;
+  Dig[7] = 28;
+  Dig[8] = 127;
+  Dig[9] = 126;
+}
+
+void main(void)
+{
+
+  
+
+PORTB=0x00;
+DDRB=0xFF;
+PORTC=0b11011111;
+DDRC=0x00;
+PORTD=0x00;
+DDRD=0xFF;
+
+
+MCUCR=0x00;
+//ADMUX=FIRST_ADC_INPUT | (ADC_VREF_TYPE & 0xff);
+ADCSRA=0xCC;
+#asm("sei")
+
+Dig_init(); //инициализация массива с двоичным кодом
+
+
+while(1)
+{
+//g1 = g1/16.6666;
+min = g1/16.6666;
+hour = f1/12.5;
+if (min > 14 | min <11)
+{
+PORTC=0b11011111;
+}
+else
+{
+PORTC=0b11111111;
+}
+         // выводим переменные (стробирование)
+        Display(hour); //разложили "часы" на 2 цифры и отобразили по очереди
+        PORTB=254;    //даем лог 0 для катода 1 разряда
+        PORTD=Disp6;  //1 цифра     
+        delay_ms(5);
+        PORTB=253;    //даем лог 0 для катода 2 разряда
+        PORTD=Disp7;   //2 цифра     
+        delay_ms(5);
+        Display(min);  //разложили "минуты" на 2 цифры и отобразили по очереди
+        PORTB=251;      //даем лог 0 для катода 3 разряда
+        PORTD=Disp6;  //3 цифра      
+        delay_ms(5);
+        PORTB=247;    //даем лог 0 для катода 4 разряда
+        PORTD=Disp7;   //4...     
+        delay_ms(5);
+
+}
+}
+

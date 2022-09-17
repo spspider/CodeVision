@@ -1,0 +1,139 @@
+Add with Carry                          ADC    Rd,Rr   0<=d<=31, 0<=r<=31            0001 11rd dddd rrrr
+Add without Carry                       ADD    Rd,Rr   0<=d<=31, 0<=r<=31            0000 11rd dddd rrrr
+Add Immediate to Word                   ADIW   Rd,K    d={24,26,28,30}, 0<=K<=63     1001 0110 KKdd KKKK
+Logical AND                             AND    Rd,Rr   0<=d<=31, 0<=r<=31            0010 00rd dddd rrrr
+Logical AND with Immediate              ANDI   Rd,K    16<=d<=31, 0<=K<=255          0111 KKKK dddd KKKK
+Arithmetic Shift Right                  ASR    Rd      0<=d<=31                      1001 010d dddd 0101
+Bit Clear in SREG                       BCLR   s       0<=s<=7                       1001 0100 1sss 1000
+Bit Load from the T Flag in SREG to a   BLD    Rd,b    0<=d<=31, 0<=b<=7             1111 100d dddd 0bbb
+bit in Register
+Branch if Bit in SREG is Cleared        BRBC   s,k     0<=s<=7, -64<=k<=+63          1111 01kk kkkk ksss
+Branch if Bit in SREG is Set            BRBS   s,k     0<=s<=7, -64<=k<=+63          1111 00kk kkkk ksss
+Branch if Carry Cleared                 BRCC   k       -64<=k<=+63                   1111 01kk kkkk k000
+Branch if Carry Set                     BRCS   k       -64<=k<=+63                   1111 00kk kkkk k000
+Branch if Equal                         BREQ   k       -64<=k<=+63                   1111 00kk kkkk k001
+Branch if Greater or Equal (Signed)     BRGE   k       -64<=k<=+63                   1111 01kk kkkk k100
+Branch if Half Carry Flag is Cleared    BRHC   k       -64<=k<=+63                   1111 01kk kkkk k101
+Branch if Half Carry Flag is Set        BRHS   k       -64<=k<=+63                   1111 00kk kkkk k101
+Branch if Global Interrupt is Disabled  BRID   k       -64<=k<=+63                   1111 01kk kkkk k111
+Branch if Global Interrupt is Enabled   BRIE   k       -64<=k<=+63                   1111 00kk kkkk k111
+Branch if Lower (Unsigned)              BRLO   k       -64<=k<=+63                   1111 00kk kkkk k000
+Branch if Less Then (Signed)            BRLT   k       -64<=k<=+63                   1111 00kk kkkk k100
+Branch if Minus                         BRMI   k       -64<=k<=+63                   1111 00kk kkkk k010
+Branch if Not Equal                     BRNE   k       -64<=k<=+63                   1111 01kk kkkk k001
+Branch if Plus                          BRPL   k       -64<=k<=+63                   1111 01kk kkkk k010
+Branch if Same or Higher (Unsigned)     BRSH   k       -64<=k<=+63                   1111 01kk kkkk k000
+Branch if T Flag is Cleared             BRTC   k       -64<=k<=+63                   1111 01kk kkkk k110
+Branch if T Flag is Set                 BRTS   k       -64<=k<=+63                   1111 00kk kkkk k110
+Branch if Overflow Cleared              BRVC   k       -64<=k<=+63                   1111 01kk kkkk k011
+Branch if Overflow Set                  BRVS   k       -64<=k<=+63                   1111 00kk kkkk k011
+Bit Set in SREG                         BSET   s       0<=s<=7                       1001 0100 0sss 1000
+Bit Store from Bit in Register to       BST    Rd,b    0<=d<=31, 0<=b<=7             1111 101d dddd 0bbb
+T flag in SREG
+Long Call to a Subroutine               CALL   k       0<=k<64K, 0<=k<4M             1001 010k kkkk 111k  kkkk kkkk kkkk kkkk
+Clear Bit in I/O Register               CBI    A,b     0<=A<=31, 0<=b<=7             1001 1000 AAAA Abbb
+Clear Bits in Register                  CBR    Rd,K    16<=d<=31, 0<=K<=255          0111 KKKK dddd KKKK
+Clear Carry Flag                        CLC                                          1001 0100 1000 1000
+Clear Half Carry Flag                   CLH                                          1001 0100 1101 1000
+Clear Global Interrupt Flag             CLI                                          1001 0100 1111 1000
+Clear Negative Flag                     CLN                                          1001 0100 1010 1000
+Clear Register                          CLR    Rd      0<=d<=31                      0010 01dd dddd dddd
+Clear Signed Flag                       CLS                                          1001 0100 1100 1000
+Clear T Flag                            CLT                                          1001 0100 1110 1000
+Clear Overflow Flag                     CLV                                          1001 0100 1011 1000
+Clear Zero Flag                         CLZ                                          1001 0100 1001 1000
+One's Complement                        COM    Rd      0<=d<=31                      1001 010d dddd 0000
+Compare                                 CP     Rd,Rr   0<=d<=31, 0<=r<=31            0001 01rd dddd rrrr
+Compare with Carry                      CPC    Rd,Rr   0<=d<=31, 0<=r<=31            0000 01rd dddd rrrr
+Compare with Immediate                  CPI    Rd,K    16<=d<=31, 0<=K<=255          0011 KKKK dddd KKKK
+Compare Skip if Equal                   CPSE   Rd,Rr   0<=d<=31, 0<=r<=31            0001 00rd dddd rrrr
+Decrement                               DEC    Rd      0<=d<=31                      1001 010d dddd 1010
+Extended Indirect Call to Subroutine    EICALL                                       1001 0101 0001 1001
+Extended Indirect Jump                  EIJMP                                        1001 0100 0001 1001
+Extended Load Program Memory            ELPM                                         1001 0101 1101 1000
+                                        ELPM   Rd,Z    0<=d<=31                      1001 000d dddd 0110
+                                        ELPM   Rd,Z+   0<=d<=31                      1001 000d dddd 0111
+Exclusive OR                            EOR    Rd,Rr   0<=d<=31, 0<=r<=31            0010 01rd dddd rrrr
+Extended Store Program Memory           ESPM                                         1001 0101 1111 1000
+Fractional Multiply Unsigned            FMUL   Rd,Rr   16<=d<=23, 16<=r<=23          0000 0011 0ddd 1rrr
+Fractional Multiply Signed              FMULS  Rd,Rr   16<=d<=23, 16<=r<=23          0000 0011 1ddd 0rrr
+Fractional Multiply Signed with         FMULSU Rd,Rr   16<=d<=23, 16<=r<=23          0000 0011 1ddd 1rrr
+Unsigned
+Indirect Call to Subroutine             ICALL                                        1001 0101 0000 1001
+Indirect Jump                           IJMP                                         1001 0100 0000 1001
+Load an I/O Location to Register        IN     Rd,A    0<=d<=31, 0<=A<=63            1011 0AAd dddd AAAA
+Increment                               INC    Rd      0<=d<=31                      1001 010d dddd 0011
+Jump                                    JMP    k       0<=k<4M                       1001 010k kkkk 110k  kkkk kkkk kkkk kkkk
+Load Indirect from data space to        LD     Rd,X    0<=d<=31                      1001 000d dddd 1100
+Register using Index X                  LD     Rd,X+   0<=d<=31                      1001 000d dddd 1101
+                                        LDD    Rd,-X   0<=d<=31                      1001 000d dddd 1110
+Load Indirect from data space to        LD     Rd,Y    0<=d<=31                      1000 000d dddd 1000
+Register using Index Y                  LD     Rd,Y+   0<=d<=31                      1001 000d dddd 1001
+                                        LD     Rd,-Y   0<=d<=31                      1001 000d dddd 1010
+                                        LDD    Rd,Y+q  0<=d<=31, 0<=q<=63            10q0 qq0d dddd 1qqq
+Load Indirect from data space to        LD     Rd,Z    0<=d<=31                      1000 000d dddd 0000
+Register using Index Z                  LD     Rd,Z+   0<=d<=31                      1001 000d dddd 0001
+                                        LD     Rd,-Z   0<=d<=31                      1001 000d dddd 0010
+                                        LDD    Rd,Z+q  0<=d<=31, 0<=q<=63            10q0 qq0d dddd 0qqq
+Load Immediate                          LDI    Rd,K    16<=d<=31, 0<=K<=255          1110 KKKK dddd KKKK
+Load Direct from data space             LDS    Rd,k    0<=d<=31, 0<=k<=65535         1001 000d dddd 0000  kkkk kkkk kkkk kkkk
+Load Program Memory                     LPM                                          1001 0101 1100 1000
+                                        LPM    Rd,Z    0<=d<=31                      1001 000d dddd 0100
+                                        LPM    Rd,Z+   0<=d<=31                      1001 000d dddd 0101
+Logical Shift Left                      LSL    Rd      0<=d<=31                      0000 11dd dddd dddd
+Logical Shift Right                     LSR    Rd      0<=d<=31                      1001 010d dddd 0110
+Copy Register                           MOV    Rd,Rr   0<=d<=31, 0<=r<=31            0010 11rd dddd rrrr
+Copy Register Word                      MOVW   Rd,Rr   d={0,2,..,30}, r={0,2,..,30}  0000 0001 dddd rrrr
+Multiply Unsigned                       MUL    Rd,Rr   0<=d<=31, 0<=r<=31            1001 11rd dddd rrrr
+Multiply Signed                         MULS   Rd,Rr   16<=d<=31, 16<=r<=31          0000 0010 dddd rrrr
+Multiply Signed with Unsigned           MULSU  Rd,Rr   16<=d<=23, 16<=r<=23          0000 0011 0ddd 0rrr
+Two's Complement                        NEG    Rd      0<=d<=31                      1001 010d dddd 0001
+No Operation                            NOP                                          0000 0000 0000 0000
+Logical OR                              OR     Rd,Rr   0<=d<=31, 0<=r<=31            0010 10rd dddd rrrr
+Logical OR with Immediate               ORI    Rd,K    16<=d<=31, 0<=K<=255          0110 KKKK dddd KKKK
+Store Register to I/O Location          OUT    A,Rr    0<=r<=31, 0<=A<=63            1011 1AAr rrrr AAAA
+Pop Register from Stack                 POP    Rd      0<=d<=31                      1001 000d dddd 1111
+Push Register on Stack                  PUSH   Rr      0<=r<=31                      1001 001d dddd 1111
+Relative Call to Subroutine             RCALL  k       -2K<=k<2K                     1101 kkkk kkkk kkkk
+Return from Subroutine                  RET                                          1001 0101 0000 1000
+Return from Interrupt                   RETI                                         1001 0101 0001 1000
+Relative Jump                           RJMP   k       -2K<=k<2K                     1100 kkkk kkkk kkkk
+Rotate Left trough Carry                ROL    Rd      0<=d<=31                      0001 11dd dddd dddd
+Rotate Right trough Carry               ROR    Rd      0<=d<=31                      1001 010d dddd 0111
+Subtract with Carry                     SBC    Rd,Rr   0<=d<=31, 0<=r<=31            0000 10rd dddd rrrr
+Subtract Immediate with Carry           SBCI   Rd,K    16<=d<=31, 0<=K<=255          0100 KKKK dddd KKKK
+Set Bit in I/O Register                 SBI    A,b     0<=A<=31, 0<=b<=7             1001 1010 AAAA Abbb
+Skip if Bit I/O Register is Cleared     SBIC   A,b     0<=A<=31, 0<=b<=7             1001 1001 AAAA Abbb
+Skip if Bit I/O Register is Set         SBIS   A,b     0<=A<=31, 0<=b<=7             1001 1011 AAAA Abbb
+Subtract Immediate from Word            SBIW   Rd,K    d={24,26,28,30}, 0<=K<=63     1001 0111 KKdd KKKK
+Set Bits in Register                    SBR    Rd,K    16<=d<=31, 0<=K<=255          0110 KKKK dddd KKKK
+Skip if Bit in Register is Cleared      SBRC   Rr,b    0<=r<=31, 0<=b<=7             1111 110r rrrr 0bbb
+Skip if Bit in Register is Set          SBRS   Rr,b    0<=r<=31, 0<=b<=7             1111 111r rrrr 0bbb
+Set Carry Flag                          SEC                                          1001 0100 0000 1000
+Set Half Carry Flag                     SEH                                          1001 0100 0101 1000
+Set Global Interrupt Flag               SEI                                          1001 0100 0111 1000
+Set Negative Flag                       SEN                                          1001 0100 0010 1000
+Set all bits in Register                SER    Rd      16<=d<=31                     1110 1111 dddd 1111
+Set Signed Flag                         SES                                          1001 0100 0100 1000
+Set T Flag                              SET                                          1001 0100 0110 1000
+Set Overflow Flag                       SEV                                          1001 0100 0011 1000
+Set Zero Flag                           SEZ                                          1001 0100 0001 1000
+SLEEP                                   SLEEP                                        1001 0101 1000 1000
+Store Program Memory                    SPM                                          1001 0101 1110 1000
+Store Indirect from Register to data    ST     X,Rr    0<=r<=31                      1001 001r rrrr 1100
+space using Index X                     ST     X+,Rr   0<=r<=31                      1001 001r rrrr 1101
+                                        ST     -X,Rr   0<=r<=31                      1001 001r rrrr 1110
+Store Indirect from Register to data    ST     Y,Rr    0<=r<=31                      1000 001r rrrr 1000
+space Index Y                           ST     Y+,Rr   0<=r<=31                      1001 001r rrrr 1001
+                                        ST     -Y,Rr   0<=r<=31                      1001 001r rrrr 1010
+                                        STD    Y+q,Rr  0<=r<=31, 0<=q<=63            10q0 qq1r rrrr 1qqq
+Store Indirect from Register to data    ST     Z,Rr    0<=r<=31                      1000 001r rrrr 0000
+space Index Z                           ST     Z+,Rr   0<=r<=31                      1001 001r rrrr 0001
+                                        ST     -Z,Rr   0<=r<=31                      1001 001r rrrr 0010
+                                        STD    Z+q,Rr  0<=r<=31, 0<=q<=63            10q0 qq1r rrrr 0qqq
+Store Direct to data space              STS    k,Rr    0<=r<=31, 0<=k<=65535         1001 001d dddd 0000  kkkk kkkk kkkk kkkk
+Subtract without Carry                  SUB    Rd,Rr   0<=d<=31, 0<=r<=31            0001 10rd dddd rrrr
+Subtract Immediate                      SUBI   Rd,K    16<=d<=31, 0<=K<=255          0101 KKKK dddd KKKK
+Swap Nibbles                            SWAP   Rd      0<=d<=31                      1001 010d dddd 0010
+Test for Zero or Minus                  TST    Rd      0<=d<=31                      0010 00dd dddd dddd
+Watchdog Reset                          WDR                                          1001 0101 1010 1000

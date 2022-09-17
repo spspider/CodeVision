@@ -1,0 +1,191 @@
+;#include <mega8.h>
+;PCODE: $00000000 VOL: 0
+	#ifndef __SLEEP_DEFINED__
+;PCODE: $00000001 VOL: 0
+	#define __SLEEP_DEFINED__
+;PCODE: $00000002 VOL: 0
+	.EQU __se_bit=0x80
+;PCODE: $00000003 VOL: 0
+	.EQU __sm_mask=0x70
+;PCODE: $00000004 VOL: 0
+	.EQU __sm_powerdown=0x20
+;PCODE: $00000005 VOL: 0
+	.EQU __sm_powersave=0x30
+;PCODE: $00000006 VOL: 0
+	.EQU __sm_standby=0x60
+;PCODE: $00000007 VOL: 0
+	.EQU __sm_ext_standby=0x70
+;PCODE: $00000008 VOL: 0
+	.EQU __sm_adc_noise_red=0x10
+;PCODE: $00000009 VOL: 0
+	.SET power_ctrl_reg=mcucr
+;PCODE: $0000000A VOL: 0
+	#endif
+;PCODE: $0000000B VOL: 0
+;PCODE: $0000000C VOL: 0
+;
+;// Standard Input/Output functions
+;#include <stdio.h>
+;//unsigned int adc1[2],Timer6;
+;unsigned char Timer1,Timer4,c1,Timer2,Timer3,bat,Timer5,a1,Timer7,aStop,Timer8;
+;unsigned char adc1[2],Timer6;
+;// Timer 0 overflow interrupt service routine
+;#include <INT.c>
+;interrupt [TIM0_OVF] void timer0_ovf_isr(void)
+; 0000 0009 {
+
+	.CSEG
+;PCODE: $0000000D VOL: 0
+;PCODE: $0000000E VOL: 0
+;//#include <beep.c>
+;//Timer1++;
+;Timer8++;
+;PCODE: $0000000F VOL: 0
+;PCODE: $00000010 VOL: 0
+;PCODE: $00000011 VOL: 0
+;
+;/*
+;  if (Timer1>=255){Timer1=0;Timer2++;Timer3++;Timer4++;
+;    }
+;  if(Timer3>=5){
+;
+;  if((adc1[0]<300)&&(adc1[0]>=500)){PORTD^=0b10000000;Timer3=0;a1=1;}
+;  if((adc1[1]<300)&&(adc1[1]>=500)){PORTD^=0b00100000;Timer3=0;a1=1;}
+;  Timer3=0;
+;  }// мигание лампы акк разряжен
+;
+;  if(Timer4>=10){
+;  if(adc1[0]<500){PORTD^=0b10000000;Timer4=0;}
+;  if(adc1[1]<500){PORTD^=0b00100000;Timer4=0;}
+;  Timer4=0;
+;  }// мигание лампы
+;
+;
+;  if(Timer2>=20){
+;  PORTB&=~0b00000011;
+;  }
+;  if(Timer2>=22){
+;  switch (bat){
+;  case 1: {bat=0;break;}
+;  case 0: {bat=1;break;}
+;  }
+;  //bat=1;
+;  c1=1;
+;  }
+;  if(Timer2>=25){
+;  if(adc1[0]<500){PORTB|=0b00000001;Timer2=0;}
+;  if(adc1[1]<500){PORTB|=0b00000010;Timer2=0;}
+;
+;  if(adc1[0]>500){PORTB&=~0b00000001;PORTD|=0b10000000;Timer2=0;a1=2;aStop=1;}
+;  if(adc1[1]>500){PORTB&=~0b00000010;PORTD|=0b00100000;Timer2=0;a1=2;aStop=1;}
+;  Timer2=0;
+;
+;  printf("bat0=%d bat1=%d#",adc1[0],adc1[1]);
+;  }
+;  */
+;}                  //заряд завершен - aStop=0;
+;PCODE: $00000012 VOL: 0
+;PCODE: $00000013 VOL: 0
+;PCODE: $00000014 VOL: 0
+;
+;#include <delay.h>
+;
+;// Read the AD conversion result
+;//#include <ADC.c>
+;
+;// Declare your global variables here
+;
+;void main(void)
+; 0000 0013 {
+;PCODE: $00000015 VOL: 0
+; 0000 0014 
+; 0000 0015 PORTB=0b00000000;
+;PCODE: $00000016 VOL: 0
+;PCODE: $00000017 VOL: 0
+; 0000 0016 DDRB=0b01000011;
+;PCODE: $00000018 VOL: 0
+;PCODE: $00000019 VOL: 0
+; 0000 0017 PORTC=0x00;
+;PCODE: $0000001A VOL: 0
+;PCODE: $0000001B VOL: 0
+; 0000 0018 DDRC=0x00;
+;PCODE: $0000001C VOL: 0
+;PCODE: $0000001D VOL: 0
+; 0000 0019 PORTD=0x00;
+;PCODE: $0000001E VOL: 0
+;PCODE: $0000001F VOL: 0
+; 0000 001A DDRD=0b10101100;
+;PCODE: $00000020 VOL: 0
+;PCODE: $00000021 VOL: 0
+; 0000 001B 
+; 0000 001C TCCR0=0x01;
+;PCODE: $00000022 VOL: 0
+;PCODE: $00000023 VOL: 0
+; 0000 001D TCNT0=0x00;
+;PCODE: $00000024 VOL: 0
+;PCODE: $00000025 VOL: 0
+; 0000 001E 
+; 0000 001F 
+; 0000 0020 // Timer(s)/Counter(s) Interrupt(s) initialization
+; 0000 0021 TIMSK|=0x01;
+;PCODE: $00000026 VOL: 0
+;PCODE: $00000027 VOL: 0
+;PCODE: $00000028 VOL: 0
+;PCODE: $00000029 VOL: 0
+; 0000 0022 
+; 0000 0023 //UCSRA=0x00;
+; 0000 0024 //UCSRB=0x18;
+; 0000 0025 //UCSRC=0x86;
+; 0000 0026 //UBRRH=0x00;
+; 0000 0027 //UBRRL=0x33;
+; 0000 0028 
+; 0000 0029 // Analog Comparator initialization
+; 0000 002A // Analog Comparator: Off
+; 0000 002B // Analog Comparator Input Capture by Timer/Counter 1: Off
+; 0000 002C ACSR=0x80;
+;PCODE: $0000002A VOL: 0
+;PCODE: $0000002B VOL: 0
+; 0000 002D SFIOR=0x00;
+;PCODE: $0000002C VOL: 0
+;PCODE: $0000002D VOL: 0
+; 0000 002E 
+; 0000 002F // ADC initialization
+; 0000 0030 // ADC Clock frequency: 1000,000 kHz
+; 0000 0031 // ADC Voltage Reference: AREF pin
+; 0000 0032 //ADMUX=ADC_VREF_TYPE & 0xff;
+; 0000 0033 ADCSRA=0x83;
+;PCODE: $0000002E VOL: 0
+;PCODE: $0000002F VOL: 0
+; 0000 0034 
+; 0000 0035 // Global enable interrupts
+; 0000 0036 #asm("sei")
+;PCODE: $00000030 VOL: 0
+	sei
+;PCODE: $00000031 VOL: 0
+; 0000 0037 
+; 0000 0038 while (1)
+;PCODE: $00000032 VOL: 0
+; 0000 0039       {
+; 0000 003A       if (Timer8==200){PORTD^=0b00001000;Timer8=0;}
+;PCODE: $00000033 VOL: 0
+;PCODE: $00000034 VOL: 0
+;PCODE: $00000035 VOL: 0
+;PCODE: $00000036 VOL: 0
+;PCODE: $00000037 VOL: 0
+;PCODE: $00000038 VOL: 0
+;PCODE: $00000039 VOL: 0
+;PCODE: $0000003A VOL: 0
+;PCODE: $0000003B VOL: 0
+;PCODE: $0000003C VOL: 0
+; 0000 003B       // Place your code here
+; 0000 003C //      if (c1==1){c1=0;adc1[bat] = read_adc(bat);} //проверка уровня заряда
+; 0000 003D 
+; 0000 003E 
+; 0000 003F       };
+;PCODE: $0000003D VOL: 0
+;PCODE: $0000003E VOL: 0
+;PCODE: $0000003F VOL: 0
+; 0000 0040 }
+;PCODE: $00000040 VOL: 0
+;PCODE: $00000041 VOL: 0
+;PCODE: $00000042 VOL: 0

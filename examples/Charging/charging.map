@@ -1,0 +1,25 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+Timer8                                                            0160h        1
+adc1                                                              0161h        2
+Timer6                                                            0163h        1
+p                                                                 0164h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+Timer1                                                            R5           1
+Timer4                                                            R4           1
+c1                                                                R7           1
+Timer2                                                            R6           1
+Timer3                                                            R9           1
+bat                                                               R8           1
+Timer5                                                            R11          1
+a1                                                                R10          1
+Timer7                                                            R13          1
+aStop                                                             R12          1

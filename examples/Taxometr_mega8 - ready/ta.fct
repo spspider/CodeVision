@@ -1,0 +1,6 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"Taxo_mega8_1.c" LINE:48
+printf DSTACK_USAGE:6 DSTACK_LEVEL:6 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:1334
+_print DSTACK_USAGE:20 DSTACK_LEVEL:26 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:376
+_put DSTACK_USAGE:7 DSTACK_LEVEL:33 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:228
+putchar DSTACK_USAGE:1 DSTACK_LEVEL:34 FILE:"C:\Program Files\cvavr2\lib\stdio.lib" LINE:163
+timer1_ovf_isr DSTACK_USAGE:6 DSTACK_LEVEL:40 FILE:"Taxo_mega8_1.c" LINE:33

@@ -1,0 +1,109 @@
+/*****************************************************
+Project : 
+Version : 
+Date    : 25.07.2009
+Author  : F4CG                            
+Company : F4CG                            
+Comments: 
+
+
+Chip type           : ATmega8
+Program type        : Application
+Clock frequency     : 8.000000 MHz
+Memory model        : Small
+External SRAM size  : 0
+Data Stack size     : 256
+*****************************************************/
+
+#include <mega8.h>   //Подключение
+#include <stdio.h>   //           внешнх 
+#include <delay.h>   //                  библиотек
+#include <math.h>
+//Объвление переменных
+unsigned long int M, M0, M1;                     
+unsigned int OVF_T0=0, OVF_T1=0;
+unsigned int Ntakt, Mx;                       // количество тиков тактовой и измеряемой частоты
+
+//Прерывание по переполнению Timer/Counter 0
+interrupt [TIM0_OVF] void timer0_ovf_isr(void)
+{
+OVF_T0++;                                     
+}
+//Прерывание по переполнению Timer/Counter 1
+interrupt [TIM1_OVF] void timer1_ovf_isr(void)
+{
+OVF_T1++;                                     
+}
+
+//Прерывание по захвату Timer/Counter 1
+interrupt [TIM1_CAPT] void timer1_capt_isr(void)
+{
+Mx=TCNT0;                                     // Значение регистра TCNT0 переписывается в переменную
+TIMSK&=0b11011111;                                  // Запрет прерывания по захвату
+} 
+
+
+/********************** Основная программа ******************************/
+
+void main(void)
+{
+
+UCSRA=0x00; 
+UCSRB=0b11000; 
+UCSRC=0b10000110; 
+UBRRH=0x00; 
+UBRRL=0x19;
+
+PORTC=0x00;
+DDRC=0x00011111;
+PORTB=0x00;
+DDRB=0b00111110;
+PORTD=0x00;
+DDRD=0b11101111;
+  
+/************ Инициализация таймеров-счетчиков *************************/
+
+//Инициализация Timer/Counter 0
+TCCR0=0b00000111; //запуск таймера, делитель таймера
+TCNT0=0x00;//от чего пуск
+
+//Инициализация Timer/Counter 1
+TCCR1A=0x00;
+TCCR1B=0b01000001;
+TCNT1H=0x00;
+TCNT1L=0x00;
+ICR1H=0x00;
+ICR1L=0x00;
+OCR1AH=0x00;
+OCR1AL=0x00;
+OCR1BH=0x00;
+OCR1BL=0x00;
+
+// Инициализация прерываний таймеров/счетчиков
+TIMSK=0x05;
+
+/****************** Бесконечный цикл **********************************/
+while (1)                                     
+{
+#asm("cli")
+
+OVF_T1 = 0;                                   
+OVF_T0 = 0;                                 
+TCNT0 = TCNT1 = 0;
+#asm("sei")                                   // Разрешения прерываний
+TIMSK|=0b100000;                                  // Разрешили захват
+while ((TIMSK&0x20)==0x20){}                  // Ожидание прерывания по захвату
+M0=(((unsigned long int)(OVF_T0))<<16)+Mx;     // Расчет общего количества тиков входной частоты
+delay_ms(200);                               // Задержка 
+TIMSK|=0x20;                                  // Разрешили захват
+while ((TIMSK&0x20)==0x20){}                  // Ожидание прерывания по захвату
+M=(((unsigned long int)(OVF_T0))<<16)+Mx;      // Расчет общего количества тиков входной частоты
+M1=M-M0;                                       // Расчет количества тиков входной частоты за время измерения
+
+printf("M %d\n\r ",M1);
+//printf("M %d\n\r ",Mx);
+
+
+ } // конец бесконечного цикла
+
+}

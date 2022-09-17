@@ -1,0 +1,372 @@
+#include <windows.h>
+#define IDC_STATIC -1
+
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+100 DIALOG DISCARDABLE  0, 0, 254, 210
+STYLE DS_MODALFRAME|WS_POPUP|WS_CAPTION
+CAPTION "Ä£Äâ¶Ë¿Ú"
+FONT 8, "MS Shell Dlg"
+{
+    ICON            100,-1,12,8,20,20
+    LTEXT           "Ä£Äâ¶Ë¿ÚµØÖ·£º",IDHELP,56,8,57,8
+    COMBOBOX        100,142,6,100,100,CBS_DROPDOWN|WS_VSCROLL|WS_TABSTOP
+    LTEXT           "LPT ÔöÇ¿Ä£Ê½£º",-1,56,26,56,8
+    COMBOBOX        102,142,24,100,100,CBS_DROPDOWNLIST|WS_VSCROLL|WS_TABSTOP
+    GROUPBOX        "ÓÃÓÚINºÍOUTÖ¸ÁîµÄ²¶»ñ·½·¨",-1,10,38,234,64
+    CONTROL         "µ÷ÊÔ¼Ä´æÆ÷²¶»ñ",10,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,50,173,11
+    LTEXT           "£¨²¶»ñËùÓÐIN¡¢OUTÖ¸Áî£©",-1,28,62,173,11,SS_NOPREFIX
+    CONTROL         "&READ_PORT_UCHAR / WRITE_PORT_UCHAR ×ªÏò",11,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,76,205,11
+    LTEXT           "£¨¸ü¿ì¡¢¸üÎÈ¶¨£©",-1,28,88,173,11,SS_NOPREFIX
+    GROUPBOX        "¹¤×÷Ñ¡Ïî",-1,10,108,234,88
+    CONTROL         "»ØÐ´OUTÖ¸Áî",12,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,120,63,10
+    LTEXT           "£¨Á¬½Ó¶à¸öOUTÖ¸Áî¸øÒ»¸öUSB°ü£©",-1,28,130,194,11,SS_NOPREFIX
+    RTEXT           "ÉèÖÃÑÓÊ±·¢°üÊ±¼ä",-1,28,144,132,8
+    EDITTEXT        101,164,142,50,14,ES_AUTOHSCROLL|ES_NUMBER
+    LTEXT           "ms",-1,218,144,10,8
+    CONTROL         "»Ø¶ÁÊä³ö¼Ä´æÆ÷Ó³Ïñ",13,"Button",BS_AUTO3STATE|WS_TABSTOP,16,162,88,10
+    PUSHBUTTON      "¸ü¾«È·¡­",103,162,160,68,14
+    LTEXT           "£¨·µ»Ø×îºóINÖ¸ÁîÖµ£»µ±Êä³ö±»Íâ²¿Ó²¼þÀ­µÍÊ±ÎÞÐ§£©",-1,28,174,194,20,SS_NOPREFIX
+}
+
+101 DIALOG DISCARDABLE  0, 0, 254, 210
+STYLE DS_MODALFRAME|WS_POPUP|WS_CAPTION
+CAPTION "Í³¼Æ±í"
+FONT 8, "MS Shell Dlg"
+{
+    GROUPBOX        "µ÷ÊÔ¼Ä´æÆ÷²¶»ñ",IDC_STATIC,2,3,250,111
+    PUSHBUTTON      "ÇåÁã",106,194,16,50,14
+    RTEXT           "OUT Ö¸Áî£º",IDC_STATIC,10,19,91,8
+    EDITTEXT        100,108,16,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "IN Ö¸Áî£º",IDC_STATIC,10,36,91,8
+    EDITTEXT        101,108,34,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "Ä£Äâ´íÎó£º",IDC_STATIC,10,52,91,8
+    EDITTEXT        102,108,50,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    LTEXT           "£¨²»Ö§³ÖIN / OUT Ö¸Áî£¬ÈçOUTSB£©",IDC_STATIC,152,44,98,18,SS_NOPREFIX
+    RTEXT           "µ÷ÊÔ¼Ä´æÆ÷¶ªÊ§£º",IDC_STATIC,10,68,91,8
+    EDITTEXT        103,108,66,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    LTEXT           "£¨Î´ÖªÇý¶¯Ð´Ïòµ÷ÊÔ¼Ä´æÆ÷£©",IDC_STATIC,152,66,98,18,SS_NOPREFIX
+    CTEXT           "100msÄÚºË¶¨Ê±Æ÷¿É¼ì²âµ½¸²¸Çµ÷ÊÔ¼Ä´æÆ÷",IDC_STATIC,10,86,238,8
+    RTEXT           "ÉèÖÃ£º",IDC_STATIC,8,100,93,8,WS_DISABLED
+    CONTROL         "SPP",108,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,108,100,30,10
+    CONTROL         "EPP (+4)",109,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,142,100,44,10
+    CONTROL         "ECP (+400h)",110,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,190,100,56,10
+    GROUPBOX        "READ_PORT_UCHAR / WRITE_PORT_UCHAR ×ªÏò",IDC_STATIC,2,116,250,48
+    PUSHBUTTON      "ÇåÁã",107,194,128,50,14
+    RTEXT           "OUT Ö¸Áî£º",IDC_STATIC,10,132,91,8
+    EDITTEXT        104,108,129,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "IN Ö¸Áî£º",IDC_STATIC,10,149,91,8
+    EDITTEXT        105,108,147,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    PUSHBUTTON      "·¢³öÒ»¸öINÖ¸Áî",111,10,166,98,12,BS_FLAT|WS_DISABLED
+    PUSHBUTTON      "¸üÐÂ¹Ì¼þ¡­",112,148,166,95,12,BS_FLAT|WS_DISABLED
+    CTEXT           "haftmann#software£¬¿ªÄ·ÄáË¹¹¤Òµ´óÑ§£¬\nµç×ÓÓëÐÅÏ¢¼¼ÊõÑ§Ôº£¬\n²âÁ¿Óë´«¸ÐÆ÷¼¼ÊõÑ§½ÌÊÚ£¬2005Äê3ÔÂ",IDC_STATIC,2,180,250,26,NOT WS_GROUP
+}
+
+102 DIALOG DISCARDABLE  0, 0, 178, 58
+STYLE DS_MODALFRAME|WS_CAPTION|WS_SYSMENU
+CAPTION "»Ø¶ÁÊä³ö¼Ä´æÆ÷"
+FONT 8, "MS Shell Dlg"
+{
+    CONTROL         "Êý¾Ý¿Ú (»ùÖ· + 0)",20,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,6,74,10
+    CONTROL         "¿ØÖÆ¿Ú (»ùÖ· + 2)",21,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,20,74,10
+    CONTROL         "ÆäËû¿Ú (ECP, EPP)",22,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,36,78,10
+    DEFPUSHBUTTON   "È·¶¨",IDOK,122,6,50,14
+    PUSHBUTTON      "È¡Ïû",IDCANCEL,122,24,50,14
+}
+
+
+103 DIALOG DISCARDABLE  0, 0, 316, 142
+STYLE DS_MODALFRAME|WS_POPUP
+FONT 8, "MS Shell Dlg"
+{
+    LTEXT           "Ä£Äâ¶Ë¿ÚµØÖ·£º",IDC_STATIC,46,7,82,8
+    COMBOBOX        100,132,6,100,100,CBS_DROPDOWN|WS_VSCROLL|WS_TABSTOP
+    ICON            0,10,20,22,20,20
+    LTEXT           "´íÎóµÄÉèÖÃ¿ÉÄÜËð»µÄúµÄ¼ÆËã»ú»òÆÆ»µÓ²ÅÌÊý¾Ý£¡½¨ÒéÊ¹ÓÃÏÂÀ­²Ëµ¥ÖÐÌá¹©µÄÑ¡Ïî¡£",IDC_STATIC,46,24,252,22,SS_NOPREFIX
+    GROUPBOX        "",IDC_STATIC,8,46,300,60
+    ICON            100,IDC_STATIC,20,66,20,20
+    LTEXT           "LPT ÔöÇ¿Ä£Ê½£º",IDC_STATIC,46,60,84,8
+    COMBOBOX        102,132,59,100,100,CBS_DROPDOWNLIST|WS_VSCROLL|WS_TABSTOP
+    LTEXT           "LPT ÔöÇ¿Ä£Ê½ÄÜ¹»²¶»ñ¸ü¶à¶Ë¿ÚµØÖ·¡£¸Ã¹¦ÄÜ²»³£ÓÃ£¬Ñ¡ÔñSPP ¼´¿É¡£",IDC_STATIC,46,76,250,20,SS_NOPREFIX
+    ICON            0,11,20,112,20,20
+    LTEXT           "ÕâÐ©ÉèÖÃ¿ÉÒÔÒÔºóÔÚWindowsÉè±¸¹ÜÀíÆ÷ÖÐÉèÖÃ¡£µã»÷ USB2LPT Éè±¸£¬´ò¿ªÊôÐÔ¡£",IDC_STATIC,46,114,252,20,SS_NOPREFIX
+}
+
+STRINGTABLE DISCARDABLE 
+{
+    16                      "Ê¹ÓÃÕâ¸ö·Ç±ê×¼¶Ë¿ÚµØÖ·»áËð»µÄúµÄ¼ÆËã»ú!"
+    17                      "¶Ë¿ÚµØÖ·²»ÊÇÓÐÐ§16½øÖÆÊý£¡"
+    18                      "¶Ë¿ÚµØÖ·´íÎó£ºÌ«¶Ì£¬Ì«³¤£¬²»ÄÜ±»4Õû³ý»òÕ¼ÓÃIDEµØÖ·£¡"
+    19                      "¶Ë¿ÚµØÖ·²»ÄÜ±»8Õû³ý£¬ÎÞ·¨Ä£ÄâEPPÄ£Ê½£¡"
+    20                      "ÑÓÊ±Ê±¼ä´íÎó£¨²»µÃ³¬¹ý 1000 ms£©¡£"
+    21                      "ÉèÖÃÄ£Äâ¶Ë¿ÚµØÖ·"
+    22                      "¶Ë¿ÚµØÖ·±ØÐëºÍÓ¦ÓÃÈí¼þÖÐµÄÉèÖÃÒ»ÖÂ¡£"
+}
+
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+100 DIALOG DISCARDABLE  0, 0, 254, 210
+STYLE DS_MODALFRAME|WS_POPUP|WS_CAPTION
+CAPTION "Emulation"
+FONT 8, "MS Shell Dlg"
+{
+    ICON            100,IDC_STATIC,12,8,20,20
+    LTEXT           "Emulierte Port&adresse:",IDC_STATIC,56,8,78,8
+    COMBOBOX        100,142,6,100,100,CBS_DROPDOWN|WS_VSCROLL|WS_TABSTOP
+    LTEXT           "LPT-&Erweiterung:",IDC_STATIC,56,26,78,8
+    COMBOBOX        102,142,24,100,100,CBS_DROPDOWNLIST|WS_VSCROLL|WS_TABSTOP
+    GROUPBOX        "Anzapfungsmethode für IN- und OUT-Befehle",IDC_STATIC,10,38,234,64
+    CONTROL         "mittels &Debugregister",10,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,50,173,11
+    LTEXT           "(erfasst alle Arten von IN- und OUT-Befehlen)",IDC_STATIC,28,62,173,11,SS_NOPREFIX
+    CONTROL         "Umleitung von &READ_PORT_UCHAR / WRITE_PORT_UCHAR",11,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,76,224,11
+    LTEXT           "(schneller und stabiler)",IDC_STATIC,28,88,173,11,SS_NOPREFIX
+    GROUPBOX        "Performance-Optionen",IDC_STATIC,10,108,234,88
+    CONTROL         "&Schreibcache für OUT-Befehle",12,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,120,113,10
+    LTEXT           "(Zusammenfassung mehrerer OUT-Befehle zu einem USB-Paket)",IDC_STATIC,28,130,212,11,SS_NOPREFIX
+    RTEXT           "Paketversendung er&zwingen nach",IDC_STATIC,28,144,133,8
+    EDITTEXT        101,164,142,50,14,ES_AUTOHSCROLL|ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,218,144,10,8
+    CONTROL         "Rüc&klesen einer Kopie von Ausgabe-Registern",13,"Button",BS_AUTO3STATE|WS_TABSTOP,16,162,163,10
+    PUSHBUTTON      "E&xakter…",103,182,160,50,14
+    LTEXT           "(liefert zuletzt geschriebenen Wert bei IN-Befehl; funktioniert nicht wenn Ausgänge durch externe Hardware [low] gesteuert werden)",IDC_STATIC,28,174,212,20,SS_NOPREFIX
+}
+
+101 DIALOG DISCARDABLE  0, 0, 254, 210
+STYLE DS_MODALFRAME|WS_POPUP|WS_CAPTION
+CAPTION "Statistik"
+FONT 8, "MS Shell Dlg"
+{
+    GROUPBOX        "Debugregister-Anzapfung",IDC_STATIC,2,3,250,111
+    PUSHBUTTON      "&Null setzen",106,194,16,50,14
+    RTEXT           "OUT-Befehle:",IDC_STATIC,10,19,91,8
+    EDITTEXT        100,108,16,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "IN-Befehle:",IDC_STATIC,10,36,91,8
+    EDITTEXT        101,108,34,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "Emulationsfehler:",IDC_STATIC,10,52,91,8
+    EDITTEXT        102,108,50,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    LTEXT           "(nicht unterstützter IN- oder OUT-Befehl, bspw. OUTSB)",IDC_STATIC,152,44,98,18,SS_NOPREFIX
+    RTEXT           "Gestohlene Debugregister:",IDC_STATIC,10,68,91,8
+    EDITTEXT        103,108,66,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    LTEXT           "(Unbekannter Treiber hat die Debugregister überschrieben)",IDC_STATIC,152,66,98,18,SS_NOPREFIX
+    CTEXT           "Überschriebene Debugregister werden mit einem 100-ms-Timer detektiert.",IDC_STATIC,10,86,238,8,SS_NOPREFIX
+    RTEXT           "Tatsächlich zugewiesen an:",IDC_STATIC,8,100,93,8,WS_DISABLED
+    CONTROL         "SPP",108,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,108,100,30,10
+    CONTROL         "EPP (+4)",109,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,142,100,44,10
+    CONTROL         "ECP (+400h)",110,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,190,100,56,10
+    GROUPBOX        "Umleitung READ_PORT_UCHAR / WRITE_PORT_UCHAR",IDC_STATIC,2,116,250,48
+    PUSHBUTTON      "Null &setzen",107,194,128,50,14
+    RTEXT           "OUT-Befehle:",IDC_STATIC,10,132,91,8
+    EDITTEXT        104,108,129,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "IN-Befehle:",IDC_STATIC,10,149,91,8
+    EDITTEXT        105,108,147,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    PUSHBUTTON      "&IN-Befehl ausführen",111,10,166,98,12,BS_FLAT|WS_DISABLED
+    PUSHBUTTON      "Firmware-&Update…",112,148,166,95,12,BS_FLAT|WS_DISABLED
+    CTEXT           "haftmann#software, Technische Universität Chemnitz,\nFakultät für Elektrotechnik und Informationstechnik,\nProfessur für Mess- und Sensortechnik, März 2005",IDC_STATIC,4,180,246,26
+}
+
+102 DIALOG DISCARDABLE  0, 0, 178, 58
+STYLE DS_MODALFRAME|WS_CAPTION|WS_SYSMENU
+CAPTION "Rücklese-Kopie von Ausgaberegistern"
+FONT 8, "MS Shell Dlg"
+{
+    CONTROL         "&Datenport (Basisadresse + 0)",20,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,6,107,10
+    CONTROL         "&Steuerport (Basisadresse + 2)",21,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,20,108,10
+    CONTROL         "&Übrige Ports (ECP, EPP)",22,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,36,93,10
+    DEFPUSHBUTTON   "OK",IDOK,122,6,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,122,24,50,14
+}
+
+103 DIALOG DISCARDABLE  0, 0, 316, 142
+STYLE DS_MODALFRAME|WS_POPUP
+FONT 8, "MS Shell Dlg"
+{
+    LTEXT           "Emulierte Port&adresse:",IDC_STATIC,46,8,80,8
+    COMBOBOX        100,132,6,100,100,CBS_DROPDOWN|WS_VSCROLL|WS_TABSTOP
+    ICON            0,10,20,22,21,20
+    LTEXT           "Eine falsch angegebene Adresse kann Ihren Computer zum „Einfrieren“ bringen oder schlimmeres! Die Verwendung einer der drei Vorgaben gilt als sicher.",IDC_STATIC,46,24,252,22,SS_NOPREFIX
+    GROUPBOX        "",IDC_STATIC,8,46,300,60
+    LTEXT           "LPT-&Erweiterung:",IDC_STATIC,46,60,80,8
+    COMBOBOX        102,132,58,100,100,CBS_DROPDOWNLIST|WS_VSCROLL|WS_TABSTOP
+    ICON            100,IDC_STATIC,20,68,21,20
+    LTEXT           "Die LPT-Erweiterung bewirkt die Emulation weiterer Portadressen.\nSie wird vergleichsweise selten benötigt, und die SPP-Einstellung ist OK.",IDC_STATIC,46,76,252,21,SS_NOPREFIX
+    LTEXT           "Diese und weitergehende Einstellungen können im Betrieb über Eigenschaftsseiten im Geräte-Manager vorgenommen werden.",IDC_STATIC,46,114,252,22,SS_NOPREFIX
+    ICON            0,11,20,112,21,20
+}
+
+
+STRINGTABLE DISCARDABLE 
+{
+    16                      "Möchten Sie wirklich diese nicht standardgemäße Portadresse verwenden?\n\nMit diesem Wert haben Sie die Lunte in der Hand, den Rechner ins Nirwana zu schicken!"
+    17                      "Die angegebene Portadresse ist keine gültige Hexadezimalzahl!"
+    18                      "Die Portadresse ist unzulässig: zu klein, zu groß, nicht durch 4 teilbar, oder auf den Adressen des IDE-Anschlusses!"
+    19                      "Bei nicht durch 8 teilbaren Portadressen ist keine EPP-Emulation möglich!"
+    20                      "Ungültige Angabe bei Zeitüberschreitung! (Darf nicht größer als 1000 ms sein.)"
+    21                      "Festlegung der emulierten Portadresse"
+    22                      "Die Portadresse muss mit der in Frage kommenden Anwendungssoftware in Übereinstimmung gebracht werden."
+}
+
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+100 DIALOG DISCARDABLE  0, 0, 254, 210
+STYLE DS_MODALFRAME|WS_POPUP|WS_CAPTION
+CAPTION "Emulation"
+FONT 8, "MS Shell Dlg"
+{
+    ICON            100,IDC_STATIC,12,8,20,20
+    LTEXT           "Emulated port &address:",IDC_STATIC,56,8,73,8
+    COMBOBOX        100,142,6,100,100,CBS_DROPDOWN|WS_VSCROLL|WS_TABSTOP
+    LTEXT           "LPT &enhancement mode:",IDC_STATIC,56,26,81,8
+    COMBOBOX        102,142,24,100,100,CBS_DROPDOWNLIST|WS_VSCROLL|WS_TABSTOP
+    GROUPBOX        "Trapping method for IN and OUT instructions",IDC_STATIC,10,38,234,64
+    CONTROL         "&Debug register trap",10,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,50,173,11
+    LTEXT           "(catches all flavours of IN and OUT instructions)",IDC_STATIC,28,62,173,11,SS_NOPREFIX
+    CONTROL         "&READ_PORT_UCHAR / WRITE_PORT_UCHAR redirect",11,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,76,205,11
+    LTEXT           "(faster, more stable)",IDC_STATIC,28,88,173,11,SS_NOPREFIX
+    GROUPBOX        "Performance options",IDC_STATIC,10,108,234,88
+    CONTROL         "Use &write-back for OUT instructions",12,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,16,120,128,10
+    LTEXT           "(Concatenate multiple OUT instructions to one USB packet)",IDC_STATIC,28,130,194,11,SS_NOPREFIX
+    RTEXT           "Send packet after that &timeout value:",IDC_STATIC,28,144,132,8
+    EDITTEXT        101,164,142,50,14,ES_AUTOHSCROLL|ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,218,144,10,8
+    CONTROL         "Read-&back local copy of output registers",13,"Button",BS_AUTO3STATE|WS_TABSTOP,16,162,143,10
+    PUSHBUTTON      "&More precisely…",103,162,160,68,14
+    LTEXT           "(return last-written value on IN instruction; does not work when outputs are driven [low] by external hardware)",IDC_STATIC,28,174,194,20,SS_NOPREFIX
+}
+
+101 DIALOG DISCARDABLE  0, 0, 254, 210
+STYLE DS_MODALFRAME|WS_POPUP|WS_CAPTION
+CAPTION "Statistics"
+FONT 8, "MS Shell Dlg"
+{
+    GROUPBOX        "Debug register trap",IDC_STATIC,2,3,250,111
+    PUSHBUTTON      "&Reset to zero",106,194,16,50,14
+    RTEXT           "OUT instructions:",IDC_STATIC,10,19,91,8
+    EDITTEXT        100,108,16,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "IN instructions:",IDC_STATIC,10,36,91,8
+    EDITTEXT        101,108,34,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "Emulation errors:",IDC_STATIC,10,52,91,8
+    EDITTEXT        102,108,50,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    LTEXT           "(unsupported IN or OUT instruction, e.g. OUTSB)",IDC_STATIC,152,44,98,18,SS_NOPREFIX
+    RTEXT           "Stolen debug registers:",IDC_STATIC,10,68,91,8
+    EDITTEXT        103,108,66,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    LTEXT           "(An unknown driver wrote to debug registers)",IDC_STATIC,152,66,98,18,SS_NOPREFIX
+    CTEXT           "Overwritten debug registers are detected by a 100 ms kernel timer.",IDC_STATIC,10,86,238,8
+    RTEXT           "Really assigned to:",IDC_STATIC,8,100,93,8,WS_DISABLED
+    CONTROL         "SPP",108,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,108,100,30,10
+    CONTROL         "EPP (+4)",109,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,142,100,44,10
+    CONTROL         "ECP (+400h)",110,"Button",BS_AUTOCHECKBOX|WS_DISABLED|WS_TABSTOP,190,100,56,10
+    GROUPBOX        "READ_PORT_UCHAR / WRITE_PORT_UCHAR redirection",IDC_STATIC,2,116,250,48
+    PUSHBUTTON      "Reset to &zero",107,194,128,50,14
+    RTEXT           "OUT instructions:",IDC_STATIC,10,132,91,8
+    EDITTEXT        104,108,129,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    RTEXT           "IN instructions:",IDC_STATIC,10,149,91,8
+    EDITTEXT        105,108,147,40,14,ES_RIGHT|ES_AUTOHSCROLL|ES_READONLY|ES_NUMBER
+    PUSHBUTTON      "Make an &IN instruction",111,10,166,98,12,BS_FLAT|WS_DISABLED
+    PUSHBUTTON      "Firmware &Update…",112,148,166,95,12,BS_FLAT|WS_DISABLED
+    CTEXT           "haftmann#software, Technische Universität Chemnitz,\nFakultät für Elektrotechnik und Informationstechnik,\nProfessur für Mess- und Sensortechnik, March 2005",IDC_STATIC,2,180,250,26
+}
+
+102 DIALOG DISCARDABLE  0, 0, 178, 58
+STYLE DS_MODALFRAME|WS_CAPTION|WS_SYSMENU
+CAPTION "Read-back copy of output registers"
+FONT 8, "MS Shell Dlg"
+{
+    CONTROL         "&Data port (base address + 0)",20,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,6,105,10
+    CONTROL         "&Control port (base address + 2)",21,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,20,112,10
+    CONTROL         "&Other ports (ECP, EPP)",22,"Button",BS_AUTOCHECKBOX|WS_TABSTOP,8,36,89,10
+    DEFPUSHBUTTON   "OK",IDOK,122,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,122,24,50,14
+}
+
+103 DIALOG DISCARDABLE  0, 0, 316, 142
+STYLE DS_MODALFRAME|WS_POPUP
+FONT 8, "MS Shell Dlg"
+{
+    LTEXT           "Emulated port &address:",IDC_STATIC,46,7,82,8
+    COMBOBOX        100,132,6,100,100,CBS_DROPDOWN|WS_VSCROLL|WS_TABSTOP
+    ICON            0,10,20,22,21,20
+    LTEXT           "A wrong setting may crash your computer or eat the content of your hard disk! Using one of the three predefined addresses should be safe.",IDC_STATIC,46,24,252,22,SS_NOPREFIX
+    GROUPBOX        "",IDC_STATIC,8,46,300,60
+    ICON            100,IDC_STATIC,20,66,21,20
+    LTEXT           "LPT &enhancement mode:",IDC_STATIC,46,60,84,8
+    COMBOBOX        102,132,59,100,100,CBS_DROPDOWNLIST|WS_VSCROLL|WS_TABSTOP
+    LTEXT           "The LPT enhancement modes enable trapping of further port addresses.\nThese are very seldom used; so the SPP setting is OK.",IDC_STATIC,46,76,250,20,SS_NOPREFIX
+    ICON            0,11,20,112,21,20
+    LTEXT           "These and further settings you can later make in Windows' Device Manager. Point to the USB2LPT device, and open Properties.",IDC_STATIC,46,114,252,20,SS_NOPREFIX
+}
+
+STRINGTABLE DISCARDABLE 
+{
+    16                      "Do you really, really want to use this non-standard port address?\n\nYou may crash your computer!"
+    17                      "This port address is not a valid hexadecimal number!"
+    18                      "This port address is wrong: too less, too great, not divisable by 4, or occupies IDE addresses!"
+    19                      "On port addresses not dividable by 8, EPP emulation is not possible!"
+    20                      "Incorrect number as Timeout value! (Must not be larger than 1000 ms.)"
+    21                      "Assignment of emulated port address"
+    22                      "This port address must match to the address used by your application software."
+}
+
+LANGUAGE 0,0
+
+100                     ICON    DISCARDABLE     "prop.ico"
+
+1 VERSIONINFO
+ FILEVERSION 1,0,2005,205
+ PRODUCTVERSION 1,0,2005,205
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040704b0"
+        {
+            VALUE "CompanyName", "haftmann#software\0"
+            VALUE "FileDescription", "Eigenschaftsseiten-Lieferant\0"
+            VALUE "FileVersion", "1.0 (2/05)\0"
+            VALUE "InternalName", "usb2lpt\0"
+            VALUE "LegalCopyright", "Freeware\0"
+            VALUE "OriginalFilename", "usb2lpt.dll\0"
+            VALUE "ProductName", "h#s USB-zu-LPT-Konverter\0"
+            VALUE "ProductVersion", "1.0 (3/05)\0"
+        }
+        BLOCK "040904b0"
+        {
+            VALUE "CompanyName", "haftmann#software\0"
+            VALUE "FileDescription", "Property Sheet Provider\0"
+            VALUE "FileVersion", "1.0 (2/05)\0"
+            VALUE "InternalName", "usb2lpt\0"
+            VALUE "LegalCopyright", "Freeware\0"
+            VALUE "OriginalFilename", "usb2lpt.dll\0"
+            VALUE "ProductName", "h#s USB to LPT converter\0"
+            VALUE "ProductVersion", "1.0 (3/05)\0"
+        }
+        BLOCK "080404b0"
+#pragma code_page(936)
+        {
+            VALUE "CompanyName", "haftmann#software\0"
+            VALUE "FileDescription", "ÊôÐÔ±í³ÌÐò\0"
+            VALUE "FileVersion", "1.0 (2/05)\0"
+            VALUE "InternalName", "usb2lpt\0"
+            VALUE "LegalCopyright", "Ãâ·ÑÈí¼þ\0"
+            VALUE "OriginalFilename", "usb2lpt.dll\0"
+            VALUE "ProductName", "h#s USB×ªLPT×ª»»Æ÷\0"
+            VALUE "ProductVersion", "1.0 (3/05)\0"
+        }
+#pragma code_page(1252)
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x407, 1200, 0x409, 1200, 0x804, 1200
+    }
+}

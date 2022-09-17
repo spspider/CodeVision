@@ -1,0 +1,155 @@
+    NAME test
+    PUBLIC test
+
+    RSEG CODE
+
+test
+    adc     r0,r1
+    add     r1,r2
+    adiw    r24,0
+    and     r2,r3
+    andi    r16,$72
+    asr     r4
+    bld     r5,4
+    breq    $-14
+    brge    $+8
+    brhc    $+6
+    brhs    $-6
+    brid    $+2
+    brie    $-2
+    brlo    $-16
+    brlt    $-8
+    brmi    $-12
+    brne    $+14
+    brpl    $+12
+    brsh    $+16
+    brtc    $+4
+    brts    $-4
+    brvc    $+10
+    brvs    $-10
+    bst     r31,7
+    call    $-2
+    cbi     $19,2
+    clc
+    clh
+    cli
+    cln
+    clr     r23
+    cls
+    clt
+    clv
+    clz
+    com     r6
+    cp      r6,r7
+    cpc     r7,r8
+    cpi     r17,1
+    cpse    r8,r9
+    dec     r9
+;   eicall              ; v1.02     Error[40]: Bad instruction
+    dw      $9519
+;   eijmp               ; v1.02     Error[40]: Bad instruction
+    dw      $9419
+    elpm
+;   elpm    r30,z       ; v1.02     Error[43]: Illegal effective address
+    dw      $91E6
+;   elpm    r31,z+      ; v1.02     Error[43]: Illegal effective address
+    dw      $91F7
+    eor     r3,r7
+;   espm                ; v1.02     Error[40]: Bad instruction
+    dw      $95F8
+;   fmul    r16,r17     ; v1.02     Error[40]: Bad instruction
+    dw      $0309
+;   fmuls   r18,r19     ; v1.02     Error[40]: Bad instruction
+    dw      $03A3
+;   fmulsu  r19,r20     ; v1.02     Error[40]: Bad instruction
+    dw      $03BC
+    icall
+    ijmp
+    in      r10,$3B
+    inc     r11
+    jmp     $+4
+    ld      r10,x
+    ld      r11,x+
+    ld      r12,-x
+    ld      r3,y
+    ld      r13,y+
+    ld      r14,-y
+    ldd     r4,y+63
+    ld      r5,z
+    ld      r15,z+
+    ld      r16,-z
+    ldd     r6,z+33
+    ldi     r18,2
+    lds     r12,$3039
+    lpm
+;   lpm     r20,z       ; v1.02     Error[43]: Illegal effective address
+    dw      $9144
+;   lpm     r22,z+      ; v1.02     Error[43]: Illegal effective address
+    dw      $9165
+    lsl     r19
+    lsr     r12
+    mov     r1,r2
+;   movw    r10,r20     ; v1.02     Error[40]: Bad instruction
+    dw      $015A
+;   mul     r12,r13     ; v1.00     Error[40]: Bad instruction
+    dw      $9CCD
+;   muls    r17,r18     ; v1.02     Error[40]: Bad instruction
+    dw      $0212
+;   mulsu   r19,r20     ; v1.02     Error[40]: Bad instruction
+    dw      $0334
+    neg     r14
+    nop
+    or      r14,r15
+    ori     r25,$29
+    out     $3D,r15
+    pop     r16
+    push    r17
+;   rcall   $+2047
+    dw      $D7FF
+    ret
+    reti
+;   rjmp    $-2048
+    dw      $C800
+    rol     r15
+    ror     r18
+    sbc     r8,r9
+    sbci    r19,3
+    sbi     $1C,5
+    sbic    $1B,4
+    sbis    $1A,3
+    sbiw    r26,1
+    sbrc    r23,3
+    sbrs    r24,5
+    sec
+    seh
+    sei
+    sen
+    ser     r31
+    ses
+    set
+    sev
+    sez
+    sleep
+;   spm                 ; v1.02     Error[40]: Bad instruction
+    dw      $95E8
+    st      x,r20
+    st      x+,r21
+    st      -x,r22
+    st      y,r10
+    st      y+,r23
+    st      -y,r24
+    std     y+1,r11
+    st      z,r30
+    st      z+,r25
+    st      -z,r26
+    std     z+10,r31
+    sts     $FF98,r25
+    sub     r16,r17
+    subi    r21,127
+    swap    r17
+    tst     r18
+    wdr
+;   ???
+    dw      $4
+
+    END test

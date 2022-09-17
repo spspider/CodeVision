@@ -1,0 +1,141 @@
+#include <mega8.h>
+#include <delay.h>        // подключаем библиотеку задержки
+
+// unsigned char sek;        // переменная сек.
+ unsigned char min;        // пересенная мин.
+ unsigned char hour;       // переменная часов
+ unsigned char Dig[10];
+ char Disp6, Disp7;
+
+// Timer 1 output compare A interrupt service routine
+interrupt [TIM1_COMPA] void timer1_compa_isr(void)  // таймер выставлен на частоту 1 Гц
+{
+// Place your code here
+       TCNT1H=0;
+       TCNT1L=0;
+//       sek++;                // инкрементируем секунду 
+//       PORTD=128;
+//       PORTB=253;         // выводим точку
+       
+      // работаем с кнопками
+ 
+
+
+}
+
+// Declare your global variables here
+
+void Display (unsigned int Number) //Ф-ция для разложения десятичного цисла
+{
+  unsigned char Num2, Num3;
+  Num2=0, Num3=0;
+    while (Number >= 10)
+  {
+    Number -= 10;  
+    Num3++; 
+  }
+  Num2 = Number;
+  Disp6 = Dig[Num3];
+  Disp7 = Dig[Num2];
+   
+} 
+void Dig_init() //Массив для отображения цифр на семисегментном индикаторе
+{
+  Dig[0] = 95;   // Сейчас у нас схема с общим катодом
+  Dig[1] = 24;
+  Dig[2] = 109;
+  Dig[3] = 124;
+  Dig[4] = 58;
+  Dig[5] = 118;
+  Dig[6] = 119;
+  Dig[7] = 28;
+  Dig[8] = 127;
+  Dig[9] = 126;
+}
+
+void main(void)
+{
+
+  
+
+PORTB=0x00;
+DDRB=0xFF;
+PORTC=0xFF;
+DDRC=0x00;
+PORTD=0x00;
+DDRD=0xFF;
+TCCR0=0x00;
+TCNT0=0x00;
+TCCR1A=0x00;
+TCCR1B=0x05;
+TCNT1H=0x00;
+TCNT1L=0x00;
+ICR1H=0x00;
+ICR1L=0x00;
+OCR1AH=0x1E;
+OCR1AL=0x85;
+OCR1BH=0x00;
+OCR1BL=0x00;
+ASSR=0x00;
+TCCR2=0x00;
+TCNT2=0x00;
+OCR2=0x00;
+MCUCR=0x00;
+TIMSK=0x10;
+ACSR=0x80;
+SFIOR=0x00;
+
+#asm("sei")
+Dig_init(); //инициализация массива с двоичным кодом
+while (1)
+      {
+      
+      
+ if (PINC.0==0) // если нажата первая кнопка
+  {        
+  hour++ ; // к значению часы добавляем единицу  
+  }
+  if (PINC.1==0) // если нажата вторая кнопка
+  {
+  hour--; // к значению часы вычитаем единицу у
+  }
+  if (PINC.2==0) // если нажата третья кнопка
+  {
+  min++; // к значению минуты добавляем единицу  
+  }
+  if (PINC.3==0) // если нажата четвертая кнопка
+  {
+  min--; // к значению минуты вычитаем единицу 
+  }  
+  if (PINC.4==0) // кнопка RESET
+  {
+  }
+         // защита переполнения переменной, она нужна для того чтобы в моментах когда время не переходило в минус.
+  if (hour==99)
+  hour=0;
+  if (min==99)
+  min=0;  
+         // выводим переменные (стробирование)
+        Display(hour); //разложили "часы" на 2 цифры и отобразили по очереди
+        PORTB=254;    //даем лог 0 для катода 1 разряда
+        PORTD=Disp6;  //1 цифра     
+        delay_ms(5);
+        PORTB=253;    //даем лог 0 для катода 2 разряда
+        PORTD=Disp7;   //2 цифра     
+        delay_ms(5);
+        Display(min);  //разложили "минуты" на 2 цифры и отобразили по очереди
+        PORTB=251;      //даем лог 0 для катода 3 разряда
+        PORTD=Disp6;  //3 цифра      
+        delay_ms(5);
+        PORTB=247;    //даем лог 0 для катода 4 разряда
+        PORTD=Disp7;   //4...     
+        delay_ms(5);
+
+
+if(hour>100)
+{
+
+}
+
+}
+}

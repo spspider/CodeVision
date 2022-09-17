@@ -1,0 +1,20 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+dht_dat                                                           0080h        5
+out                                                               0085h        4
+p                                                                 0089h        1
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+bGlobalErr                                                        R3           1
+dht_in                                                            R2           1
+cyf                                                               R5           1
+des                                                               R4           1
+ed                                                                R7           1
+fase                                                              R6           1

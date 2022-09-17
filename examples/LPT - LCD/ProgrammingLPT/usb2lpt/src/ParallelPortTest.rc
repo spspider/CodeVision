@@ -1,0 +1,119 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+100 DIALOGEX 0, 0, 254, 210
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_NOFAILCREATE | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Emulation"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Emulierte Port&adresse:",-1,56,8,78,8
+    COMBOBOX        100,142,6,100,100,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Datenport (+0)",-1,18,24,224,26,0,WS_EX_RIGHT
+    EDITTEXT        160,218,34,18,12,ES_CENTER | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        176,24,34,18,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "&Statusport (+1)",-1,18,90,224,26,0,WS_EX_RIGHT
+    EDITTEXT        161,218,100,18,12,ES_CENTER | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        177,24,100,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "S&teuerport (+2)",-1,18,116,224,26,0,WS_EX_RIGHT
+    EDITTEXT        162,218,126,18,12,ES_CENTER | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        178,24,126,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "&ECR (+402h)",-1,18,164,224,28,0,WS_EX_RIGHT
+    EDITTEXT        170,218,174,18,12,ES_CENTER | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    COMBOBOX        102,48,174,76,102,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        186,24,174,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "FIFO voll",120,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,152,170,44,10
+    CONTROL         "FIFO leer",121,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,152,180,45,10
+    EDITTEXT        168,24,150,18,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Byte ein&lesen",131,48,148,56,14
+    CONTROL         "&Adresse",122,"Button",BS_AUTORADIOBUTTON,106,146,48,10
+    CONTROL         "&Daten",123,"Button",BS_AUTORADIOBUTTON,106,156,48,10
+    PUSHBUTTON      "Byte a&usgeben",130,156,148,56,14
+    RTEXT           "cfgB (+401h)",119,172,150,42,8
+    EDITTEXT        169,218,148,18,12,ES_CENTER | ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "cfgA (+400h)",118,46,152,42,8
+    PUSHBUTTON      "Lesen",117,45,34,28,12,BS_FLAT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

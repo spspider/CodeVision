@@ -1,0 +1,14 @@
+void Beep (){
+if (Bee>1){
+Timer_7++;
+if (Timer_7>=Bee){
+Timer_7=0;
+Timer_8++;
+PORTC^=0b00000100;
+}
+if (Timer_8>120){
+Timer_8=Bee=0;
+PORTC&=~0b00000100;
+}
+}
+}

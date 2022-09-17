@@ -1,0 +1,32 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+adress2                                                           0160h        2
+adress3                                                           0162h        2
+PWM1                                                              0164h        2
+Timer1                                                            0166h        2
+Timer2                                                            0168h        2
+bit1                                                              016Ah        2
+bit0                                                              016Ch        2
+FreqT                                                             016Eh        2
+TOL                                                               0170h        2
+bit01                                                             0172h        2
+bit10                                                             0174h        2
+shiftd                                                            0176h        2
+U1                                                                0178h        2
+U2                                                                017Ah        2
+Timer_1                                                           017Ch        2
+p                                                                 017Eh        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+d                                                                 R4,R5        2
+d1                                                                R6,R7        2
+d2                                                                R8,R9        2
+d3                                                                R10,R11      2
+adress1                                                           R12,R13      2

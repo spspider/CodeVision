@@ -1,0 +1,9 @@
+CodeVisionAVR C Compiler V1.25.9 Standard
+(C) Copyright 1998-2008 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+File: c:\cvavr\uart2mk\uart2mk1\uart2mk1.c
+Global variables memory map:
+
+Variable                          Address   Size
+*p_S44                                                                160h      2

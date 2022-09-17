@@ -1,0 +1,33 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+adc                                                               0160h        5
+Timer3                                                            0165h        1
+cl                                                                0166h        5
+sw                                                                016Bh        1
+adc_c                                                             016Ch       10
+a                                                                 0176h        1
+pulse_ok                                                          0177h        1
+buzzer                                                            0178h        1
+ready_adc_2                                                       0179h        1
+q                                                                 017Ah        1
+_seed                                                             017Bh        4
+_base_y                                                           017Fh        4
+_lcd_x                                                            0183h        1
+_lcd_y                                                            0184h        1
+_lcd_maxx                                                         0185h        1
+p                                                                 0186h        2
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+Timer1                                                            R4,R5        2
+Timer4                                                            R6,R7        2
+Timer5                                                            R8,R9        2
+Timer7                                                            R10,R11      2
+Timer2                                                            R13          1
+Timer6                                                            R12          1
